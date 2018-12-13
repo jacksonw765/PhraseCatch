@@ -2,6 +2,7 @@ package com.jacksonw765.phrasecatch;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +32,8 @@ public class CategoryActivity extends AppCompatActivity {
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO
+                final MediaPlayer mp = MediaPlayer.create(view.getContext(), R.raw.countdown_short);
+                
             }
         });
 

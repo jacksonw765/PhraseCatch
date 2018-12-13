@@ -61,11 +61,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonPlus"
-        android:layout_alignEnd="@+id/spinner2"
+        android:layout_alignEnd="@+id/spinnerCat"
         android:text="Start" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinnerCat"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@+id/textView"
