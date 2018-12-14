@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_college_life">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Roman Noodles</item>
+
+    </string-array>
+</resources>
