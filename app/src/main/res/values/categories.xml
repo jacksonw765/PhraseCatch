@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="Categories">
+        <item>Everything</item>
+        <item>College Life</item>
+        <item>Sports</item>
+        <item>Movies</item>
+        <item>Places</item>
+        <item>TV Shows</item>
+        <item>Music</item>
+
+    </string-array>
+
     <string-array name="array_college_life">
         <item>Drinking</item>
         <item>Hangover</item>

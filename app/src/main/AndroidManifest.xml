@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryActivity" />
-        <activity android:name=".PlayActivity"></activity>
+        <activity android:name=".PlayActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".CategoryRefactor"></activity>
     </application>
 
 </manifest>
