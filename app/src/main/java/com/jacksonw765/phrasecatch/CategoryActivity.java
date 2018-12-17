@@ -15,8 +15,7 @@ import android.widget.Toast;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    private Button buttonPlus, buttonMinus, buttonStart;
-    private int pointsToWin = 6;
+
     private TextView textViewPointsToWin;
     private Spinner spinnerCatagories;
 
@@ -25,53 +24,7 @@ public class CategoryActivity extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        buttonMinus = findViewById(R.id.buttonMinus);
-        buttonPlus = findViewById(R.id.buttonPlus);
-        buttonStart = findViewById(R.id.buttonStart);
-        textViewPointsToWin = findViewById(R.id.textPointsToWin);
 
-        buttonMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(pointsToWin > 0) {
-                    try {
-                        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.type);
-                        mp.start();
-                        pointsToWin--;
-                        textViewPointsToWin.setText("" + pointsToWin);
-                    } catch (Exception e) {
-                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(), "Min score", Toast.LENGTH_SHORT);
-                }
-            }
-        });
 
-        buttonPlus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (pointsToWin < 10) {
-                    try {
-                        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.type);
-                        mp.start();
-                        pointsToWin++;
-                        textViewPointsToWin.setText("" + pointsToWin);
-                    } catch (Exception e) {
-                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(), "Max score", Toast.LENGTH_SHORT);
-                }
-            }
-        });
-
-        buttonStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

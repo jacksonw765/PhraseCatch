@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoryRefactor"
-    android:background="@color/backgroundColor">
+    tools:context=".CategoryRefactor">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,11 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <item>Places</item>
-            <item>TV Shows</item>
-            <item>Music</item>
-
 
             <TextView
                 android:id="@+id/textView7"
@@ -39,13 +33,20 @@
                 android:layout_alignParentEnd="true"
                 android:paddingLeft="25dp"
                 android:paddingTop="10dp"
-                android:paddingRight="25dp">
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp">
 
                 <Button
                     android:id="@+id/buttonCatagoryEverything"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
-                    android:text="Everything" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Everything"
+                    android:textSize="28sp" />
 
                 <Button
                     android:id="@+id/buttonCollegeLife"
@@ -53,23 +54,36 @@
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:text="College Life" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="College Life"
+                    android:textSize="30sp" />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/middleCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:paddingLeft="25dp"
-                android:paddingTop="15dp"
+                android:paddingTop="20dp"
                 android:paddingRight="25dp"
-                android:id="@+id/middleCard">
+                android:paddingBottom="20dp">
 
                 <Button
                     android:id="@+id/buttonSports"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
-                    android:text="Sports" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Sports"
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/Movies"
@@ -77,23 +91,38 @@
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:text="Movies/TV Shows" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Movies/TV Shows"
+                    android:textSize="30sp" />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/lowerCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:paddingLeft="25dp"
-                android:paddingTop="15dp"
+                android:paddingTop="20dp"
+                android:fontFamily="@font/nunito_font"
                 android:paddingRight="25dp"
-                android:id="@+id/lowerCard">
+                android:paddingBottom="20dp">
 
                 <Button
                     android:id="@+id/buttonPlaces"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
-                    android:text="Places" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Places"
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/buttonMusic"
@@ -101,7 +130,13 @@
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:text="ButtonMusic" />
+                    android:background="@drawable/button_white"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Music"
+                    android:textSize="30sp" />
 
             </RelativeLayout>
     </LinearLayout>

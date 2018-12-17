@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@font/nunito_font</item>
+        <item name="android:buttonStyle">@font/nunito_font</item>
     </style>
 
 </resources>
