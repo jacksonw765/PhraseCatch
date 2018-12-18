@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategoryActivity" />
         <activity android:name=".PlayActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".CategoryRefactor"></activity>
+        <activity android:name=".CategoryActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

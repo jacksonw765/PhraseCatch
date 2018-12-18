@@ -1,5 +1,6 @@
 package com.jacksonw765.phrasecatch;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.preference.PreferenceManager;
@@ -17,26 +18,35 @@ import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
 
+    //define UI
     private Button buttonPlus, buttonMinus;
-    private int pointsToWin = 6;
     private TextView textViewPointsToWin;
     private RadioGroup radioGroup;
-
     private RadioButton radioShort, radioMid, radioLong, radioRandom;
 
-    public final static String RADIO_KEY = "RADIO_KEY";
-    private SharedPreferences.Editor editor;
-    private SharedPreferences prefs;
+    //define variables
+    private int pointsToWin;
+    private static SharedPreferences.Editor editor;
+    private static SharedPreferences prefs;
 
-    private final int SHORT = 1;
-    private final int MID = 2;
-    private final int LONG = 3;
-    private final int RANDOM = 4;
+    public static final int SHORT_TIME = 30;
+    public static final int MID_TIME = 47;
+    public static final int LONG_TIME = 53;
+
+   //define constants
+    public final static String RADIO_KEY = "RADIO_KEY";
+    public final static String POINTS_KEY = "RADIO_KEY";
+    public final static int SHORT = 1;
+    public final static int MID = 2;
+    public final static int LONG = 3;
+    public final static int RANDOM = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        //instantiate UI
         buttonMinus = findViewById(R.id.buttonMinus);
         buttonPlus = findViewById(R.id.buttonPlus);
         textViewPointsToWin = findViewById(R.id.textPointsToWin);
@@ -46,15 +56,13 @@ public class SettingsActivity extends AppCompatActivity {
         radioLong = findViewById(R.id.radioButtonThree);
         radioRandom = findViewById(R.id.radioButtonFour);
 
-        textViewPointsToWin.setTextIsSelectable(false);
+        //instantiate other elements
         prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        pointsToWin = loadPointsToWin(getApplicationContext());
+        textViewPointsToWin.setText(""+pointsToWin);
 
-        switch (loadRadio()) {
-            case -1:
-                saveRadio(RANDOM);
-                if(!radioRandom.isChecked())
-                    radioRandom.toggle();
-                break;
+        //load previous radio from SP
+        switch (loadRadio(getApplicationContext())) {
             case 1:
                 radioShort.toggle();
                 break;
@@ -68,6 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
                 radioRandom.toggle();
         }
 
+        //onClick listeners
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -96,6 +105,7 @@ public class SettingsActivity extends AppCompatActivity {
                         mp.start();
                         pointsToWin--;
                         textViewPointsToWin.setText("" + pointsToWin);
+                        savePointsToWin(pointsToWin);
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
                     }
@@ -114,6 +124,7 @@ public class SettingsActivity extends AppCompatActivity {
                         mp.start();
                         pointsToWin++;
                         textViewPointsToWin.setText("" + pointsToWin);
+                        savePointsToWin(pointsToWin);
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
                     }
@@ -124,13 +135,39 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
-    private void saveRadio(int status) {
+
+    //getters and setters for SP
+    private static void saveRadio(int status) {
         editor = prefs.edit();
         editor.putInt(RADIO_KEY, status);
         editor.apply();
     }
 
-    public int loadRadio() {
-        return prefs.getInt(RADIO_KEY, -1);
+    public static int loadRadio(Context context) {
+        prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        editor = prefs.edit();
+        int soundType = prefs.getInt(RADIO_KEY, -1);
+        if(soundType == -1) {
+            saveRadio(RANDOM);
+            soundType = RANDOM;
+        }
+        return soundType;
+    }
+
+    private static void savePointsToWin(int pointsToWin) {
+        editor = prefs.edit();
+        editor.putInt(POINTS_KEY, pointsToWin);
+        editor.apply();
+    }
+
+    public static int loadPointsToWin(Context context) {
+        prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        editor = prefs.edit();
+        int points = prefs.getInt(POINTS_KEY, -1);
+        if(points == -1) {
+            points = 7;
+            savePointsToWin(points);
+        }
+        return points;
     }
 }

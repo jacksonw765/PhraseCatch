@@ -1,17 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="Categories">
-        <item>Everything</item>
-        <item>College Life</item>
-        <item>Sports</item>
-        <item>Movies</item>
-        <item>Places</item>
-        <item>TV Shows</item>
-        <item>Music</item>
+
+    <string-array name="array_college_life">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Academic Year</item>
+        <item>Advisor</item>
+        <item>Application</item>
+        <item>Common App</item>
+        <item>Degree</item>
+        <item>Commencement</item>
+        <item>Credit</item>
+        <item>Financial Aid</item>
+        <item>FASFA</item>
+        <item>GenEd</item>
+        <item>GPA</item>
+        <item>Grant</item>
+        <item>Scholarship</item>
+        <item>Internship</item>
+        <item>Open Admission</item>
+        <item>Syllabus</item>
+        <item>Syllabooze Week</item>
+        <item>Transcript</item>
+        <item>Tuition</item>
+        <item>Work-Study</item>
+        <item>PhD</item>
+        <item>Credit Hour</item>
+        <item>Curriculum</item>
+        <item>Liberal Arts</item>
+        <item>Track</item>
+        <item>Gap Year</item>
+        <item>Early Decision</item>
+        <item>Waitlist</item>
+        <item>NCAA</item>
+        <item>Denied</item>
+        <item>Accepted</item>
+        <item>Freshman</item>
+        <item>Junior</item>
+        <item>Sophomore</item>
+        <item>Senior</item>
+        <item>5th Year</item>
+        <item>Barstool</item>
+        <item>Instagram</item>
+        <item>Snapchat</item>
+        <item>Hookup</item>
+        <item>Tinder</item>
+        <item>Bumble</item>
+        <item>Hinge</item>
+        <item>Dorm</item>
+        <item>Resident Advisor</item>
+        <item>Colleague</item>
+        <item>SAT</item>
+        <item>ACT</item>
+        <item>Clown</item>
+        <item>Lit</item>
+        <item>Turnt</item>
+        <item>Dank</item>
+        <item>Low Key</item>
+        <item>Thicc</item>
+        <item>Savage</item>
+        <item>Woke</item>
+        <item>Weed</item>
+        <item>Joint</item>
+        <item>Juul</item>
+        <item>Podds</item>
+        <item>Shade</item>
+        <item>Fire</item>
+        <item>Salty</item>
+        <item>Fam</item>
+        <item>Goals</item>
+        <item>Squad</item>
+    </string-array>
+
+    <string-array name="array_everything">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Roman Noodles</item>
 
     </string-array>
 
-    <string-array name="array_college_life">
+    <string-array name="array_music">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Roman Noodles</item>
+
+    </string-array>
+
+    <string-array name="array_places">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Roman Noodles</item>
+
+    </string-array>
+
+    <string-array name="array_movies">
+        <item>Drinking</item>
+        <item>Hangover</item>
+        <item>Sexiled</item>
+        <item>Beer Pong</item>
+        <item>Flip Cup</item>
+        <item>Roman Noodles</item>
+
+    </string-array>
+
+    <string-array name="array_sports">
         <item>Drinking</item>
         <item>Hangover</item>
         <item>Sexiled</item>
