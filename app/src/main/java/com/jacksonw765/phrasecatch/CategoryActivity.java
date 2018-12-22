@@ -14,9 +14,8 @@ public class CategoryActivity extends AppCompatActivity {
     public final static int EVERYTHING = 1;
     public final static int SPORTS = 2;
     public final static int COLLEGE = 3;
-    public final static int MOVIES = 4;
-    public final static int PLACES = 5;
-    public final static int MUSIC = 6;
+    public final static int ENTERTAINMENT = 4;
+    public final static int WORLD = 5;
     public final static int ERROR_VALUE = -1;
 
     @Override
@@ -29,7 +28,6 @@ public class CategoryActivity extends AppCompatActivity {
         buttonCollege = findViewById(R.id.buttonCollegeLife);
         buttonPlaces = findViewById(R.id.buttonPlaces);
         buttonMusic = findViewById(R.id.buttonMusic);
-
 
 
         buttonEverything.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +52,7 @@ public class CategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                intent.putExtra(CATEGORY_TYPE, MOVIES);
+                intent.putExtra(CATEGORY_TYPE, ENTERTAINMENT);
                 startActivity(intent);
             }
         });
@@ -72,16 +70,7 @@ public class CategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                intent.putExtra(CATEGORY_TYPE, PLACES);
-                startActivity(intent);
-            }
-        });
-
-        buttonMusic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                intent.putExtra(CATEGORY_TYPE, MUSIC);
+                intent.putExtra(CATEGORY_TYPE, WORLD);
                 startActivity(intent);
             }
         });

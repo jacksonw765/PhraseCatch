@@ -35,6 +35,7 @@ public class PlayActivity extends AppCompatActivity {
     private int currentPointsA, currentPointsB, pointsToWin = 0;
     private CountDownTimer timer;
     private Boolean isGameActive = false;
+    private Data data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,8 @@ public class PlayActivity extends AppCompatActivity {
         textTeamAPoints = findViewById(R.id.textTeamAPoints);
         textTeamBPoints = findViewById(R.id.textTeamBPoints);
         textWord = findViewById(R.id.textStatement);
-        pointsToWin = SettingsActivity.loadPointsToWin(getApplicationContext());
+        data = new Data(this);
+        pointsToWin = data.loadPointsToWin();
 
         //load current deck
         Intent intent = getIntent();
@@ -122,8 +124,8 @@ public class PlayActivity extends AppCompatActivity {
 
     //gets the users preference for timer length and converts it to audio.
     private int getSelectedTimeInMilli() {
-        int tempVal = SettingsActivity.loadRadio(getApplicationContext());
-        if(tempVal == SettingsActivity.RANDOM) {
+        int tempVal = data.loadRadio();
+        if(tempVal == Data.RANDOM) {
             Random random = new Random(1234);
             switch (random.nextInt(3)+1) {
                 case 1:

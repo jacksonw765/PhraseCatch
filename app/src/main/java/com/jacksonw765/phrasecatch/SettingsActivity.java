@@ -23,28 +23,20 @@ public class SettingsActivity extends AppCompatActivity {
     private TextView textViewPointsToWin;
     private RadioGroup radioGroup;
     private RadioButton radioShort, radioMid, radioLong, radioRandom;
+    private Data data;
 
     //define variables
     private int pointsToWin;
-    private static SharedPreferences.Editor editor;
-    private static SharedPreferences prefs;
 
     public static final int SHORT_TIME = 30;
     public static final int MID_TIME = 47;
     public static final int LONG_TIME = 53;
 
-   //define constants
-    public final static String RADIO_KEY = "RADIO_KEY";
-    public final static String POINTS_KEY = "RADIO_KEY";
-    public final static int SHORT = 1;
-    public final static int MID = 2;
-    public final static int LONG = 3;
-    public final static int RANDOM = 4;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        data = new Data(this);
 
         //instantiate UI
         buttonMinus = findViewById(R.id.buttonMinus);
@@ -57,12 +49,11 @@ public class SettingsActivity extends AppCompatActivity {
         radioRandom = findViewById(R.id.radioButtonFour);
 
         //instantiate other elements
-        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        pointsToWin = loadPointsToWin(getApplicationContext());
+        pointsToWin = data.loadPointsToWin();
         textViewPointsToWin.setText(""+pointsToWin);
 
         //load previous radio from SP
-        switch (loadRadio(getApplicationContext())) {
+        switch (data.loadRadio()) {
             case 1:
                 radioShort.toggle();
                 break;
@@ -82,16 +73,16 @@ public class SettingsActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch(radioGroup.getCheckedRadioButtonId()) {
                     case R.id.radioButtonOne:
-                        saveRadio(SHORT);
+                        data.saveRadio(Data.SHORT);
                         break;
                     case R.id.radioButtonTwo:
-                        saveRadio(MID);
+                        data.saveRadio(Data.MID);
                         break;
                     case R.id.radioButtonThree:
-                        saveRadio(LONG);
+                        data.saveRadio(Data.LONG);
                         break;
                     case R.id.radioButtonFour:
-                        saveRadio(RANDOM);
+                        data.saveRadio(Data.RANDOM);
                 }
             }
         });
@@ -105,7 +96,7 @@ public class SettingsActivity extends AppCompatActivity {
                         mp.start();
                         pointsToWin--;
                         textViewPointsToWin.setText("" + pointsToWin);
-                        savePointsToWin(pointsToWin);
+                        data.savePointsToWin(pointsToWin);
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
                     }
@@ -124,7 +115,7 @@ public class SettingsActivity extends AppCompatActivity {
                         mp.start();
                         pointsToWin++;
                         textViewPointsToWin.setText("" + pointsToWin);
-                        savePointsToWin(pointsToWin);
+                        data.savePointsToWin(pointsToWin);
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
                     }
@@ -137,37 +128,5 @@ public class SettingsActivity extends AppCompatActivity {
 
 
     //getters and setters for SP
-    private static void saveRadio(int status) {
-        editor = prefs.edit();
-        editor.putInt(RADIO_KEY, status);
-        editor.apply();
-    }
 
-    public static int loadRadio(Context context) {
-        prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        editor = prefs.edit();
-        int soundType = prefs.getInt(RADIO_KEY, -1);
-        if(soundType == -1) {
-            saveRadio(RANDOM);
-            soundType = RANDOM;
-        }
-        return soundType;
-    }
-
-    private static void savePointsToWin(int pointsToWin) {
-        editor = prefs.edit();
-        editor.putInt(POINTS_KEY, pointsToWin);
-        editor.apply();
-    }
-
-    public static int loadPointsToWin(Context context) {
-        prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        editor = prefs.edit();
-        int points = prefs.getInt(POINTS_KEY, -1);
-        if(points == -1) {
-            points = 7;
-            savePointsToWin(points);
-        }
-        return points;
-    }
 }

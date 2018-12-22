@@ -76,22 +76,144 @@
     </string-array>
 
     <string-array name="array_everything">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Roman Noodles</item>
-
+        <item>Filler</item>
     </string-array>
 
-    <string-array name="array_music">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Roman Noodles</item>
+    <string-array name="array_entertainment">
+        <item>The Beatles</item>
+        <item>Autotune</item>
+        <item>Gain</item>
+        <item>Gig</item>
+        <item>Hook</item>
+        <item>Mo Bamba</item>
+        <item>Jam</item>
+        <item>Treble</item>
+        <item>Mids</item>
+        <item>Bass</item>
+        <item>Soundbar</item>
+        <item>Harmony</item>
+        <item>Melody</item>
+        <item>Noise Canceling</item>
+        <item>Violin</item>
+        <item>Pitch</item>
+        <item>Tempo</item>
+        <item>Twerking</item>
+        <item>Beat</item>
+        <item>Beat Box</item>
+        <item>Hip Hop</item>
+        <item>Mosh Pit</item>
+        <item>Saxophone</item>
+        <item>Funky</item>
+        <item>Trumpet</item>
+        <item>Audience</item>
+        <item>Curtain Call</item>
+        <item>The Flash</item>
+        <item>Arrow</item>
+        <item>Game of Thrones</item>
+        <item>Baby Shark</item>
+        <item>Shaw Shank Redemption</item>
+        <item>Dodgeball!</item>
+        <item>Bart Simpson</item>
+        <item>Peter Griffin</item>
+        <item>Family Guy</item>
+        <item>Here Comes the Sun</item>
+        <item>Cue</item>
+        <item>The 100</item>
+        <item>Pirating</item>
+        <item>Movie Box</item>
+        <item>Torrent</item>
+        <item>Drake</item>
+        <item>Luke Combs</item>
+        <item>XXXTENTACION</item>
+        <item>Van Morrison</item>
+        <item>Wham!</item>
+        <item>Tyga</item>
+        <item>Migos</item>
+        <item>Chief Keef</item>
+        <item>Neil Diamond</item>
+        <item>Josh Groban</item>
+        <item>Zac Brown</item>
+        <item>Ice Ice Baby</item>
+        <item>Mr. Brightside</item>
+        <item>Eric Church</item>
+        <item>Bruce Springsteen</item>
+        <item>Alan Jackson</item>
+
+        <item>Chuck Berry</item>
+        <item>Humble</item>
+        <item>Action!</item>
+        <item>Lil Baby</item>
+        <item>Toto</item>
+        <item>Billy Joel</item>
+        <item>Piano Man</item>
+        <item>Adele</item>
+        <item>Offset</item>
+
+        <item>Travis Scott</item>
+        <item>A$AP Ferg</item>
+        <item>Bowling for Soup</item>
+        <item>Jimmy Buffet</item>
+
+        <item>Casablanca</item>
+        <item>Wizard of Oz</item>
+        <item>The Godfather</item>
+        <item>2001: Space Odyssey</item>
+        <item>Mary Poppins</item>
+        <item>Ben-Her</item>
+        <item>James Bond</item>
+        <item>Daniel Day-Lewis</item>
+        <item>Mary Streep</item>
+        <item>Denzel Washington</item>
+        <item>Johnny Depp</item>
+        <item>Natalie Portman</item>
+        <item>Leonardo DiCaprio</item>
+        <item>Robert Downey Jr.</item>
+        <item>Brad Pitt</item>
+        <item>Jodie Foster</item>
+        <item>Liam Neeson</item>
+        <item>Morgan Freeman</item>
+        <item>Supermodel</item>
+        <item>Eddie Murry</item>
+        <item>Music to My Ears</item>
+        <item>Will Farrel</item>
+        <item>Selena Gomez</item>
+        <item>Taylor Swift</item>
+        <item>Saturday Night Live</item>
+        <item>Behind the Scenes</item>
+        <item>Box Office</item>
+        <item>Prime Time</item>
+        <item>Superman</item>
+        <item>Drums</item>
+        <item>Gong</item>
+        <item>Sitar</item>
+        <item>Tuba</item>
+        <item>Squidward</item>
+        <item>Rotten Tomatos</item>
+        <item>Will Smith</item>
+        <item>Sequel</item>
+        <item>Back to the Future</item>
+        <item>Harry Potter</item>
+        <item>Supergirl</item>
+        <item>Electric Slide</item>
+        <item>UCF</item>
+        <item>Fight Night</item>
+        <item>Seth McFarlane</item>
+        <item>Bootleg</item>
+        <item>Elevator Music</item>
+        <item>Fred Fredburger</item>
+        <item>Owen Wilson</item>
+        <item>Seth Myers</item>
+        <item>Ben Stiller</item>
+        <item>Boombox</item>
+        <item>Chromecast</item>
+        <item>Netflix</item>
+        <item>Amazon Video</item>
+        <item>Fergie</item>
+        <item>Black Eye Peas</item>
+        <item>Jeopardy</item>
+        <item>Oscars</item>
+        <item>Red Carpet</item>
+        <item>Seth Rogan</item>
 
     </string-array>
 
