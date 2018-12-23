@@ -2,10 +2,10 @@ package com.jacksonw765.phrasecatch;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,11 +13,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import java.util.TimerTask;
 
 public class PlayActivity extends AppCompatActivity {
 
@@ -65,7 +63,7 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //start game
-                if(!isGameActive) {
+                if (!isGameActive) {
                     startGame();
                 }
                 //game is active, so stop game
@@ -123,31 +121,34 @@ public class PlayActivity extends AppCompatActivity {
     }
 
     //gets the users preference for timer length and converts it to audio.
+    //this is a really ugly method. Refactor when feeling it
     private int getSelectedTimeInMilli() {
-        int tempVal = data.loadRadio();
-        if(tempVal == Data.RANDOM) {
-            Random random = new Random(1234);
-            switch (random.nextInt(3)+1) {
-                case 1:
-                    tempVal = SettingsActivity.SHORT_TIME;
-                    countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_short);
-                    break;
-                case 2:
-                    tempVal = SettingsActivity.MID_TIME;
-                    countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_mix);
-                    break;
-                case 3:
-                    tempVal = SettingsActivity.LONG_TIME;
-                    countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_reg);
-            }
+        Random random;
+        int retVal = data.loadRadio();
+        if (retVal == Data.RANDOM) {
+            random = new Random(1234);
+            retVal = random.nextInt(3) + 1;
         }
-        return tempVal*1000;
+        switch (retVal) {
+            case 1:
+                retVal = SettingsActivity.SHORT_TIME;
+                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_short);
+                break;
+            case 2:
+                retVal = SettingsActivity.MID_TIME;
+                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_mix);
+                break;
+            case 3:
+                retVal = SettingsActivity.LONG_TIME;
+                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_reg);
+        }
+        return retVal * 1000;
     }
 
     private String getNextWord() {
         String nextWord = null;
-        if(deckIndex <= deckMaxIndex) {
-             nextWord = currentDeck.get(deckIndex);
+        if (deckIndex <= deckMaxIndex) {
+            nextWord = currentDeck.get(deckIndex);
             deckIndex++;
             return nextWord;
         } else {
