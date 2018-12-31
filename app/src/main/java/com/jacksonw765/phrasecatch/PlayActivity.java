@@ -1,11 +1,14 @@
 package com.jacksonw765.phrasecatch;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -34,6 +37,7 @@ public class PlayActivity extends AppCompatActivity {
     private CountDownTimer timer;
     private Boolean isGameActive = false;
     private Data data;
+    private int currentTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,15 +51,68 @@ public class PlayActivity extends AppCompatActivity {
         textWord = findViewById(R.id.textStatement);
         data = new Data(this);
         pointsToWin = data.loadPointsToWin();
+        textTeamAPoints = findViewById(R.id.textTeamAPoints);
+        textTeamBPoints = findViewById(R.id.textTeamBPoints);
 
         //load current deck
         Intent intent = getIntent();
         category = intent.getIntExtra(CategoryActivity.CATEGORY_TYPE, CategoryActivity.ERROR_VALUE);
 
+        currentTime = getSelectedTimeInMilli();
+        updateUI();
+
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 textWord.setText(getNextWord());
+            }
+        });
+
+        textTeamAPoints.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!isGameActive) {
+                    currentPointsA++;
+                    textTeamAPoints.setText("" + currentPointsA);
+                    if (currentPointsA == pointsToWin) {
+                        AlertDialog.Builder builder;
+                        builder = new AlertDialog.Builder(view.getContext());
+                        builder.setTitle("Team A Wins!")
+                                .setMessage("Team A has won! Congratulations")
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        startActivity(intent);
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
+                    }
+                }
+            }
+        });
+
+        textTeamBPoints.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!isGameActive) {
+                    currentPointsB++;
+                    textTeamBPoints.setText("" + currentPointsB);
+                    if (currentPointsB == pointsToWin) {
+                        AlertDialog.Builder builder;
+                        builder = new AlertDialog.Builder(view.getContext(), android.R.style.Theme_Material_Dialog_Alert);
+                        builder.setTitle("Team B Wins!")
+                                .setMessage("Team B has won! Congratulations")
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        startActivity(intent);
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
+                    }
+                }
             }
         });
 
@@ -66,7 +123,7 @@ public class PlayActivity extends AppCompatActivity {
                 if (!isGameActive) {
                     startGame();
                 }
-                //game is active, so stop game
+                //game is active, stop game
                 else {
                     countdownSound.stop();
                     timer.cancel();
@@ -75,9 +132,8 @@ public class PlayActivity extends AppCompatActivity {
             }
         });
 
-        int temp = getSelectedTimeInMilli();
-
-        timer = new CountDownTimer(temp, 1000) {
+        //create new timer
+        timer = new CountDownTimer(currentTime, 1000) {
             @Override
             public void onTick(long l) {
 
@@ -98,6 +154,13 @@ public class PlayActivity extends AppCompatActivity {
                 currentDeck = new ArrayList<>(tempList);
                 Collections.shuffle(currentDeck);
                 break;
+            case CategoryActivity.EVERYTHING:
+                List<String> college = Arrays.asList(getResources().getStringArray(R.array.array_college_life));
+                List<String> entertainment = Arrays.asList(getResources().getStringArray(R.array.array_entertainment));
+                ArrayList everything = new ArrayList(college);
+                everything.addAll(entertainment);
+                Collections.shuffle(everything);
+                currentDeck = everything;
         }
         textWord.setText("Click Start");
         buttonStartStop.setText("Start");
@@ -106,18 +169,24 @@ public class PlayActivity extends AppCompatActivity {
 
     //called when a user hits start
     private void startGame() {
-        deckMaxIndex = currentDeck.size();
-        countdownSound.start();
-        buttonStartStop.setText("Stop");
-        textWord.setText(getNextWord());
-        buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
-        isGameActive = true;
+        try {
+            deckMaxIndex = currentDeck.size();
+            countdownSound.start();
+            buttonStartStop.setText("Stop");
+            textWord.setText(getNextWord());
+            buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
+            isGameActive = true;
+            updateUI();
+        } catch (Exception e) {
+            e.fillInStackTrace();
+        }
     }
 
     private void endGame() {
         buttonStartStop.setText("Start");
         buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_lightblue, null));
         isGameActive = false;
+        updateUI();
     }
 
     //gets the users preference for timer length and converts it to audio.
@@ -155,6 +224,15 @@ public class PlayActivity extends AppCompatActivity {
             deckIndex = 0;
         }
         return nextWord;
+    }
+
+    private void updateUI() {
+        if(!isGameActive) {
+            buttonNext.setEnabled(false);
+        }
+        else {
+            buttonNext.setEnabled(true);
+        }
     }
 
 }
