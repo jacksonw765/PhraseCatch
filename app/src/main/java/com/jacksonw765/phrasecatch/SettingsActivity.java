@@ -6,7 +6,9 @@ import android.media.MediaPlayer;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -38,6 +40,8 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         data = new Data(this);
 
+
+
         //instantiate UI
         buttonMinus = findViewById(R.id.buttonMinus);
         buttonPlus = findViewById(R.id.buttonPlus);
@@ -51,6 +55,7 @@ public class SettingsActivity extends AppCompatActivity {
         //instantiate other elements
         pointsToWin = data.loadPointsToWin();
         textViewPointsToWin.setText(""+pointsToWin);
+        textViewPointsToWin.setInputType(InputType.TYPE_NULL);
 
         //load previous radio from SP
         switch (data.loadRadio()) {
@@ -125,6 +130,8 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
 
     //getters and setters for SP

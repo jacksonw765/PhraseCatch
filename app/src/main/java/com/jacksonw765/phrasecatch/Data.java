@@ -33,7 +33,7 @@ public class Data {
         prefs = PreferenceManager.getDefaultSharedPreferences(context);
         editor = prefs.edit();
         int soundType = prefs.getInt(RADIO_KEY, -1);
-        if(soundType == -1) {
+        if(soundType == -1 || soundType == 7) {
             saveRadio(RANDOM);
             soundType = RANDOM;
         }
