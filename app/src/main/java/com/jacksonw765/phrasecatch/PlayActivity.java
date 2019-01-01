@@ -26,7 +26,6 @@ public class PlayActivity extends AppCompatActivity {
     private Button buttonNext, buttonStartStop;
     private TextView textTeamAPoints, textTeamBPoints, textWord;
 
-
     //create rest
     private int category;
     private int deckIndex = 0;
@@ -58,7 +57,10 @@ public class PlayActivity extends AppCompatActivity {
         Intent intent = getIntent();
         category = intent.getIntExtra(CategoryActivity.CATEGORY_TYPE, CategoryActivity.ERROR_VALUE);
 
+        //loads current time from the data class
         currentTime = getSelectedTimeInMilli();
+
+        //updates UI elements
         updateUI();
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +77,7 @@ public class PlayActivity extends AppCompatActivity {
                     currentPointsA++;
                     textTeamAPoints.setText("" + currentPointsA);
                     if (currentPointsA == pointsToWin) {
+                        MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), R.raw.win_sound);
                         AlertDialog.Builder builder;
                         builder = new AlertDialog.Builder(view.getContext());
                         builder.setTitle("Team A Wins!")
@@ -87,6 +90,7 @@ public class PlayActivity extends AppCompatActivity {
                                 })
                                 .setIcon(android.R.drawable.ic_dialog_alert)
                                 .show();
+                        mediaPlayer.start();
                     }
                 }
             }
@@ -99,8 +103,9 @@ public class PlayActivity extends AppCompatActivity {
                     currentPointsB++;
                     textTeamBPoints.setText("" + currentPointsB);
                     if (currentPointsB == pointsToWin) {
+                        MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), R.raw.win_sound);
                         AlertDialog.Builder builder;
-                        builder = new AlertDialog.Builder(view.getContext(), android.R.style.Theme_Material_Dialog_Alert);
+                        builder = new AlertDialog.Builder(view.getContext());
                         builder.setTitle("Team B Wins!")
                                 .setMessage("Team B has won! Congratulations")
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
@@ -111,6 +116,7 @@ public class PlayActivity extends AppCompatActivity {
                                 })
                                 .setIcon(android.R.drawable.ic_dialog_alert)
                                 .show();
+                        mediaPlayer.start();
                     }
                 }
             }
@@ -176,6 +182,7 @@ public class PlayActivity extends AppCompatActivity {
             textWord.setText(getNextWord());
             buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
             isGameActive = true;
+            timer.start();
             updateUI();
         } catch (Exception e) {
             e.fillInStackTrace();
@@ -186,6 +193,8 @@ public class PlayActivity extends AppCompatActivity {
         buttonStartStop.setText("Start");
         buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_lightblue, null));
         isGameActive = false;
+        countdownSound.stop();
+        countdownSound.release();
         updateUI();
     }
 
@@ -235,4 +244,30 @@ public class PlayActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if(isGameActive) {
+            final AlertDialog.Builder builder;
+            builder = new AlertDialog.Builder(this);
+            builder.setTitle("Game In Progress!")
+                    .setMessage("Are you sure you would like to cancel?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            PlayActivity.super.onBackPressed();
+                            endGame();
+                        }
+                    })
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .show();
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
 }

@@ -8,7 +8,7 @@ public class Data {
 
     //define constants
     public final static String RADIO_KEY = "RADIO_KEY";
-    public final static String POINTS_KEY = "RADIO_KEY";
+    public final static String POINTS_KEY = "POINTS_KEY";
     public final static int SHORT = 1;
     public final static int MID = 2;
     public final static int LONG = 3;
@@ -37,6 +37,7 @@ public class Data {
             saveRadio(RANDOM);
             soundType = RANDOM;
         }
+        editor.apply();
         return soundType;
     }
 
@@ -54,6 +55,7 @@ public class Data {
             points = 7;
             savePointsToWin(points);
         }
+        editor.apply();
         return points;
     }
 }
