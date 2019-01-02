@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class PlayActivity extends AppCompatActivity {
+public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPreparedListener {
 
     //create UI
     private Button buttonNext, buttonStartStop;
@@ -37,6 +37,7 @@ public class PlayActivity extends AppCompatActivity {
     private Boolean isGameActive = false;
     private Data data;
     private int currentTime;
+    private long timeLeft = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +75,10 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!isGameActive) {
+                    MediaPlayer scorePoints = MediaPlayer.create(view.getContext(), R.raw.type);
                     currentPointsA++;
                     textTeamAPoints.setText("" + currentPointsA);
+                    scorePoints.start();
                     if (currentPointsA == pointsToWin) {
                         MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), R.raw.win_sound);
                         AlertDialog.Builder builder;
@@ -100,8 +103,10 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!isGameActive) {
+                    MediaPlayer scorePoints = MediaPlayer.create(view.getContext(), R.raw.type);
                     currentPointsB++;
                     textTeamBPoints.setText("" + currentPointsB);
+                    scorePoints.start();
                     if (currentPointsB == pointsToWin) {
                         MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), R.raw.win_sound);
                         AlertDialog.Builder builder;
@@ -131,8 +136,8 @@ public class PlayActivity extends AppCompatActivity {
                 }
                 //game is active, stop game
                 else {
-                    countdownSound.stop();
-                    timer.cancel();
+                    if(timeLeft > 0)
+                        timer.cancel();
                     endGame();
                 }
             }
@@ -142,7 +147,7 @@ public class PlayActivity extends AppCompatActivity {
         timer = new CountDownTimer(currentTime, 1000) {
             @Override
             public void onTick(long l) {
-
+                timeLeft = l;
             }
 
             @Override
@@ -175,18 +180,19 @@ public class PlayActivity extends AppCompatActivity {
 
     //called when a user hits start
     private void startGame() {
-        try {
+        //try {
             deckMaxIndex = currentDeck.size();
-            countdownSound.start();
+            countdownSound.setOnPreparedListener(this);
+            //countdownSound.prepareAsync();
             buttonStartStop.setText("Stop");
             textWord.setText(getNextWord());
             buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
             isGameActive = true;
             timer.start();
             updateUI();
-        } catch (Exception e) {
-            e.fillInStackTrace();
-        }
+       // } catch (Exception e) {
+            //e.fillInStackTrace();
+       // }
     }
 
     private void endGame() {
@@ -194,7 +200,8 @@ public class PlayActivity extends AppCompatActivity {
         buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_lightblue, null));
         isGameActive = false;
         countdownSound.stop();
-        countdownSound.release();
+        countdownSound.reset();
+        //countdownSound.release();
         updateUI();
     }
 
@@ -269,5 +276,9 @@ public class PlayActivity extends AppCompatActivity {
         else {
             super.onBackPressed();
         }
+    }
+
+    public void onPrepared(MediaPlayer player) {
+        player.start();
     }
 }
