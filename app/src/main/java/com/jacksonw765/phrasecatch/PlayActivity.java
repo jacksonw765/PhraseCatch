@@ -8,19 +8,20 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPreparedListener {
+public class PlayActivity extends AppCompatActivity {
 
     //create UI
     private Button buttonNext, buttonStartStop;
@@ -38,6 +39,7 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
     private Data data;
     private int currentTime;
     private long timeLeft = -1;
+    private int countDownSoundURI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,7 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
         currentTime = getSelectedTimeInMilli();
 
         //updates UI elements
-        updateUI();
+        updateButtonNext();
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,7 +140,11 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
                 else {
                     if(timeLeft > 0)
                         timer.cancel();
-                    endGame();
+                    try {
+                        endGame();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
@@ -152,7 +158,11 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
 
             @Override
             public void onFinish() {
-                endGame();
+                try {
+                    endGame();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
             }
         };
 
@@ -180,29 +190,40 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
 
     //called when a user hits start
     private void startGame() {
-        //try {
             deckMaxIndex = currentDeck.size();
-            countdownSound.setOnPreparedListener(this);
-            //countdownSound.prepareAsync();
+            countdownSound.start();
             buttonStartStop.setText("Stop");
             textWord.setText(getNextWord());
             buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
             isGameActive = true;
             timer.start();
-            updateUI();
-       // } catch (Exception e) {
-            //e.fillInStackTrace();
-       // }
+            updateButtonNext();
     }
 
-    private void endGame() {
+    private void endGame() throws IOException {
         buttonStartStop.setText("Start");
         buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_lightblue, null));
         isGameActive = false;
-        countdownSound.stop();
-        countdownSound.reset();
-        //countdownSound.release();
-        updateUI();
+        resetSound(countdownSound);
+        updateButtonNext();
+    }
+
+    private void resetSound(MediaPlayer mp) {
+        try {
+            mp.stop();
+            //mp.reset();
+            mp.prepare();
+            mp.setDataSource(getResources().getResourceName(countDownSoundURI));
+            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mediaPlayer) {
+                    mediaPlayer.start();
+                }
+            });
+        }
+        catch(Exception e) {
+                e.printStackTrace();
+            }
     }
 
     //gets the users preference for timer length and converts it to audio.
@@ -217,15 +238,18 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
         switch (retVal) {
             case 1:
                 retVal = SettingsActivity.SHORT_TIME;
-                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_short);
+                countDownSoundURI = R.raw.countdown_short;
+                countdownSound = MediaPlayer.create(getApplicationContext(), countDownSoundURI);
                 break;
             case 2:
                 retVal = SettingsActivity.MID_TIME;
-                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_mix);
+                countDownSoundURI = R.raw.countdown_mix;
+                countdownSound = MediaPlayer.create(getApplicationContext(), countDownSoundURI);
                 break;
             case 3:
                 retVal = SettingsActivity.LONG_TIME;
-                countdownSound = MediaPlayer.create(getApplicationContext(), R.raw.countdown_reg);
+                countDownSoundURI = R.raw.countdown_reg;
+                countdownSound = MediaPlayer.create(getApplicationContext(), countDownSoundURI);
         }
         return retVal * 1000;
     }
@@ -242,7 +266,7 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
         return nextWord;
     }
 
-    private void updateUI() {
+    private void updateButtonNext() {
         if(!isGameActive) {
             buttonNext.setEnabled(false);
         }
@@ -253,7 +277,7 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
 
     @Override
     public void onBackPressed() {
-        if(isGameActive) {
+        if(isGameActive || currentPointsA > 0 || currentPointsB > 0) {
             final AlertDialog.Builder builder;
             builder = new AlertDialog.Builder(this);
             builder.setTitle("Game In Progress!")
@@ -261,7 +285,11 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             PlayActivity.super.onBackPressed();
-                            endGame();
+                            try {
+                                endGame();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -276,9 +304,5 @@ public class PlayActivity extends AppCompatActivity implements MediaPlayer.OnPre
         else {
             super.onBackPressed();
         }
-    }
-
-    public void onPrepared(MediaPlayer player) {
-        player.start();
     }
 }
