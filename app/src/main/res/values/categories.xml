@@ -148,12 +148,10 @@
         <item>Piano Man</item>
         <item>Adele</item>
         <item>Offset</item>
-
         <item>Travis Scott</item>
         <item>A$AP Ferg</item>
         <item>Bowling for Soup</item>
         <item>Jimmy Buffet</item>
-
         <item>Casablanca</item>
         <item>Wizard of Oz</item>
         <item>The Godfather</item>
@@ -218,32 +216,371 @@
     </string-array>
 
     <string-array name="array_places">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Roman Noodles</item>
-
+        <item>Machu Picchu</item>
+        <item>Taj Mahal</item>
+        <item>St Peter's Basilica</item>
+        <item>Alcatraz</item>
+        <item>Golden Gate Bridge</item>
+        <item>Statue of Liberty</item>
+        <item>Eiffel Tower</item>
+        <item>Big Ben</item>
+        <item>Tower of Pisa</item>
+        <item>Colosseum</item>
+        <item>Empire State Building</item>
+        <item>Hollywood</item>
+        <item>Notre Dame</item>
+        <item>Tokyo</item>
+        <item>London</item>
+        <item>Wall of China</item>
+        <item>Sydney</item>
+        <item>Berlin Wall</item>
+        <item>Stonehenge</item>
+        <item>Kilimanjaro</item>
+        <item>Grand Canyon</item>
+        <item>Pyramids of Giza</item>
+        <item>Great Sphinx</item>
+        <item>Forbidden City</item>
+        <item>Mount Everest</item>
+        <item>Capitol Hill</item>
+        <item>Sears Tower</item>
+        <item>Brooklyn Bridge</item>
+        <item>Times Square</item>
+        <item>White House</item>
+        <item>Buckingham Palace</item>
+        <item>Pompeii</item>
+        <item>Edinburgh Castle</item>
+        <item>CN Tower</item>
+        <item>Niagara Falls</item>
+        <item>Tower of London</item>
+        <item>Madrid Palace</item>
+        <item>Las Vegas</item>
+        <item>Windsor Castle</item>
+        <item>St. Paul's Cathedral</item>
+        <item>Central Park</item>
+        <item>Mount Rushmore</item>
+        <item>Mount Fuji</item>
+        <item>Space Needle</item>
+        <item>Tower of the Americas</item>
+        <item>Cincinnati</item>
+        <item>San Antonio</item>
+        <item>Mexico</item>
+        <item>Washington Monument</item>
+        <item>The Shard</item>
+        <item>Moai</item>
+        <item>Temple of Luxor</item>
+        <item>Pentagon</item>
+        <item>Chichen Itza</item>
+        <item>Chicago</item>
+        <item>The Bean</item>
+        <item>Victoria Falls</item>
+        <item>Terracotta Warriors</item>
+        <item>Yellowstone</item>
+        <item>Petra</item>
+        <item>Pearl Tower</item>
+        <item>Wailing Wall</item>
+        <item>Loch Ness</item>
+        <item>Mecca</item>
+        <item>Sydney Harbor Bridge</item>
+        <item>Sistine Chapel</item>
+        <item>Riverwalk</item>
+        <item>Mount Etna</item>
+        <item>Freedom Tower</item>
+        <item>Gateway Arch</item>
+        <item>Shanghai</item>
+        <item>Redwood National Park</item>
+        <item>Berlin Cathedral</item>
+        <item>England</item>
+        <item>Disneyland</item>
+        <item>Everglades</item>
+        <item>Prague Castle</item>
+        <item>Chapel Bridge</item>
+        <item>Table Mountain</item>
+        <item>Walk of Fame</item>
+        <item>Death Valley</item>
+        <item>Winter Palace</item>
+        <item>British Museum</item>
+        <item>Oxford University</item>
+        <item>Blue Lagoon</item>
+        <item>Kremlin</item>
+        <item>Millau Bridge</item>
+        <item>San Diego</item>
+        <item>Denmark</item>
+        <item>France</item>
+        <item>Sagrada Familia</item>
+        <item>Mount Rushmore</item>
+        <item>Seattle</item>
+        <item>New York City</item>
+        <item>Charleston</item>
+        <item>San Francisco</item>
+        <item>Washington, D.C.</item>
+        <item>New Orleans</item>
+        <item>Palm Springs</item>
+        <item>St. Louis</item>
+        <item>Hawaii</item>
+        <item>Miami Beach</item>
+        <item>Boston</item>
+        <item>Savannah</item>
+        <item>Orlando</item>
+        <item>Portland</item>
+        <item>Nashville</item>
+        <item>Austin</item>
     </string-array>
 
-    <string-array name="array_movies">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Roman Noodles</item>
-
+    <string-array name="Food">
+        <item>Beer</item>
+        <item>Brandy</item>
+        <item>Cocoa</item>
+        <item>Cocktail</item>
+        <item>Coffee</item>
+        <item>Coke</item>
+        <item>Green tea</item>
+        <item>Ice coffee</item>
+        <item>Ice tea</item>
+        <item>Juice</item>
+        <item>Lemonade</item>
+        <item>Liquor</item>
+        <item>Milk</item>
+        <item>Milkshake</item>
+        <item>Orange juice</item>
+        <item>Punch</item>
+        <item>Soda</item>
+        <item>Soft drink</item>
+        <item>Tea</item>
+        <item>Tomato juice</item>
+        <item>Water</item>
+        <item>Whiskey</item>
+        <item>Wine</item>
+        <item>Apple</item>
+        <item>Apricot</item>
+        <item>Banana</item>
+        <item>Blackberry</item>
+        <item>Blueberry</item>
+        <item>Cherry</item>
+        <item>Cranberry</item>
+        <item>Currant</item>
+        <item>Fig</item>
+        <item>Grape</item>
+        <item>Grapefruit</item>
+        <item>Grapes</item>
+        <item>Kiwi</item>
+        <item>Kumquat</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Melon</item>
+        <item>Nectarine</item>
+        <item>Orange</item>
+        <item>Peach</item>
+        <item>Pear</item>
+        <item>Persimmon</item>
+        <item>Pineapple</item>
+        <item>Plum</item>
+        <item>Pomegranate</item>
+        <item>Prune</item>
+        <item>Raspberry</item>
+        <item>Strawberry</item>
+        <item>Tangerine</item>
+        <item>Watermelon</item>
+        <item>Barley</item>
+        <item>Corn</item>
+        <item>Millet</item>
+        <item>Oats</item>
+        <item>Rice</item>
+        <item>Rye</item>
+        <item>Brown rice</item>
+        <item>Short grain rice</item>
+        <item>Long grain rice</item>
+        <item>Rye</item>
+        <item>Soy beans</item>
+        <item>Wheat</item>
+        <item>Alphabet</item>
+        <item>Bows</item>
+        <item>Cappelletti</item>
+        <item>Curly lasagna</item>
+        <item>Elbow macaroni</item>
+        <item>Fedelini</item>
+        <item>Lasagna</item>
+        <item>Noodles</item>
+        <item>Ravioli</item>
+        <item>Ribbed macaroni</item>
+        <item>Shells</item>
+        <item>Spaghetti</item>
+        <item>Stars</item>
+        <item>Thin macaroni</item>
+        <item>Thin spaghetti</item>
+        <item>Tortellini</item>
+        <item>Turrets</item>
+        <item>Vermicelli</item>
+        <item>Wheels</item>
+        <item>Bacon</item>
+        <item>Beef</item>
+        <item>Chicken</item>
+        <item>Chicken breast</item>
+        <item>Chicken leg</item>
+        <item>Chicken wing</item>
+        <item>Ham</item>
+        <item>Hamburger</item>
+        <item>Heart</item>
+        <item>Hot dog</item>
+        <item>Kidney</item>
+        <item>Lamb chop</item>
+        <item>Mutton</item>
+        <item>Pork</item>
+        <item>Roast</item>
+        <item>Sausage</item>
+        <item>Steak</item>
+        <item>Tongue</item>
+        <item>Turkey</item>
+        <item>Veal</item>
+        <item>Venison</item>
+        <item>Bill</item>
+        <item>Breakfast</item>
+        <item>Check</item>
+        <item>Cup</item>
+        <item>Dessert</item>
+        <item>Dinner</item>
+        <item>Dressing</item>
+        <item>Drink</item>
+        <item>Fork</item>
+        <item>Hamburger</item>
+        <item>Knife</item>
+        <item>Lunch</item>
+        <item>Menu</item>
+        <item>Napkin</item>
+        <item>Order</item>
+        <item>Salt</item>
+        <item>Spoon</item>
+        <item>Water</item>
+        <item>Coffee</item>
+        <item>Tea</item>
+        <item>Blue cheese</item>
+        <item>French dressing</item>
+        <item>House dressing</item>
+        <item>Thousand island</item>
+        <item>Vinegar</item>
+        <item>Ranch</item>
+        <item>Oil and vinegar</item>
+        <item>Asparagus</item>
+        <item>Beans</item>
+        <item>Beet</item>
+        <item>Broccoli</item>
+        <item>Brussels sprouts</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Celery</item>
+        <item>Chinese cabbage</item>
+        <item>Corn</item>
+        <item>Cucumber</item>
+        <item>Eggplant</item>
+        <item>Green pepper</item>
+        <item>Japanese radish</item>
+        <item>Kale</item>
+        <item>Lettuce</item>
+        <item>Okra</item>
+        <item>Onion</item>
+        <item>Peas</item>
+        <item>Potato</item>
+        <item>Pumpkins</item>
+        <item>Radish</item>
+        <item>Spinach</item>
+        <item>Sweet potato</item>
+        <item>Tomatoes</item>
+        <item>Turnips</item>
+        <item>Cheese</item>
+        <item>Cream</item>
+        <item>Ice cream</item>
+        <item>Milk</item>
+        <item>Yogurt</item>
+        <item>Beans</item>
+        <item>Bread</item>
+        <item>Cereal</item>
+        <item>Eggs</item>
+        <item>Fats</item>
+        <item>Fish</item>
+        <item>Fruit</item>
+        <item>Meat</item>
+        <item>Nuts</item>
+        <item>Oils</item>
+        <item>Pasta</item>
+        <item>Poultry</item>
+        <item>Rice</item>
+        <item>Sweets</item>
+        <item>Vegetables</item>
     </string-array>
 
     <string-array name="array_sports">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Roman Noodles</item>
-
+        <item>Strike</item>
+        <item>Baseball</item>
+        <item>Baseball</item>
+        <item>Perfect Game</item>
+        <item>Free Throw</item>
+        <item>Technical</item>
+        <item>Track</item>
+        <item>Sprint</item>
+        <item>Field Goal</item>
+        <item>Penalty</item>
+        <item>Offsides</item>
+        <item>Intentional Grounding</item>
+        <item>Parallel Bar</item>
+        <item>Quarterback</item>
+        <item>Corner Kick</item>
+        <item>NCAA</item>
+        <item>NFL</item>
+        <item>MLB</item>
+        <item>Baseline</item>
+        <item>Ejection</item>
+        <item>Sudden Death</item>
+        <item>Push Up</item>
+        <item>Spike</item>
+        <item>Pistol</item>
+        <item>Pitcher</item>
+        <item>Outfielder</item>
+        <item>Polo</item>
+        <item>Ping Pong</item>
+        <item>Bengals</item>
+        <item>Steelers</item>
+        <item>Rams</item>
+        <item>Smash</item>
+        <item>Half Nelson</item>
+        <item>Travel</item>
+        <item>Three Pointer</item>
+        <item>Touchdown</item>
+        <item>Extra Point</item>
+        <item>Puck</item>
+        <item>Hole In One</item>
+        <item>Putter</item>
+        <item>Man-to-Man</item>
+        <item>Own Goal</item>
+        <item>Playoffs</item>
+        <item>Ride The Bus</item>
+        <item>Timeout</item>
+        <item>Topspin</item>
+        <item>Underhand</item>
+        <item>Strike</item>
+        <item>Spare</item>
+        <item>Defense</item>
+        <item>Offense</item>
+        <item>Lost a Step</item>
+        <item>Slam Dunk</item>
+        <item>Next Man Up</item>
+        <item>Hail Mary</item>
+        <item>Win is a Win</item>
+        <item>Pass the Baton</item>
+        <item>Full-court Press</item>
+        <item>G.O.A.T</item>
+        <item>Par for the Course</item>
+        <item>Scratch</item>
+        <item>Curveball</item>
+        <item>Punt</item>
+        <item>Fired Up</item>
+        <item>Marathon</item>
+        <item>Utility Player</item>
+        <item>Five Star Recruit</item>
+        <item>Get the Ball Rolling</item>
+        <item>Dropped the Ball</item>
+        <item>Game of Inches</item>
+        <item>Out of the Park</item>
     </string-array>
+
+
 </resources>
