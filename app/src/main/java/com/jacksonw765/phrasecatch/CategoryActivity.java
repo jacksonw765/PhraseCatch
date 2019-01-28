@@ -1,21 +1,24 @@
 package com.jacksonw765.phrasecatch;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    Button buttonEverything, buttonSports, buttonMovies, buttonCollege, buttonPlaces, buttonMusic;
+    Button buttonEverything, buttonSports, buttonEntertainment, buttonCollege, buttonPlaces, buttonScience, buttonAnimals, buttonFood;
 
     public final static String CATEGORY_TYPE = "CATEGORY";
     public final static int EVERYTHING = 1;
     public final static int SPORTS = 2;
     public final static int COLLEGE = 3;
     public final static int ENTERTAINMENT = 4;
-    public final static int WORLD = 5;
+    public final static int PLACES = 5;
+    public final static int ANIMAL = 6;
+    public final static int SCIENCE = 7;
+    public final static int FOOD = 8;
     public final static int ERROR_VALUE = -1;
 
     @Override
@@ -24,11 +27,12 @@ public class CategoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category);
         buttonEverything = findViewById(R.id.buttonCatagoryEverything);
         buttonSports = findViewById(R.id.buttonSports);
-        buttonMovies = findViewById(R.id.buttonMovies);
+        buttonEntertainment = findViewById(R.id.buttonEntertainment);
         buttonCollege = findViewById(R.id.buttonCollegeLife);
         buttonPlaces = findViewById(R.id.buttonPlaces);
-        buttonMusic = findViewById(R.id.buttonMusic);
-
+        buttonScience = findViewById(R.id.buttonScience);
+        buttonAnimals = findViewById(R.id.buttonAnimals);
+        buttonFood = findViewById(R.id.buttonFood);
 
         buttonEverything.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,11 +52,11 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
-        buttonMovies.setOnClickListener(new View.OnClickListener() {
+        buttonScience.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                intent.putExtra(CATEGORY_TYPE, ENTERTAINMENT);
+                intent.putExtra(CATEGORY_TYPE, SCIENCE);
                 startActivity(intent);
             }
         });
@@ -66,11 +70,35 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
+        buttonAnimals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
+                intent.putExtra(CATEGORY_TYPE, ANIMAL);
+                startActivity(intent);
+            }
+        });
+        buttonEntertainment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
+                intent.putExtra(CATEGORY_TYPE, ENTERTAINMENT);
+                startActivity(intent);
+            }
+        });
         buttonPlaces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
-                intent.putExtra(CATEGORY_TYPE, WORLD);
+                intent.putExtra(CATEGORY_TYPE, PLACES);
+                startActivity(intent);
+            }
+        });
+        buttonFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PlayActivity.class);
+                intent.putExtra(CATEGORY_TYPE, FOOD);
                 startActivity(intent);
             }
         });

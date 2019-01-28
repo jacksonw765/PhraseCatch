@@ -218,7 +218,7 @@
     <string-array name="array_places">
         <item>Machu Picchu</item>
         <item>Taj Mahal</item>
-        <item>St Peter's Basilica</item>
+        <item>St Peters Basilica</item>
         <item>Alcatraz</item>
         <item>Golden Gate Bridge</item>
         <item>Statue of Liberty</item>
@@ -255,7 +255,7 @@
         <item>Madrid Palace</item>
         <item>Las Vegas</item>
         <item>Windsor Castle</item>
-        <item>St. Paul's Cathedral</item>
+        <item>St. Pauls Cathedral</item>
         <item>Central Park</item>
         <item>Mount Rushmore</item>
         <item>Mount Fuji</item>
@@ -324,9 +324,41 @@
         <item>Portland</item>
         <item>Nashville</item>
         <item>Austin</item>
+        <item>Africa</item>
+        <item>Antarctica</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Europe</item>
+        <item>North america</item>
+        <item>South america</item>
+        <item>Bay</item>
+        <item>Beach</item>
+        <item>Cave</item>
+        <item>Creek</item>
+        <item>Desert</item>
+        <item>Earth</item>
+        <item>Forest</item>
+        <item>Hill</item>
+        <item>Island</item>
+        <item>Lake</item>
+        <item>Mountain</item>
+        <item>Ocean</item>
+        <item>Peak</item>
+        <item>Plain</item>
+        <item>Pond</item>
+        <item>River</item>
+        <item>Riverbed</item>
+        <item>Sea</item>
+        <item>Stream</item>
+        <item>Swamp</item>
+        <item>Valley</item>
+        <item>Waterfall</item>
+        <item>Woods</item>
+        <item></item>
+
     </string-array>
 
-    <string-array name="Food">
+    <string-array name="array_food">
         <item>Beer</item>
         <item>Brandy</item>
         <item>Cocoa</item>
@@ -580,7 +612,437 @@
         <item>Dropped the Ball</item>
         <item>Game of Inches</item>
         <item>Out of the Park</item>
+        <item>Athletics</item>
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Bowling</item>
+        <item>Car racing</item>
+        <item>Cycling</item>
+        <item>Football</item>
+        <item>Golf</item>
+        <item>Gymnastics</item>
+        <item>Handball</item>
+        <item>Hang gliding</item>
+        <item>Hockey</item>
+        <item>Horse racing</item>
+        <item>Jogging</item>
+        <item>Motorcycle racing</item>
+        <item>Para gliding</item>
+        <item>Polo</item>
+        <item>Rugby</item>
+        <item>Scuba diving</item>
+        <item>Skiing</item>
+        <item>Skin diving</item>
+        <item>Snow-boarding</item>
+        <item>Soccer</item>
+        <item>Softball</item>
+        <item>Squash</item>
+        <item>Swimming</item>
+        <item>Table tennis</item>
+        <item>Tennis</item>
+        <item>Track and field</item>
+        <item>Volleyball</item>
+        <item>Ball</item>
+        <item>Baseball cap</item>
+        <item>Bat</item>
+        <item>Batter</item>
+        <item>Batters box</item>
+        <item>Batting average</item>
+        <item>Catcher</item>
+        <item>Catcher mitt</item>
+        <item>Catchers box</item>
+        <item>Center fielder</item>
+        <item>Chest protector</item>
+        <item>Coach</item>
+        <item>Day game</item>
+        <item>Dugout</item>
+        <item>Exhibition game</item>
+        <item>Extra inning</item>
+        <item>Face mask</item>
+        <item>Farm team</item>
+        <item>Fence</item>
+        <item>Field umpire</item>
+        <item>First baseman</item>
+        <item>Glove</item>
+        <item>Foul</item>
+        <item>Foul line</item>
+        <item>Four balls</item>
+        <item>Game</item>
+        <item>Glove</item>
+        <item>Helmet</item>
+        <item>Hit</item>
+        <item>Home plate</item>
+        <item>Home team</item>
+        <item>Innings</item>
+        <item>Left fielder</item>
+        <item>Major league</item>
+        <item>Minor league</item>
+        <item>Night game</item>
+        <item>One ball</item>
+        <item>Pitcher</item>
+        <item>Pitchers mound</item>
+        <item>Plate umpire</item>
+        <item>Play-off</item>
+        <item>Right fielder</item>
+        <item>Runner</item>
+        <item>Scoreboard</item>
+        <item>Second baseman</item>
+        <item>Shin guards</item>
+        <item>Short stop</item>
+        <item>Spiked shoes</item>
+        <item>Strike one</item>
+        <item>Strike out</item>
+        <item>Strike three</item>
+        <item>Strike two</item>
+        <item>Switch hitter</item>
+        <item>Third baseman</item>
+        <item>Three balls</item>
+        <item>Two balls</item>
+        <item>Visiting team</item>
+        <item>Walk</item>
+        <item>Cornerback</item>
+        <item>Defensive end</item>
+        <item>Fullback</item>
+        <item>Guard</item>
+        <item>Halfback</item>
+        <item>Linebacker</item>
+        <item>Middle guard</item>
+        <item>Quarterback</item>
+        <item>Tackle</item>
+        <item>Backstroke</item>
+        <item>Breaststroke</item>
+        <item>Butterfly</item>
+        <item>Crawl</item>
+        <item>Deep end</item>
+        <item>Diving</item>
+        <item>Diving board</item>
+        <item>Dog paddle</item>
+        <item>Lake</item>
+        <item>Life guard</item>
+        <item>Ocean</item>
+        <item>River</item>
+        <item>Shallow end</item>
+        <item>Sidestroke</item>
+        <item>Swimming lane</item>
+        <item>Swimming pool</item>
+        <item>Synchronized swimming</item>
+        <item>Turn</item>
+        <item>Water</item>
     </string-array>
 
+    <string-array name="array_science">
+        <item>Butane</item>
+        <item>Carbon dioxide</item>
+        <item>Carbon monoxide</item>
+        <item>Freon</item>
+        <item>Helium</item>
+        <item>Hydrogen</item>
+        <item>Methane</item>
+        <item>Neon</item>
+        <item>Nitric oxide</item>
+        <item>Nitrogen</item>
+        <item>Oxygen</item>
+        <item>Propane</item>
+        <item>Alcohol</item>
+        <item>Blood</item>
+        <item>Coffee</item>
+        <item>Cream</item>
+        <item>Gasoline</item>
+        <item>Grease</item>
+        <item>Juice</item>
+        <item>Milk</item>
+        <item>Oil</item>
+        <item>Syrup</item>
+        <item>Soup</item>
+        <item>Tea</item>
+        <item>Water</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Iron</item>
+        <item>Aluminium</item>
+        <item>Copper</item>
+        <item>Steel</item>
+        <item>Brass</item>
+        <item>Tin</item>
+        <item>Zinc</item>
+        <item>Lead</item>
+        <item>Nickel</item>
+        <item>Platinum</item>
+        <item>Titanium</item>
+        <item>Mercury</item>
+        <item>Bronze</item>
+        <item>Acrylic</item>
+        <item>Alloy</item>
+        <item>Aluminum</item>
+        <item>Brass</item>
+        <item>Brick</item>
+        <item>Bronze</item>
+        <item>Carbon</item>
+        <item>Cardboard</item>
+        <item>Cast iron</item>
+        <item>Cement</item>
+        <item>Ceramics</item>
+        <item>Copper</item>
+        <item>Cotton</item>
+        <item>Diamond</item>
+        <item>Epoxy</item>
+        <item>Fiber</item>
+        <item>Fiberglass</item>
+        <item>Glass</item>
+        <item>Glue</item>
+        <item>Gold</item>
+        <item>Iron</item>
+        <item>Leather</item>
+        <item>Linen</item>
+        <item>Nylon</item>
+        <item>Paper</item>
+        <item>Polyester</item>
+        <item>Rubber</item>
+        <item>Sand</item>
+        <item>Silica</item>
+        <item>Silver</item>
+        <item>Skin</item>
+        <item>Steel</item>
+        <item>Stone</item>
+        <item>Titanium</item>
+        <item>Vinyl</item>
+        <item>Viscose</item>
+        <item>Wood</item>
+        <item>Wool</item>
+        <item>Air</item>
+        <item>Barometer</item>
+        <item>Blizzard</item>
+        <item>Celsius</item>
+        <item>Chill</item>
+        <item>Cirrus</item>
+        <item>Cloud</item>
+        <item>Clouds</item>
+        <item>Cloudy</item>
+        <item>Cold</item>
+        <item>Cyclone</item>
+        <item>Degree</item>
+        <item>Dew</item>
+        <item>Drizzle</item>
+        <item>Dry</item>
+        <item>Dry season</item>
+        <item>Fahrenheit</item>
+        <item>Flood</item>
+        <item>Fog</item>
+        <item>Forecast</item>
+        <item>Freeze</item>
+        <item>Frost</item>
+        <item>Hail</item>
+        <item>Heat</item>
+        <item>Hot</item>
+        <item>Humidity</item>
+        <item>Hurricane</item>
+        <item>Ice</item>
+        <item>Lightning</item>
+        <item>Meteorology</item>
+        <item>Moon</item>
+        <item>Precipitation</item>
+        <item>Pressure</item>
+        <item>Radar</item>
+        <item>Rain</item>
+        <item>Rainstorm</item>
+        <item>Rainbow</item>
+        <item>Rainy</item>
+        <item>Rainy season</item>
+        <item>Sky</item>
+        <item>Sleet</item>
+        <item>Snow</item>
+        <item>Snowstorm</item>
+        <item>Snowy</item>
+        <item>Storm</item>
+        <item>Sun</item>
+        <item>Sunny</item>
+        <item>Temperature</item>
+        <item>Thermometer</item>
+        <item>Thunder</item>
+        <item>Thunderstorm</item>
+        <item>Tornado</item>
+        <item>Tsunami</item>
+        <item>Typhoon</item>
+        <item>Warm</item>
+        <item>Weather</item>
+        <item>Wind</item>
+        <item>Windy</item>
+    </string-array>
 
+    <string-array name="array_animals">
+        <item>Aardvark</item>
+        <item>Bear</item>
+        <item>Camel</item>
+        <item>Crocodile</item>
+        <item>Elephant</item>
+        <item>Giraffe</item>
+        <item>Kangaroo</item>
+        <item>Leopard</item>
+        <item>Lion</item>
+        <item>Llama</item>
+        <item>Monkey</item>
+        <item>Ostrich</item>
+        <item>Rhinoceros</item>
+        <item>Snake</item>
+        <item>Tiger</item>
+        <item>Wolf</item>
+        <item>Zebra</item>
+        <item>Anteater</item>
+        <item>Armadillo</item>
+        <item>Baboon</item>
+        <item>Badger</item>
+        <item>Beaver</item>
+        <item>Cheetah</item>
+        <item>Cougar</item>
+        <item>Gazelle</item>
+        <item>Gorilla</item>
+        <item>Ocelot</item>
+        <item>Panda</item>
+        <item>Panther</item>
+        <item>Porcupine</item>
+        <item>Wallaby</item>
+        <item>Puma</item>
+        <item>Lynx</item>
+        <item>Bobcat</item>
+        <item>Jaguar</item>
+        <item>Hyena</item>
+        <item>Alligator</item>
+        <item>Ant</item>
+        <item>Bee</item>
+        <item>Bird</item>
+        <item>Cat</item>
+        <item>Chicken</item>
+        <item>Chimpanzee</item>
+        <item>Cow</item>
+        <item>Deer</item>
+        <item>Dog</item>
+        <item>Dolphin</item>
+        <item>Duck</item>
+        <item>Eagle</item>
+        <item>Fish</item>
+        <item>Fly</item>
+        <item>Fox</item>
+        <item>Frog</item>
+        <item>Goat</item>
+        <item>Goldfish</item>
+        <item>Hamster</item>
+        <item>Hippopotamus</item>
+        <item>Horse</item>
+        <item>Kitten</item>
+        <item>Lizard</item>
+        <item>Lobster</item>
+        <item>Octopus</item>
+        <item>Otter</item>
+        <item>Owl</item>
+        <item>Oyster</item>
+        <item>Parrot</item>
+        <item>Pelican</item>
+        <item>Pig</item>
+        <item>Pigeon</item>
+        <item>Puppy</item>
+        <item>Rabbit</item>
+        <item>Rat</item>
+        <item>Reindeer</item>
+        <item>Rooster</item>
+        <item>Scorpion</item>
+        <item>Seal</item>
+        <item>Shark</item>
+        <item>Sheep</item>
+        <item>Shrimp</item>
+        <item>Snail</item>
+        <item>Sparrow</item>
+        <item>Spider</item>
+        <item>Squid</item>
+        <item>Squirrel</item>
+        <item>Swallow</item>
+        <item>Swan</item>
+        <item>Toad</item>
+        <item>Tortoise</item>
+        <item>Turtle</item>
+        <item>Vulture</item>
+        <item>Walrus</item>
+        <item>Weasel</item>
+        <item>Whale</item>
+        <item>Bull</item>
+        <item>Calf</item>
+        <item>Donkey</item>
+        <item>Goose</item>
+        <item>Hen</item>
+        <item>Lamb</item>
+        <item>Turkey</item>
+        <item>Chihuahua</item>
+        <item>Bulldog</item>
+        <item>German shepherd</item>
+        <item>Beetle</item>
+        <item>Butterfly</item>
+        <item>Caterpillar</item>
+        <item>Centipede</item>
+        <item>Cockroach</item>
+        <item>Cricket</item>
+        <item>Dragonfly</item>
+        <item>Flea</item>
+        <item>Grasshopper</item>
+        <item>Grub</item>
+        <item>Ladybug</item>
+        <item>Maggot</item>
+        <item>Mosquito</item>
+        <item>Moth</item>
+        <item>Termite</item>
+        <item>Tick</item>
+        <item>Wasp</item>
+        <item>Carp</item>
+        <item>Tropical fish</item>
+        <item>Caterpiller</item>
+        <item>Cicada</item>
+        <item>Insects</item>
+        <item>Locust</item>
+        <item>Albatross</item>
+        <item>Buzzard</item>
+        <item>Chick</item>
+        <item>Condor</item>
+        <item>Cormorant</item>
+        <item>Crow</item>
+        <item>Drake</item>
+        <item>Duckling</item>
+        <item>Gander</item>
+        <item>Gosling</item>
+        <item>Grouse</item>
+        <item>Hawk</item>
+        <item>Heron</item>
+        <item>Partridge</item>
+        <item>Pheasant</item>
+        <item>Ptarmigan</item>
+        <item>Puffin</item>
+        <item>Quail</item>
+        <item>Raven</item>
+        <item>Seagull</item>
+        <item>Bass</item>
+        <item>Cod</item>
+        <item>Crab</item>
+        <item>Crawdad</item>
+        <item>Crayfish</item>
+        <item>Eel</item>
+        <item>Halibut</item>
+        <item>Herring</item>
+        <item>Perch</item>
+        <item>Pike</item>
+        <item>Salmon</item>
+        <item>Sardine</item>
+        <item>Sturgeon</item>
+        <item>Tadpole</item>
+        <item>Trout</item>
+        <item>Tuna</item>
+        <item>Swordfish</item>
+        <item>Boa</item>
+        <item>Brown snake</item>
+        <item>Cobra</item>
+        <item>Coral snake</item>
+        <item>Green snake</item>
+        <item>King cobra</item>
+        <item>Python</item>
+        <item>Rat snake</item>
+        <item>Rattlesnake</item>
+        <item>Viper</item>
+        <item>Sphynx</item>
+    </string-array>
 </resources>

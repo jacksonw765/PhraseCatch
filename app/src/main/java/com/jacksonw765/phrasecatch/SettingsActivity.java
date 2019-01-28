@@ -1,22 +1,15 @@
 package com.jacksonw765.phrasecatch;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -39,8 +32,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         data = new Data(this);
-
-
 
         //instantiate UI
         buttonMinus = findViewById(R.id.buttonMinus);

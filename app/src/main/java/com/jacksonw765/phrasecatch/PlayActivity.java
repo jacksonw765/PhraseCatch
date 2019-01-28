@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,7 +30,7 @@ public class PlayActivity extends AppCompatActivity {
     private int category;
     private int deckIndex = 0;
     private int deckMaxIndex;
-    private ArrayList<String> currentDeck;
+    private ArrayList currentDeck;
     private MediaPlayer countdownSound;
     private int currentPointsA, currentPointsB, pointsToWin = 0;
     private CountDownTimer timer;
@@ -170,18 +169,60 @@ public class PlayActivity extends AppCompatActivity {
         switch (category) {
             case CategoryActivity.ERROR_VALUE:
                 Toast.makeText(getApplicationContext(), "ERROR! NO DECK SELECTED", Toast.LENGTH_SHORT).show();
-            case CategoryActivity.COLLEGE:
-                List<String> tempList = Arrays.asList(getResources().getStringArray(R.array.array_college_life));
-                currentDeck = new ArrayList<>(tempList);
+            case CategoryActivity.EVERYTHING:
+                List<String> college_a = Arrays.asList(getResources().getStringArray(R.array.array_college_life));
+                List<String> entertainment_a = Arrays.asList(getResources().getStringArray(R.array.array_entertainment));
+                List<String> animals_a = Arrays.asList(getResources().getStringArray(R.array.array_animals));
+                List<String> places_a = Arrays.asList(getResources().getStringArray(R.array.array_places));
+                List<String> science_a = Arrays.asList(getResources().getStringArray(R.array.array_science));
+                List<String> sports_a = Arrays.asList(getResources().getStringArray(R.array.array_sports));
+                List<String> food_a = Arrays.asList(getResources().getStringArray(R.array.array_food));
+                ArrayList everything = new ArrayList<String>();
+                everything.addAll(entertainment_a);
+                everything.addAll(college_a);
+                everything.addAll(animals_a);
+                everything.addAll(places_a);
+                everything.addAll(science_a);
+                everything.addAll(sports_a);
+                everything.addAll(food_a);
+                currentDeck = everything;
                 Collections.shuffle(currentDeck);
                 break;
-            case CategoryActivity.EVERYTHING:
+            case CategoryActivity.COLLEGE:
                 List<String> college = Arrays.asList(getResources().getStringArray(R.array.array_college_life));
+                currentDeck = new ArrayList(college);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.ANIMAL:
+                List<String> animals = Arrays.asList(getResources().getStringArray(R.array.array_animals));
+                currentDeck = new ArrayList(animals);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.PLACES:
+                List<String> places = Arrays.asList(getResources().getStringArray(R.array.array_places));
+                currentDeck = new ArrayList(places);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.SCIENCE:
+                List<String> science = Arrays.asList(getResources().getStringArray(R.array.array_science));
+                currentDeck = new ArrayList(science);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.ENTERTAINMENT:
                 List<String> entertainment = Arrays.asList(getResources().getStringArray(R.array.array_entertainment));
-                ArrayList everything = new ArrayList(college);
-                everything.addAll(entertainment);
-                Collections.shuffle(everything);
-                currentDeck = everything;
+                currentDeck = new ArrayList(entertainment);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.SPORTS:
+                List<String> sports = Arrays.asList(getResources().getStringArray(R.array.array_sports));
+                currentDeck = new ArrayList(sports);
+                Collections.shuffle(currentDeck);
+                break;
+            case CategoryActivity.FOOD:
+                List<String> food = Arrays.asList(getResources().getStringArray(R.array.array_food));
+                currentDeck = new ArrayList(food);
+                Collections.shuffle(currentDeck);
+                break;
         }
         textWord.setText("Click Start");
         buttonStartStop.setText("Start");
@@ -211,7 +252,6 @@ public class PlayActivity extends AppCompatActivity {
     private void resetSound(MediaPlayer mp) {
         try {
             mp.stop();
-            //mp.reset();
             mp.prepare();
             mp.setDataSource(getResources().getResourceName(countDownSoundURI));
             mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -257,7 +297,7 @@ public class PlayActivity extends AppCompatActivity {
     private String getNextWord() {
         String nextWord = null;
         if (deckIndex <= deckMaxIndex) {
-            nextWord = currentDeck.get(deckIndex);
+            nextWord = (String) currentDeck.get(deckIndex);
             deckIndex++;
             return nextWord;
         } else {
