@@ -1,6 +1,7 @@
 package com.jacksonw765.phrasecatch;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -159,6 +160,7 @@ public class PlayActivity extends AppCompatActivity {
             public void onFinish() {
                 try {
                     endGame();
+                    timerUp();
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
                 }
@@ -241,7 +243,7 @@ public class PlayActivity extends AppCompatActivity {
             updateButtonNext();
     }
 
-    private void endGame() throws IOException {
+    private void endGame() {
         buttonStartStop.setText("Start");
         buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_lightblue, null));
         isGameActive = false;
@@ -344,5 +346,19 @@ public class PlayActivity extends AppCompatActivity {
         else {
             super.onBackPressed();
         }
+    }
+
+    private void timerUp() {
+        final AlertDialog.Builder builder;
+        builder = new AlertDialog.Builder(this);
+        builder.setTitle("Timer")
+                .setMessage("Timer is up")
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .setIcon(R.drawable.logo_main)
+                .show();
     }
 }

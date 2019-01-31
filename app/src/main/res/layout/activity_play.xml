@@ -17,15 +17,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textStatement"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
             android:fontFamily="@font/nunito"
             android:gravity="center"
             android:inputType="textMultiLine"
@@ -92,7 +89,7 @@
         android:id="@+id/buttonStop"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/button_red"
         android:elevation="5dp"
         android:fontFamily="@font/nunito_font"
@@ -107,13 +104,13 @@
         android:id="@+id/buttonNext"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/button_green"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_lightblue"
         android:fontFamily="@font/nunito_font"
         android:gravity="center"
         android:text="Next"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutStatement" />
 </android.support.constraint.ConstraintLayout>

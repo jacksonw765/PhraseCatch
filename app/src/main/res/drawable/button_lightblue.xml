@@ -3,13 +3,13 @@
     <item android:state_pressed="true">
         <shape xmlns:android="http://schemas.android.com/apk/res/android" >
             <corners
-                android:topLeftRadius="30dp"
-                android:topRightRadius="30dp"
-                android:bottomLeftRadius="30dp"
-                android:bottomRightRadius="30dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:bottomRightRadius="20dp"
                 />
             <solid
-                android:color="#389eff"
+                android:color="#0086c3"
                 />
         </shape>
 
@@ -17,13 +17,13 @@
     <item>
         <shape xmlns:android="http://schemas.android.com/apk/res/android" >
             <corners
-                android:topLeftRadius="30dp"
-                android:topRightRadius="30dp"
-                android:bottomLeftRadius="30dp"
-                android:bottomRightRadius="30dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:bottomRightRadius="20dp"
                 />
             <solid
-                android:color="#54bbff"
+                android:color="#0093c4"
                 />
         </shape>
     </item>
