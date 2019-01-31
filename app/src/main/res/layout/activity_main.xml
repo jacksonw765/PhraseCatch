@@ -8,12 +8,10 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/main"
         android:layout_width="350dp"
-        android:layout_height="500dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="23dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
         android:background="@drawable/button_white">
 
         <TextView
@@ -29,13 +27,24 @@
             android:textAlignment="center"
             android:textSize="45sp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="237dp"
+            android:layout_height="222dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="114dp"
+            app:srcCompat="@drawable/logo_main" />
+
         <Button
             android:id="@+id/buttonSettings"
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:layout_alignStart="@+id/buttonPlay"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="126dp"
+            android:layout_marginStart="-2dp"
+            android:layout_marginBottom="33dp"
             android:background="@drawable/button_green"
             android:elevation="5dp"
             android:fontFamily="@font/nunito_font"
@@ -47,7 +56,9 @@
             android:id="@+id/buttonPlay"
             android:layout_width="200dp"
             android:layout_height="75dp"
-            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="121dp"
             android:background="@drawable/button_lightblue"
             android:elevation="5dp"
             android:fontFamily="@font/nunito_font"

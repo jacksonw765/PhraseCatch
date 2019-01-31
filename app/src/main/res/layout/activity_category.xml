@@ -175,15 +175,8 @@
                     android:padding="5dp"
                     android:text="Food"
                     android:textSize="26sp" />
-
             </RelativeLayout>
-
-
         </LinearLayout>
     </ScrollView>
-
-
-
-
 
 </RelativeLayout>
