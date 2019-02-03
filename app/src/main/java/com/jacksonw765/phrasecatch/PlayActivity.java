@@ -51,11 +51,11 @@ public class PlayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
         MobileAds.initialize(this, "ca-app-pub-7225811178915318~7129168296");
         adview = findViewById(R.id.adView);
         adRequest = new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build();
         adview.loadAd(adRequest);
-
 
         buttonNext = findViewById(R.id.buttonNext);
         buttonStartStop = findViewById(R.id.buttonStop);

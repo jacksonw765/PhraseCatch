@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".CategoryActivity">
 
     <ScrollView
@@ -28,21 +29,25 @@
                 android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:paddingLeft="25dp"
+                android:layout_alignParentEnd="false"
+                android:addStatesFromChildren="false"
+                android:alwaysDrawnWithCache="false"
+                android:paddingLeft="20dp"
                 android:paddingTop="10dp"
-                android:paddingRight="25dp"
-                android:paddingBottom="20dp">
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
 
                 <Button
                     android:id="@+id/buttonCatagoryEverything"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Everything"
                     android:textSize="24sp" />
 
@@ -51,12 +56,14 @@
                     android:layout_width="165dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="College Life"
                     android:textSize="24sp" />
 
@@ -67,19 +74,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:paddingRight="25dp"
-                android:paddingBottom="20dp">
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
 
                 <Button
                     android:id="@+id/buttonSports"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Sports"
                     android:textSize="26sp" />
 
@@ -88,12 +97,14 @@
                     android:layout_width="165dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Entertainment"
                     android:textSize="20sp" />
 
@@ -105,20 +116,22 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/nunito_font"
                 android:gravity="center"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:paddingRight="25dp"
-                android:paddingBottom="20dp">
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
 
                 <Button
                     android:id="@+id/buttonPlaces"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Places"
                     android:textSize="26sp" />
 
@@ -127,12 +140,14 @@
                     android:layout_width="165dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Science"
                     android:textSize="24sp" />
 
@@ -142,23 +157,25 @@
                 android:id="@+id/lowerCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/nunito_font"
                 android:gravity="center"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:paddingRight="25dp"
-                android:paddingBottom="20dp">
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
 
                 <Button
                     android:id="@+id/buttonAnimals"
                     android:layout_width="165dp"
                     android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Animals"
                     android:textSize="26sp" />
 
@@ -167,12 +184,14 @@
                     android:layout_width="165dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:padding="5dp"
                     android:text="Food"
                     android:textSize="26sp" />
             </RelativeLayout>
