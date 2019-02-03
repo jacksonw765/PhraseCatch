@@ -150,9 +150,26 @@ public class PlayActivity extends AppCompatActivity {
                 }
                 //game is active, stop game
                 else {
-                    if(timeLeft > 0)
-                        timer.cancel();
-                        endGame();
+                    AlertDialog.Builder builder;
+                    builder = new AlertDialog.Builder(view.getContext());
+                    builder.setTitle("Stop Round?")
+                            .setMessage("Are you sure you would like to stop the round?")
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    if(timeLeft > 0) {
+                                        timer.cancel();
+                                        endGame();
+                                    }
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+
+                                }
+                            })
+                            .show();
                 }
             }
         });
@@ -240,7 +257,7 @@ public class PlayActivity extends AppCompatActivity {
             deckMaxIndex = currentDeck.size();
             countdownSound.start();
             buttonStartStop.setText("Stop");
-            textWord.setText(getNextWord());
+            textWord.setText(capitalize(getNextWord()));
             buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
             isGameActive = true;
             timer.start();
@@ -321,6 +338,21 @@ public class PlayActivity extends AppCompatActivity {
         }
     }
 
+    private String capitalize(String str) {
+        String[] words = str.split("\\s");
+        StringBuilder sb = new StringBuilder();
+        for (String s: words) {
+            if (!s.equals("")) {
+                sb.append(Character.toUpperCase(s.charAt(0)));
+                sb.append(s.substring(1));
+            }
+            sb.append(" ");
+        }
+
+        // trim() to remove extra space in the end before returning
+        return sb.toString().trim();
+    }
+
     @Override
     public void onBackPressed() {
         if(isGameActive || currentPointsA > 0 || currentPointsB > 0) {
@@ -351,14 +383,14 @@ public class PlayActivity extends AppCompatActivity {
     private void timerUp() {
         final AlertDialog.Builder builder;
         builder = new AlertDialog.Builder(this);
-        builder.setTitle("Timer")
-                .setMessage("Timer is up")
+        builder.setTitle("Timer Expired!")
+                .setMessage("Timer is up.")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
                 })
-                .setIcon(R.drawable.logo_main)
+                .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 }
