@@ -14,6 +14,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +30,8 @@ public class PlayActivity extends AppCompatActivity {
     //create UI
     private Button buttonNext, buttonStartStop;
     private TextView textTeamAPoints, textTeamBPoints, textWord;
+    private AdView adview;
+    private AdRequest adRequest;
 
     //create rest
     private int category;
@@ -45,6 +51,11 @@ public class PlayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+        MobileAds.initialize(this, "ca-app-pub-7225811178915318~7129168296");
+        adview = findViewById(R.id.adView);
+        adRequest = new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build();
+        adview.loadAd(adRequest);
+
 
         buttonNext = findViewById(R.id.buttonNext);
         buttonStartStop = findViewById(R.id.buttonStop);
@@ -55,6 +66,7 @@ public class PlayActivity extends AppCompatActivity {
         pointsToWin = data.loadPointsToWin();
         textTeamAPoints = findViewById(R.id.textTeamAPoints);
         textTeamBPoints = findViewById(R.id.textTeamBPoints);
+        adview = findViewById(R.id.adView);
 
         //load current deck
         Intent intent = getIntent();
@@ -140,11 +152,7 @@ public class PlayActivity extends AppCompatActivity {
                 else {
                     if(timeLeft > 0)
                         timer.cancel();
-                    try {
                         endGame();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                 }
             }
         });
@@ -158,12 +166,8 @@ public class PlayActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                try {
                     endGame();
                     timerUp();
-                } catch (IOException ioe) {
-                    ioe.printStackTrace();
-                }
             }
         };
 
@@ -327,11 +331,7 @@ public class PlayActivity extends AppCompatActivity {
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             PlayActivity.super.onBackPressed();
-                            try {
                                 endGame();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
