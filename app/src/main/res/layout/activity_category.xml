@@ -195,6 +195,18 @@
                     android:text="Food"
                     android:textSize="26sp" />
             </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/framelauout"
+                android:layout_marginTop="-7dp"
+                android:backgroundTint="#FFFFFF"
+                android:indeterminate="true"
+                android:indeterminateTint="#1a09d6"
+                android:max="100" />
         </LinearLayout>
     </ScrollView>
 

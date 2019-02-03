@@ -1,7 +1,6 @@
 package com.jacksonw765.phrasecatch;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -16,9 +15,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -32,7 +31,7 @@ public class PlayActivity extends AppCompatActivity {
     private TextView textTeamAPoints, textTeamBPoints, textWord;
     private AdView adview;
     private AdRequest adRequest;
-
+    private InterstitialAd interstitialAd;
     //create rest
     private int category;
     private int deckIndex = 0;
@@ -53,9 +52,12 @@ public class PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play);
 
         MobileAds.initialize(this, "ca-app-pub-7225811178915318~7129168296");
+        interstitialAd = new InterstitialAd(this);
         adview = findViewById(R.id.adView);
         adRequest = new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build();
         adview.loadAd(adRequest);
+        interstitialAd.setAdUnitId("ca-app-pub-7225811178915318/8513120893");
+        interstitialAd.loadAd(new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build());
 
         buttonNext = findViewById(R.id.buttonNext);
         buttonStartStop = findViewById(R.id.buttonStop);
@@ -387,7 +389,11 @@ public class PlayActivity extends AppCompatActivity {
                 .setMessage("Timer is up.")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-
+                        if (interstitialAd.isLoaded()) {
+                            interstitialAd.show();
+                        } else {
+                            System.out.println("NOT LOADED");
+                        }
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
