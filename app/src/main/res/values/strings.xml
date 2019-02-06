@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PhraseCatch</string>
     <string name="add_id">ca-app-pub-7225811178915318~7129168296</string>
+    <string name="title_activity_intro__three">Intro_Three</string>
 </resources>

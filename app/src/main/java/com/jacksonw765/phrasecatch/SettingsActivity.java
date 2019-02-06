@@ -86,7 +86,8 @@ public class SettingsActivity extends AppCompatActivity {
         buttonMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(pointsToWin > 0) {
+                System.out.println(pointsToWin);
+                if (pointsToWin >= 2) {
                     try {
                         final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.type);
                         mp.start();
@@ -112,6 +113,7 @@ public class SettingsActivity extends AppCompatActivity {
                         pointsToWin++;
                         textViewPointsToWin.setText("" + pointsToWin);
                         data.savePointsToWin(pointsToWin);
+                        System.out.println("Load" + data.loadPointsToWin());
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
                     }
@@ -121,10 +123,4 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-    //getters and setters for SP
-
 }

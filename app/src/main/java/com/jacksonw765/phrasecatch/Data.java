@@ -9,6 +9,7 @@ public class Data {
     //define constants
     public final static String RADIO_KEY = "RADIO_KEY";
     public final static String POINTS_KEY = "POINTS_KEY";
+    public final static String FIRST_RUN = "FIRST_RUN";
     public final static int SHORT = 1;
     public final static int MID = 2;
     public final static int LONG = 3;
@@ -57,5 +58,19 @@ public class Data {
         }
         editor.apply();
         return points;
+    }
+
+    public boolean loadFirstRun() {
+        prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        editor = prefs.edit();
+        boolean first = prefs.getBoolean(FIRST_RUN, true);
+        editor.apply();
+        return first;
+    }
+
+    public void setFirstRun(boolean first) {
+        editor = prefs.edit();
+        editor.putBoolean(FIRST_RUN, first);
+        editor.apply();
     }
 }
