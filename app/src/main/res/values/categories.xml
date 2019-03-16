@@ -354,31 +354,256 @@
         <item>Valley</item>
         <item>Waterfall</item>
         <item>Woods</item>
-        <item></item>
 
     </string-array>
 
     <string-array name="array_food">
+        <item>Acorn</item>
+        <item>Alfalfa</item>
+        <item>Bamboo</item>
+        <item>Bark</item>
+        <item>Bean</item>
+        <item>Berry</item>
+        <item>Blade</item>
+        <item>Brush</item>
+        <item>Bud</item>
+        <item>Bulb</item>
+        <item>Bush</item>
+        <item>Cactus</item>
+        <item>Clover</item>
+        <item>Cork</item>
+        <item>Corolla</item>
+        <item>Fern</item>
+        <item>Flora</item>
+        <item>Flower</item>
+        <item>Forest</item>
+        <item>Fruit</item>
+        <item>Garden</item>
+        <item>Grain</item>
+        <item>Grass</item>
+        <item>Grove</item>
+        <item>Herb</item>
+        <item>Ivy</item>
+        <item>Jungle</item>
+        <item>Juniper</item>
+        <item>Kelp</item>
+        <item>Kudzu</item>
+        <item>Leaf</item>
+        <item>Lily</item>
+        <item>Moss</item>
+        <item>Nectar</item>
+        <item>Nut</item>
+        <item>Palm</item>
+        <item>Petal</item>
+        <item>Pollen</item>
+        <item>Resin</item>
+        <item>Root</item>
+        <item>Sage</item>
+        <item>Sap</item>
+        <item>Seed</item>
+        <item>Shoot</item>
+        <item>Shrub</item>
+        <item>Spore</item>
+        <item>Stalk</item>
+        <item>Spine</item>
+        <item>Sprout</item>
+        <item>Stem</item>
+        <item>Thorn</item>
+        <item>Tree</item>
+        <item>Trunk</item>
+        <item>Twig</item>
+        <item>Vein</item>
+        <item>Vine</item>
+        <item>Weed</item>
+        <item>Wood</item>
+        <item>Alligator</item>
+        <item>Beef</item>
+        <item>Bison</item>
+        <item>Buffalo</item>
+        <item>Caribou</item>
+        <item>Chicken</item>
+        <item>Duck</item>
+        <item>Elk</item>
+        <item>Goat</item>
+        <item>Lamb</item>
+        <item>Pheasant</item>
+        <item>Pork</item>
+        <item>Quail</item>
+        <item>Rabbit</item>
+        <item>Turkey</item>
+        <item>Veal</item>
+        <item>Venison</item>
+        <item>Yak</item>
+        <item>Apple</item>
+        <item>Apricot</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Berry</item>
+        <item>Cantaloupe</item>
+        <item>Cherry</item>
+        <item>Citron</item>
+        <item>Citrus</item>
+        <item>Coconut</item>
+        <item>Date</item>
+        <item>Fig</item>
+        <item>Grape</item>
+        <item>Guava</item>
+        <item>Kiwi</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Mango</item>
+        <item>Melon</item>
+        <item>Nectarine</item>
+        <item>Orange</item>
+        <item>Papaya</item>
+        <item>Peach</item>
+        <item>Pear</item>
+        <item>Pineapple</item>
+        <item>Plum</item>
+        <item>Prune</item>
+        <item>Raisin</item>
+        <item>Raspberry</item>
+        <item>Tangerine</item>
+        <item>Aroma</item>
+        <item>Bagel</item>
+        <item>Batter</item>
+        <item>Beans</item>
         <item>Beer</item>
+        <item>Biscuit</item>
+        <item>Bread</item>
+        <item>Broth</item>
+        <item>Burger</item>
+        <item>Butter</item>
+        <item>Cake</item>
+        <item>Candy</item>
+        <item>Caramel</item>
+        <item>Caviar</item>
+        <item>Cheese</item>
+        <item>Chili</item>
+        <item>Chocolate</item>
+        <item>Cider</item>
+        <item>Cobbler</item>
+        <item>Cocoa</item>
+        <item>Coffee</item>
+        <item>Cookie</item>
+        <item>Cream</item>
+        <item>Croissant</item>
+        <item>Crumble</item>
+        <item>Cuisine</item>
+        <item>Curd</item>
+        <item>Dessert</item>
+        <item>Dish</item>
+        <item>Drink</item>
+        <item>Eggs</item>
+        <item>Entree</item>
+        <item>Filet</item>
+        <item>Fish</item>
+        <item>Flour</item>
+        <item>Foie Gras</item>
+        <item>Food</item>
+        <item>Glaze</item>
+        <item>Grill</item>
+        <item>Hamburger</item>
+        <item>Ice</item>
+        <item>Juice</item>
+        <item>Ketchup</item>
+        <item>Kitchen</item>
+        <item>Lard</item>
+        <item>Liquor</item>
+        <item>Margarine</item>
+        <item>Marinade</item>
+        <item>Mayo</item>
+        <item>Mayonnaise</item>
+        <item>Meat</item>
+        <item>Milk</item>
+        <item>Mousse</item>
+        <item>Muffin</item>
+        <item>Mushroom</item>
+        <item>Noodle</item>
+        <item>Nut</item>
+        <item>Oil</item>
+        <item>Olive</item>
+        <item>Omelette</item>
+        <item>Pan</item>
+        <item>Pasta</item>
+        <item>Paste</item>
+        <item>Pastry</item>
+        <item>Pie</item>
+        <item>Pizza</item>
+        <item>Plate</item>
+        <item>Pot</item>
+        <item>Poutine</item>
+        <item>Pudding</item>
+        <item>Raclette</item>
+        <item>Recipe</item>
+        <item>Rice</item>
+        <item>Salad</item>
+        <item>Salsa</item>
+        <item>Sandwich</item>
+        <item>Sauce</item>
+        <item>Seasoning</item>
+        <item>Skillet</item>
+        <item>Soda</item>
+        <item>Soup</item>
+        <item>Soy</item>
+        <item>Spice</item>
+        <item>Steak</item>
+        <item>Stew</item>
+        <item>Syrup</item>
+        <item>Tartar</item>
+        <item>Taste</item>
+        <item>Tea</item>
+        <item>Toast</item>
+        <item>Vinegar</item>
+        <item>Waffle</item>
+        <item>Water</item>
+        <item>Wheat</item>
+        <item>Wine</item>
+        <item>Wok</item>
+        <item>Yeast</item>
+        <item>Yogurt</item>
+        <item>Blt</item>
+        <item>Bagel</item>
+        <item>Burger</item>
+        <item>Burrito</item>
+        <item>Cheeseburger</item>
+        <item>Clubhouse</item>
+        <item>Frank</item>
+        <item>Hamburger</item>
+        <item>Hoagie</item>
+        <item>Melt</item>
+        <item>Muffin</item>
+        <item>Panini</item>
+        <item>Philly</item>
+        <item>Pita</item>
+        <item>Pretzel</item>
+        <item>Reuben</item>
+        <item>Sandwich</item>
+        <item>Slider</item>
+        <item>Sub</item>
+        <item>Taco</item>
+        <item>Wrap</item>
+        <item>Beer</item>
+        <item>Test</item>
         <item>Brandy</item>
         <item>Cocoa</item>
         <item>Cocktail</item>
         <item>Coffee</item>
         <item>Coke</item>
-        <item>Green tea</item>
-        <item>Ice coffee</item>
-        <item>Ice tea</item>
+        <item>Green Tea</item>
+        <item>Ice Coffee</item>
+        <item>Ice Tea</item>
         <item>Juice</item>
         <item>Lemonade</item>
         <item>Liquor</item>
         <item>Milk</item>
         <item>Milkshake</item>
-        <item>Orange juice</item>
+        <item>Orange Juice</item>
         <item>Punch</item>
         <item>Soda</item>
-        <item>Soft drink</item>
+        <item>Soft Drink</item>
         <item>Tea</item>
-        <item>Tomato juice</item>
+        <item>Tomato Juice</item>
         <item>Water</item>
         <item>Whiskey</item>
         <item>Wine</item>
@@ -418,27 +643,27 @@
         <item>Oats</item>
         <item>Rice</item>
         <item>Rye</item>
-        <item>Brown rice</item>
-        <item>Short grain rice</item>
-        <item>Long grain rice</item>
+        <item>Brown Rice</item>
+        <item>Short Grain Rice</item>
+        <item>Long Grain Rice</item>
         <item>Rye</item>
-        <item>Soy beans</item>
+        <item>Soy Beans</item>
         <item>Wheat</item>
         <item>Alphabet</item>
         <item>Bows</item>
         <item>Cappelletti</item>
-        <item>Curly lasagna</item>
-        <item>Elbow macaroni</item>
+        <item>Curly Lasagna</item>
+        <item>Elbow Macaroni</item>
         <item>Fedelini</item>
         <item>Lasagna</item>
         <item>Noodles</item>
         <item>Ravioli</item>
-        <item>Ribbed macaroni</item>
+        <item>Ribbed Macaroni</item>
         <item>Shells</item>
         <item>Spaghetti</item>
         <item>Stars</item>
-        <item>Thin macaroni</item>
-        <item>Thin spaghetti</item>
+        <item>Thin Macaroni</item>
+        <item>Thin Spaghetti</item>
         <item>Tortellini</item>
         <item>Turrets</item>
         <item>Vermicelli</item>
@@ -446,15 +671,15 @@
         <item>Bacon</item>
         <item>Beef</item>
         <item>Chicken</item>
-        <item>Chicken breast</item>
-        <item>Chicken leg</item>
-        <item>Chicken wing</item>
+        <item>Chicken Breast</item>
+        <item>Chicken Leg</item>
+        <item>Chicken Wing</item>
         <item>Ham</item>
         <item>Hamburger</item>
         <item>Heart</item>
-        <item>Hot dog</item>
+        <item>Hot Dog</item>
         <item>Kidney</item>
-        <item>Lamb chop</item>
+        <item>Lamb Chop</item>
         <item>Mutton</item>
         <item>Pork</item>
         <item>Roast</item>
@@ -484,28 +709,28 @@
         <item>Water</item>
         <item>Coffee</item>
         <item>Tea</item>
-        <item>Blue cheese</item>
-        <item>French dressing</item>
-        <item>House dressing</item>
-        <item>Thousand island</item>
+        <item>Blue Cheese</item>
+        <item>French Dressing</item>
+        <item>House Dressing</item>
+        <item>Thousand Island</item>
         <item>Vinegar</item>
         <item>Ranch</item>
-        <item>Oil and vinegar</item>
+        <item>Oil And Vinegar</item>
         <item>Asparagus</item>
         <item>Beans</item>
         <item>Beet</item>
         <item>Broccoli</item>
-        <item>Brussels sprouts</item>
+        <item>Brussels Sprouts</item>
         <item>Cabbage</item>
         <item>Carrot</item>
         <item>Cauliflower</item>
         <item>Celery</item>
-        <item>Chinese cabbage</item>
+        <item>Chinese Cabbage</item>
         <item>Corn</item>
         <item>Cucumber</item>
         <item>Eggplant</item>
-        <item>Green pepper</item>
-        <item>Japanese radish</item>
+        <item>Green Pepper</item>
+        <item>Japanese Radish</item>
         <item>Kale</item>
         <item>Lettuce</item>
         <item>Okra</item>
@@ -515,12 +740,12 @@
         <item>Pumpkins</item>
         <item>Radish</item>
         <item>Spinach</item>
-        <item>Sweet potato</item>
+        <item>Sweet Potato</item>
         <item>Tomatoes</item>
         <item>Turnips</item>
         <item>Cheese</item>
         <item>Cream</item>
-        <item>Ice cream</item>
+        <item>Ice Cream</item>
         <item>Milk</item>
         <item>Yogurt</item>
         <item>Beans</item>
@@ -972,7 +1197,7 @@
         <item>Turkey</item>
         <item>Chihuahua</item>
         <item>Bulldog</item>
-        <item>German shepherd</item>
+        <item>German Shepherd</item>
         <item>Beetle</item>
         <item>Butterfly</item>
         <item>Caterpillar</item>
@@ -991,8 +1216,8 @@
         <item>Tick</item>
         <item>Wasp</item>
         <item>Carp</item>
-        <item>Tropical fish</item>
-        <item>Caterpiller</item>
+        <item>Tropical Fish</item>
+        <item>Caterpillar</item>
         <item>Cicada</item>
         <item>Insects</item>
         <item>Locust</item>
@@ -1034,15 +1259,147 @@
         <item>Tuna</item>
         <item>Swordfish</item>
         <item>Boa</item>
-        <item>Brown snake</item>
+        <item>Brown Snake</item>
         <item>Cobra</item>
-        <item>Coral snake</item>
-        <item>Green snake</item>
-        <item>King cobra</item>
+        <item>Coral Snake</item>
+        <item>Green Snake</item>
+        <item>King Cobra</item>
         <item>Python</item>
-        <item>Rat snake</item>
+        <item>Rat Snake</item>
         <item>Rattlesnake</item>
         <item>Viper</item>
         <item>Sphynx</item>
+        <item>Beagle</item>
+        <item>Borzoi</item>
+        <item>Boxer</item>
+        <item>Collie</item>
+        <item>Corgie</item>
+        <item>Dachshund</item>
+        <item>Dingo</item>
+        <item>Feist</item>
+        <item>Harrier</item>
+        <item>Hound</item>
+        <item>Husky</item>
+        <item>Maltese</item>
+        <item>Pinscher</item>
+        <item>Poodle</item>
+        <item>Pug</item>
+        <item>Retriever</item>
+        <item>Rottweiler</item>
+        <item>Schnauser</item>
+        <item>Setter</item>
+        <item>Spaniel</item>
+        <item>Spitz</item>
+        <item>Terrier</item>
+        <item>Westie</item>
+        <item>Whippet</item>
+        <item>Angora</item>
+        <item>Balinese</item>
+        <item>Bengal</item>
+        <item>Birman</item>
+        <item>Bobtail</item>
+        <item>Bombay</item>
+        <item>Burmese</item>
+        <item>Calico</item>
+        <item>Ginger</item>
+        <item>Himalayan</item>
+        <item>Javanese</item>
+        <item>Korat</item>
+        <item>Longhair</item>
+        <item>Marmalade</item>
+        <item>Oriental</item>
+        <item>Persian</item>
+        <item>Siamese</item>
+        <item>Siberian</item>
+        <item>Tabby</item>
+        <item>Tom</item>
+        <item>Albatross</item>
+        <item>Avocet</item>
+        <item>Budgie</item>
+        <item>Canary</item>
+        <item>Chick</item>
+        <item>Chickadee</item>
+        <item>Chicken</item>
+        <item>Cockatiel</item>
+        <item>Cockatoo</item>
+        <item>Coot</item>
+        <item>Covey</item>
+        <item>Crow</item>
+        <item>Cuckoo</item>
+        <item>Darter</item>
+        <item>Dove</item>
+        <item>Duck</item>
+        <item>Eagle</item>
+        <item>Falcon</item>
+        <item>Finch</item>
+        <item>Flamingo</item>
+        <item>Fowl</item>
+        <item>Goldfinch</item>
+        <item>Goose</item>
+        <item>Grouse</item>
+        <item>Hawk</item>
+        <item>Heron</item>
+        <item>Jackdaw</item>
+        <item>Jay</item>
+        <item>Kestrel</item>
+        <item>Lark</item>
+        <item>Loon</item>
+        <item>Macaw</item>
+        <item>Magpie</item>
+        <item>Martin</item>
+        <item>Osprey</item>
+        <item>Ostrich</item>
+        <item>Owl</item>
+        <item>Parakeet</item>
+        <item>Parrot</item>
+        <item>Pelican</item>
+        <item>Penguin</item>
+        <item>Pigeon</item>
+        <item>Pintail</item>
+        <item>Puffin</item>
+        <item>Quail</item>
+        <item>Quetzal</item>
+        <item>Rail</item>
+        <item>Raven</item>
+        <item>Razorbill</item>
+        <item>Rhea</item>
+        <item>Rook</item>
+        <item>Shrike</item>
+        <item>Skylark</item>
+        <item>Snipe</item>
+        <item>Sparrow</item>
+        <item>Starling</item>
+        <item>Stork</item>
+        <item>Swallow</item>
+        <item>Swift</item>
+        <item>Tanager</item>
+        <item>Thrush</item>
+        <item>Toucan</item>
+        <item>Turkey</item>
+        <item>Vulture</item>
+        <item>Warbler</item>
+        <item>Anchovy</item>
+        <item>Bass</item>
+        <item>Carp</item>
+        <item>Cod</item>
+        <item>Flounder</item>
+        <item>Grouper</item>
+        <item>Haddock</item>
+        <item>Halibut</item>
+        <item>Herring</item>
+        <item>Mackerel</item>
+        <item>Marlin</item>
+        <item>Mullet</item>
+        <item>Perch</item>
+        <item>Pollock</item>
+        <item>Salmon</item>
+        <item>Sardine</item>
+        <item>Scallop</item>
+        <item>Shark</item>
+        <item>Snapper</item>
+        <item>Sole</item>
+        <item>Tilapia</item>
+        <item>Trout</item>
+        <item>Tuna</item>
     </string-array>
 </resources>
