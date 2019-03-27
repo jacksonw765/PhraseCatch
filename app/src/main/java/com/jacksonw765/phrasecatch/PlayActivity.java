@@ -324,9 +324,15 @@ public class PlayActivity extends AppCompatActivity {
     private String getNextWord() {
         String nextWord = null;
         if (deckIndex <= deckMaxIndex) {
-            nextWord = (String) currentDeck.get(deckIndex);
-            deckIndex++;
-            return nextWord;
+            try {
+                nextWord = (String) currentDeck.get(deckIndex);
+                deckIndex++;
+                return nextWord;
+            } catch (IndexOutOfBoundsException index) {
+                deckIndex = 0;
+                nextWord = (String)currentDeck.get(deckIndex);
+                System.out.println(index.toString());
+            }
         } else {
             deckIndex = 0;
         }
