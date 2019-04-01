@@ -1,15 +1,15 @@
 package com.jacksonw765.phrasecatch;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.support.annotation.NonNull;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -34,6 +34,7 @@ public class PlayActivity extends AppCompatActivity {
     private AdView adview;
     private AdRequest adRequest;
     private InterstitialAd interstitialAd;
+
     //create rest
     private int category;
     private int deckIndex = 0;
@@ -47,6 +48,7 @@ public class PlayActivity extends AppCompatActivity {
     private int currentTime;
     private long timeLeft = -1;
     private int countDownSoundURI;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +73,7 @@ public class PlayActivity extends AppCompatActivity {
         textTeamAPoints = findViewById(R.id.textTeamAPoints);
         textTeamBPoints = findViewById(R.id.textTeamBPoints);
         adview = findViewById(R.id.adView);
+        context = getApplicationContext();
 
         //load current deck
         Intent intent = getIntent();
@@ -160,7 +163,7 @@ public class PlayActivity extends AppCompatActivity {
                             .setMessage("Are you sure you would like to stop the round?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    if(timeLeft > 0) {
+                                    if (timeLeft > 0) {
                                         timer.cancel();
                                         endGame();
                                     }
@@ -187,8 +190,10 @@ public class PlayActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                    endGame();
+                endGame();
+                if (!isFinishing()) {
                     timerUp();
+                }
             }
         };
 
@@ -258,14 +263,14 @@ public class PlayActivity extends AppCompatActivity {
 
     //called when a user hits start
     private void startGame() {
-            deckMaxIndex = currentDeck.size();
-            countdownSound.start();
-            buttonStartStop.setText("Stop");
-            textWord.setText(capitalize(getNextWord()));
-            buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
-            isGameActive = true;
-            timer.start();
-            updateButtonNext();
+        deckMaxIndex = currentDeck.size();
+        countdownSound.start();
+        buttonStartStop.setText("Stop");
+        textWord.setText(capitalize(getNextWord()));
+        buttonStartStop.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_red, null));
+        isGameActive = true;
+        timer.start();
+        updateButtonNext();
     }
 
     private void endGame() {
@@ -287,10 +292,9 @@ public class PlayActivity extends AppCompatActivity {
                     mediaPlayer.start();
                 }
             });
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        catch(Exception e) {
-                e.printStackTrace();
-            }
     }
 
     //gets the users preference for timer length and converts it to audio.
@@ -330,7 +334,7 @@ public class PlayActivity extends AppCompatActivity {
                 return nextWord;
             } catch (IndexOutOfBoundsException index) {
                 deckIndex = 0;
-                nextWord = (String)currentDeck.get(deckIndex);
+                nextWord = (String) currentDeck.get(deckIndex);
                 System.out.println(index.toString());
             }
         } else {
@@ -340,32 +344,31 @@ public class PlayActivity extends AppCompatActivity {
     }
 
     private void updateButtonNext() {
-        if(!isGameActive) {
+        if (!isGameActive) {
             buttonNext.setEnabled(false);
-        }
-        else {
+        } else {
             buttonNext.setEnabled(true);
         }
     }
 
+    @NonNull
     private String capitalize(String str) {
         String[] words = str.split("\\s");
         StringBuilder sb = new StringBuilder();
-        for (String s: words) {
+        for (String s : words) {
             if (!s.equals("")) {
                 sb.append(Character.toUpperCase(s.charAt(0)));
                 sb.append(s.substring(1));
             }
             sb.append(" ");
         }
-
         // trim() to remove extra space in the end before returning
         return sb.toString().trim();
     }
 
     @Override
     public void onBackPressed() {
-        if(isGameActive || currentPointsA > 0 || currentPointsB > 0) {
+        if (isGameActive || currentPointsA > 0 || currentPointsB > 0) {
             final AlertDialog.Builder builder;
             builder = new AlertDialog.Builder(this);
             builder.setTitle("Game In Progress!")
@@ -373,26 +376,26 @@ public class PlayActivity extends AppCompatActivity {
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             PlayActivity.super.onBackPressed();
-                                endGame();
+                            endGame();
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-
+                            finishAndRemoveTask();
                         }
                     })
                     .show();
-        }
-        else {
+        } else {
             super.onBackPressed();
         }
     }
 
     private void timerUp() {
+        textWord.setText("Click Start");
         final AlertDialog.Builder builder;
-        builder = new AlertDialog.Builder(this);
+        builder = new AlertDialog.Builder(PlayActivity.this);
         builder.setTitle("Timer Expired!")
                 .setMessage("Timer is up.")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {

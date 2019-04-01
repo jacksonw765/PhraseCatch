@@ -1,6 +1,8 @@
 package com.jacksonw765.phrasecatch;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,6 +18,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*
+        if(!isNetworkConnected()) {
+            if(!isFinishing()) {
+                AlertDialog.Builder builder;
+                builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("No Internet Found")
+                        .setMessage("This application requires internet. Please try again when a connection can be found.")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                finishAffinity();
+                                System.exit(0);
+                            }
+                        })
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+            }
+        }
+        */
 
         buttonHowTo = findViewById(R.id.buttonHowTo);
         buttonPlay = findViewById(R.id.buttonPlay);
@@ -44,5 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.getActiveNetworkInfo() != null;
     }
 }
