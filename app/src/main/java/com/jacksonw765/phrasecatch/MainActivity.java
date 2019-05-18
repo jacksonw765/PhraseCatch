@@ -1,9 +1,11 @@
 package com.jacksonw765.phrasecatch;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -19,24 +21,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
         if(!isNetworkConnected()) {
             if(!isFinishing()) {
                 AlertDialog.Builder builder;
                 builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("No Internet Found")
-                        .setMessage("This application requires internet. Please try again when a connection can be found.")
+                builder.setTitle("Please Play Fair")
+                        .setMessage("Since this application is free, we rely on ads. " +
+                                "While we can't stop you from playing, please consider connecting to internet.")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                finishAffinity();
-                                System.exit(0);
+
                             }
-                        })
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
+                        }).setIcon(android.R.drawable.ic_dialog_alert).show();
             }
         }
-        */
 
         buttonHowTo = findViewById(R.id.buttonHowTo);
         buttonPlay = findViewById(R.id.buttonPlay);

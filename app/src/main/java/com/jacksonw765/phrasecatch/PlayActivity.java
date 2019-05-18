@@ -175,8 +175,7 @@ public class PlayActivity extends AppCompatActivity {
                                 public void onClick(DialogInterface dialogInterface, int i) {
 
                                 }
-                            })
-                            .show();
+                            }).show();
                 }
             }
         });

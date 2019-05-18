@@ -95,10 +95,10 @@ public class SettingsActivity extends AppCompatActivity {
                         textViewPointsToWin.setText("" + pointsToWin);
                         data.savePointsToWin(pointsToWin);
                     } catch (Exception e) {
-                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
+                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Min score", Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(), "Min score", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -115,10 +115,10 @@ public class SettingsActivity extends AppCompatActivity {
                         data.savePointsToWin(pointsToWin);
                         System.out.println("Load" + data.loadPointsToWin());
                     } catch (Exception e) {
-                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT);
+                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Max score", Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(), "Max score", Toast.LENGTH_SHORT).show();
                 }
             }
         });
