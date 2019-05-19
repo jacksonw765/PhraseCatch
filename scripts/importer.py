@@ -1,4 +1,6 @@
 import argparse
+import os
+
 
 def remove_duplicates(values):
     output = []
@@ -9,21 +11,24 @@ def remove_duplicates(values):
             seen.add(value)
     return output
 
+
 def text_to_list(text_file):
     with open(text_file) as f:
         word = f.readlines()
         return word
 
+
 def write_array(import_list, write_name):
     writer = open(write_name, "a")
     for word in import_list:
-        writer.write("<item>" + word.replace("\n", "").title() + "</item>\n")
+        writer.write("<item>" + word.replace("\n", "").replace("\t", "").title().strip() + "</item>\n")
     writer.close()
+
 
 def write(import_list, write_name):
     writer = open(write_name, "a")
     for word in import_list:
-        writer.write(word.title())
+        writer.write("\t\t"+word.strip()+"\n")
     writer.close()
 
 
@@ -36,13 +41,16 @@ if __name__ == '__main__':
 
     if args.importer:
         file = args.importer
+        filename, file_extension = os.path.splitext(file)
         word = text_to_list(file)
-        write_array(word, "XMLData.txt")
+        write_array(word, filename + "_import" + file_extension)
+        print("Wrote " + str(word.__len__()) + " lines")
 
     if args.duplicate:
         file = args.duplicate
         word = text_to_list(file)
-        print(word.__len__())
+        filename, file_extension = os.path.splitext(file)
         rem_d = remove_duplicates(word)
-        print(rem_d.__len__())
-        write(word, "Duplicate.txt")
+        line_delta = word.__len__() - rem_d.__len__()
+        write(word, filename + "_duplicate" + file_extension)
+        print("Removed " + str(line_delta) + " lines")

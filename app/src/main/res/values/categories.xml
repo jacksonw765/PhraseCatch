@@ -1,1405 +1,2020 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string-array name="array_college_life">
-        <item>Drinking</item>
-        <item>Hangover</item>
-        <item>Sexiled</item>
-        <item>Beer Pong</item>
-        <item>Flip Cup</item>
-        <item>Academic Year</item>
-        <item>Advisor</item>
-        <item>Application</item>
-        <item>Common App</item>
-        <item>Degree</item>
-        <item>Commencement</item>
-        <item>Credit</item>
-        <item>Financial Aid</item>
-        <item>FASFA</item>
-        <item>GenEd</item>
-        <item>GPA</item>
-        <item>Grant</item>
-        <item>Scholarship</item>
-        <item>Internship</item>
-        <item>Open Admission</item>
-        <item>Syllabus</item>
-        <item>Syllabooze Week</item>
-        <item>Transcript</item>
-        <item>Tuition</item>
-        <item>Work-Study</item>
-        <item>PhD</item>
-        <item>Credit Hour</item>
-        <item>Curriculum</item>
-        <item>Liberal Arts</item>
-        <item>Track</item>
-        <item>Gap Year</item>
-        <item>Early Decision</item>
-        <item>Waitlist</item>
-        <item>NCAA</item>
-        <item>Denied</item>
-        <item>Accepted</item>
-        <item>Freshman</item>
-        <item>Junior</item>
-        <item>Sophomore</item>
-        <item>Senior</item>
-        <item>5th Year</item>
-        <item>Barstool</item>
-        <item>Instagram</item>
-        <item>Snapchat</item>
-        <item>Hookup</item>
-        <item>Tinder</item>
-        <item>Bumble</item>
-        <item>Hinge</item>
-        <item>Dorm</item>
-        <item>Resident Advisor</item>
-        <item>Colleague</item>
-        <item>SAT</item>
-        <item>ACT</item>
-        <item>Clown</item>
-        <item>Lit</item>
-        <item>Turnt</item>
-        <item>Dank</item>
-        <item>Low Key</item>
-        <item>Thicc</item>
-        <item>Savage</item>
-        <item>Woke</item>
-        <item>Weed</item>
-        <item>Joint</item>
-        <item>Juul</item>
-        <item>Podds</item>
-        <item>Shade</item>
-        <item>Fire</item>
-        <item>Salty</item>
-        <item>Fam</item>
-        <item>Goals</item>
-        <item>Squad</item>
-    </string-array>
-
-    <string-array name="array_everything">
-        <item>Filler</item>
-    </string-array>
-
-    <string-array name="array_entertainment">
-        <item>The Beatles</item>
-        <item>Autotune</item>
-        <item>Gain</item>
-        <item>Gig</item>
-        <item>Hook</item>
-        <item>Mo Bamba</item>
-        <item>Jam</item>
-        <item>Treble</item>
-        <item>Mids</item>
-        <item>Bass</item>
-        <item>Soundbar</item>
-        <item>Harmony</item>
-        <item>Melody</item>
-        <item>Noise Canceling</item>
-        <item>Violin</item>
-        <item>Pitch</item>
-        <item>Tempo</item>
-        <item>Twerking</item>
-        <item>Beat</item>
-        <item>Beat Box</item>
-        <item>Hip Hop</item>
-        <item>Mosh Pit</item>
-        <item>Saxophone</item>
-        <item>Funky</item>
-        <item>Trumpet</item>
-        <item>Audience</item>
-        <item>Curtain Call</item>
-        <item>The Flash</item>
-        <item>Arrow</item>
-        <item>Game of Thrones</item>
-        <item>Baby Shark</item>
-        <item>Shaw Shank Redemption</item>
-        <item>Dodgeball!</item>
-        <item>Bart Simpson</item>
-        <item>Peter Griffin</item>
-        <item>Family Guy</item>
-        <item>Here Comes the Sun</item>
-        <item>Cue</item>
-        <item>The 100</item>
-        <item>Pirating</item>
-        <item>Movie Box</item>
-        <item>Torrent</item>
-        <item>Drake</item>
-        <item>Luke Combs</item>
-        <item>XXXTENTACION</item>
-        <item>Van Morrison</item>
-        <item>Wham!</item>
-        <item>Tyga</item>
-        <item>Migos</item>
-        <item>Chief Keef</item>
-        <item>Neil Diamond</item>
-        <item>Josh Groban</item>
-        <item>Zac Brown</item>
-        <item>Ice Ice Baby</item>
-        <item>Mr. Brightside</item>
-        <item>Eric Church</item>
-        <item>Bruce Springsteen</item>
-        <item>Alan Jackson</item>
-        <item>Baby Shark</item>
-        <item>Chuck Berry</item>
-        <item>Humble</item>
-        <item>Action!</item>
-        <item>Lil Baby</item>
-        <item>Toto</item>
-        <item>Billy Joel</item>
-        <item>Piano Man</item>
-        <item>Adele</item>
-        <item>Offset</item>
-        <item>Travis Scott</item>
-        <item>A$AP Ferg</item>
-        <item>Bowling for Soup</item>
-        <item>Jimmy Buffet</item>
-        <item>Casablanca</item>
-        <item>Wizard of Oz</item>
-        <item>The Godfather</item>
-        <item>2001: Space Odyssey</item>
-        <item>Mary Poppins</item>
-        <item>Ben-Her</item>
-        <item>James Bond</item>
-        <item>Daniel Day-Lewis</item>
-        <item>Mary Streep</item>
-        <item>Denzel Washington</item>
-        <item>Johnny Depp</item>
-        <item>Natalie Portman</item>
-        <item>Leonardo DiCaprio</item>
-        <item>Robert Downey Jr.</item>
-        <item>Brad Pitt</item>
-        <item>Jodie Foster</item>
-        <item>Liam Neeson</item>
-        <item>Morgan Freeman</item>
-        <item>Supermodel</item>
-        <item>Eddie Murry</item>
-        <item>Music to My Ears</item>
-        <item>Will Farrel</item>
-        <item>Selena Gomez</item>
-        <item>Taylor Swift</item>
-        <item>Saturday Night Live</item>
-        <item>Behind the Scenes</item>
-        <item>Box Office</item>
-        <item>Prime Time</item>
-        <item>Superman</item>
-        <item>Drums</item>
-        <item>Gong</item>
-        <item>Sitar</item>
-        <item>Tuba</item>
-        <item>Squidward</item>
-        <item>Rotten Tomatos</item>
-        <item>Will Smith</item>
-        <item>Sequel</item>
-        <item>Back to the Future</item>
-        <item>Harry Potter</item>
-        <item>Supergirl</item>
-        <item>Electric Slide</item>
-        <item>UCF</item>
-        <item>Fight Night</item>
-        <item>Seth McFarlane</item>
-        <item>Bootleg</item>
-        <item>Elevator Music</item>
-        <item>Fred Fredburger</item>
-        <item>Owen Wilson</item>
-        <item>Seth Myers</item>
-        <item>Ben Stiller</item>
-        <item>Boombox</item>
-        <item>Chromecast</item>
-        <item>Netflix</item>
-        <item>Amazon Video</item>
-        <item>Fergie</item>
-        <item>Black Eye Peas</item>
-        <item>Jeopardy</item>
-        <item>Oscars</item>
-        <item>Red Carpet</item>
-        <item>Seth Rogan</item>
-
-    </string-array>
-
-    <string-array name="array_places">
-        <item>Machu Picchu</item>
-        <item>Taj Mahal</item>
-        <item>St Peters Basilica</item>
-        <item>Alcatraz</item>
-        <item>Golden Gate Bridge</item>
-        <item>Statue of Liberty</item>
-        <item>Eiffel Tower</item>
-        <item>Big Ben</item>
-        <item>Tower of Pisa</item>
-        <item>Colosseum</item>
-        <item>Empire State Building</item>
-        <item>Hollywood</item>
-        <item>Notre Dame</item>
-        <item>Tokyo</item>
-        <item>London</item>
-        <item>Wall of China</item>
-        <item>Sydney</item>
-        <item>Berlin Wall</item>
-        <item>Stonehenge</item>
-        <item>Kilimanjaro</item>
-        <item>Grand Canyon</item>
-        <item>Pyramids of Giza</item>
-        <item>Great Sphinx</item>
-        <item>Forbidden City</item>
-        <item>Mount Everest</item>
-        <item>Capitol Hill</item>
-        <item>Sears Tower</item>
-        <item>Brooklyn Bridge</item>
-        <item>Times Square</item>
-        <item>White House</item>
-        <item>Buckingham Palace</item>
-        <item>Pompeii</item>
-        <item>Edinburgh Castle</item>
-        <item>CN Tower</item>
-        <item>Niagara Falls</item>
-        <item>Tower of London</item>
-        <item>Madrid Palace</item>
-        <item>Las Vegas</item>
-        <item>Windsor Castle</item>
-        <item>St. Pauls Cathedral</item>
-        <item>Central Park</item>
-        <item>Mount Rushmore</item>
-        <item>Mount Fuji</item>
-        <item>Space Needle</item>
-        <item>Tower of the Americas</item>
-        <item>Cincinnati</item>
-        <item>San Antonio</item>
-        <item>Mexico</item>
-        <item>Washington Monument</item>
-        <item>The Shard</item>
-        <item>Moai</item>
-        <item>Temple of Luxor</item>
-        <item>Pentagon</item>
-        <item>Chichen Itza</item>
-        <item>Chicago</item>
-        <item>The Bean</item>
-        <item>Victoria Falls</item>
-        <item>Terracotta Warriors</item>
-        <item>Yellowstone</item>
-        <item>Petra</item>
-        <item>Pearl Tower</item>
-        <item>Wailing Wall</item>
-        <item>Loch Ness</item>
-        <item>Mecca</item>
-        <item>Sydney Harbor Bridge</item>
-        <item>Sistine Chapel</item>
-        <item>Riverwalk</item>
-        <item>Mount Etna</item>
-        <item>Freedom Tower</item>
-        <item>Gateway Arch</item>
-        <item>Shanghai</item>
-        <item>Redwood National Park</item>
-        <item>Berlin Cathedral</item>
-        <item>England</item>
-        <item>Disneyland</item>
-        <item>Everglades</item>
-        <item>Prague Castle</item>
-        <item>Chapel Bridge</item>
-        <item>Table Mountain</item>
-        <item>Walk of Fame</item>
-        <item>Death Valley</item>
-        <item>Winter Palace</item>
-        <item>British Museum</item>
-        <item>Oxford University</item>
-        <item>Blue Lagoon</item>
-        <item>Kremlin</item>
-        <item>Millau Bridge</item>
-        <item>San Diego</item>
-        <item>Denmark</item>
-        <item>France</item>
-        <item>Sagrada Familia</item>
-        <item>Mount Rushmore</item>
-        <item>Seattle</item>
-        <item>New York City</item>
-        <item>Charleston</item>
-        <item>San Francisco</item>
-        <item>Washington, D.C.</item>
-        <item>New Orleans</item>
-        <item>Palm Springs</item>
-        <item>St. Louis</item>
-        <item>Hawaii</item>
-        <item>Miami Beach</item>
-        <item>Boston</item>
-        <item>Savannah</item>
-        <item>Orlando</item>
-        <item>Portland</item>
-        <item>Nashville</item>
-        <item>Austin</item>
-        <item>Africa</item>
-        <item>Antarctica</item>
-        <item>Asia</item>
-        <item>Australia</item>
-        <item>Europe</item>
-        <item>North america</item>
-        <item>South america</item>
-        <item>Bay</item>
-        <item>Beach</item>
-        <item>Cave</item>
-        <item>Creek</item>
-        <item>Desert</item>
-        <item>Earth</item>
-        <item>Forest</item>
-        <item>Hill</item>
-        <item>Island</item>
-        <item>Lake</item>
-        <item>Mountain</item>
-        <item>Ocean</item>
-        <item>Peak</item>
-        <item>Plain</item>
-        <item>Pond</item>
-        <item>River</item>
-        <item>Riverbed</item>
-        <item>Sea</item>
-        <item>Stream</item>
-        <item>Swamp</item>
-        <item>Valley</item>
-        <item>Waterfall</item>
-        <item>Woods</item>
-
-    </string-array>
-
-    <string-array name="array_food">
-        <item>Acorn</item>
-        <item>Alfalfa</item>
-        <item>Bamboo</item>
-        <item>Bark</item>
-        <item>Bean</item>
-        <item>Berry</item>
-        <item>Blade</item>
-        <item>Brush</item>
-        <item>Bud</item>
-        <item>Bulb</item>
-        <item>Bush</item>
-        <item>Cactus</item>
-        <item>Clover</item>
-        <item>Cork</item>
-        <item>Corolla</item>
-        <item>Fern</item>
-        <item>Flora</item>
-        <item>Flower</item>
-        <item>Forest</item>
-        <item>Fruit</item>
-        <item>Garden</item>
-        <item>Grain</item>
-        <item>Grass</item>
-        <item>Grove</item>
-        <item>Herb</item>
-        <item>Ivy</item>
-        <item>Jungle</item>
-        <item>Juniper</item>
-        <item>Kelp</item>
-        <item>Kudzu</item>
-        <item>Leaf</item>
-        <item>Lily</item>
-        <item>Moss</item>
-        <item>Nectar</item>
-        <item>Nut</item>
-        <item>Palm</item>
-        <item>Petal</item>
-        <item>Pollen</item>
-        <item>Resin</item>
-        <item>Root</item>
-        <item>Sage</item>
-        <item>Sap</item>
-        <item>Seed</item>
-        <item>Shoot</item>
-        <item>Shrub</item>
-        <item>Spore</item>
-        <item>Stalk</item>
-        <item>Spine</item>
-        <item>Sprout</item>
-        <item>Stem</item>
-        <item>Thorn</item>
-        <item>Tree</item>
-        <item>Trunk</item>
-        <item>Twig</item>
-        <item>Vein</item>
-        <item>Vine</item>
-        <item>Weed</item>
-        <item>Wood</item>
-        <item>Alligator</item>
-        <item>Beef</item>
-        <item>Bison</item>
-        <item>Buffalo</item>
-        <item>Caribou</item>
-        <item>Chicken</item>
-        <item>Duck</item>
-        <item>Elk</item>
-        <item>Goat</item>
-        <item>Lamb</item>
-        <item>Pheasant</item>
-        <item>Pork</item>
-        <item>Quail</item>
-        <item>Rabbit</item>
-        <item>Turkey</item>
-        <item>Veal</item>
-        <item>Venison</item>
-        <item>Yak</item>
-        <item>Apple</item>
-        <item>Apricot</item>
-        <item>Avocado</item>
-        <item>Banana</item>
-        <item>Berry</item>
-        <item>Cantaloupe</item>
-        <item>Cherry</item>
-        <item>Citron</item>
-        <item>Citrus</item>
-        <item>Coconut</item>
-        <item>Date</item>
-        <item>Fig</item>
-        <item>Grape</item>
-        <item>Guava</item>
-        <item>Kiwi</item>
-        <item>Lemon</item>
-        <item>Lime</item>
-        <item>Mango</item>
-        <item>Melon</item>
-        <item>Nectarine</item>
-        <item>Orange</item>
-        <item>Papaya</item>
-        <item>Peach</item>
-        <item>Pear</item>
-        <item>Pineapple</item>
-        <item>Plum</item>
-        <item>Prune</item>
-        <item>Raisin</item>
-        <item>Raspberry</item>
-        <item>Tangerine</item>
-        <item>Aroma</item>
-        <item>Bagel</item>
-        <item>Batter</item>
-        <item>Beans</item>
-        <item>Beer</item>
-        <item>Biscuit</item>
-        <item>Bread</item>
-        <item>Broth</item>
-        <item>Burger</item>
-        <item>Butter</item>
-        <item>Cake</item>
-        <item>Candy</item>
-        <item>Caramel</item>
-        <item>Caviar</item>
-        <item>Cheese</item>
-        <item>Chili</item>
-        <item>Chocolate</item>
-        <item>Cider</item>
-        <item>Cobbler</item>
-        <item>Cocoa</item>
-        <item>Coffee</item>
-        <item>Cookie</item>
-        <item>Cream</item>
-        <item>Croissant</item>
-        <item>Crumble</item>
-        <item>Cuisine</item>
-        <item>Curd</item>
-        <item>Dessert</item>
-        <item>Dish</item>
-        <item>Drink</item>
-        <item>Eggs</item>
-        <item>Entree</item>
-        <item>Filet</item>
-        <item>Fish</item>
-        <item>Flour</item>
-        <item>Foie Gras</item>
-        <item>Food</item>
-        <item>Glaze</item>
-        <item>Grill</item>
-        <item>Hamburger</item>
-        <item>Ice</item>
-        <item>Juice</item>
-        <item>Ketchup</item>
-        <item>Kitchen</item>
-        <item>Lard</item>
-        <item>Liquor</item>
-        <item>Margarine</item>
-        <item>Marinade</item>
-        <item>Mayo</item>
-        <item>Mayonnaise</item>
-        <item>Meat</item>
-        <item>Milk</item>
-        <item>Mousse</item>
-        <item>Muffin</item>
-        <item>Mushroom</item>
-        <item>Noodle</item>
-        <item>Nut</item>
-        <item>Oil</item>
-        <item>Olive</item>
-        <item>Omelette</item>
-        <item>Pan</item>
-        <item>Pasta</item>
-        <item>Paste</item>
-        <item>Pastry</item>
-        <item>Pie</item>
-        <item>Pizza</item>
-        <item>Plate</item>
-        <item>Pot</item>
-        <item>Poutine</item>
-        <item>Pudding</item>
-        <item>Raclette</item>
-        <item>Recipe</item>
-        <item>Rice</item>
-        <item>Salad</item>
-        <item>Salsa</item>
-        <item>Sandwich</item>
-        <item>Sauce</item>
-        <item>Seasoning</item>
-        <item>Skillet</item>
-        <item>Soda</item>
-        <item>Soup</item>
-        <item>Soy</item>
-        <item>Spice</item>
-        <item>Steak</item>
-        <item>Stew</item>
-        <item>Syrup</item>
-        <item>Tartar</item>
-        <item>Taste</item>
-        <item>Tea</item>
-        <item>Toast</item>
-        <item>Vinegar</item>
-        <item>Waffle</item>
-        <item>Water</item>
-        <item>Wheat</item>
-        <item>Wine</item>
-        <item>Wok</item>
-        <item>Yeast</item>
-        <item>Yogurt</item>
-        <item>Blt</item>
-        <item>Bagel</item>
-        <item>Burger</item>
-        <item>Burrito</item>
-        <item>Cheeseburger</item>
-        <item>Clubhouse</item>
-        <item>Frank</item>
-        <item>Hamburger</item>
-        <item>Hoagie</item>
-        <item>Melt</item>
-        <item>Muffin</item>
-        <item>Panini</item>
-        <item>Philly</item>
-        <item>Pita</item>
-        <item>Pretzel</item>
-        <item>Reuben</item>
-        <item>Sandwich</item>
-        <item>Slider</item>
-        <item>Sub</item>
-        <item>Taco</item>
-        <item>Wrap</item>
-        <item>Beer</item>
-        <item>Test</item>
-        <item>Brandy</item>
-        <item>Cocoa</item>
-        <item>Cocktail</item>
-        <item>Coffee</item>
-        <item>Coke</item>
-        <item>Green Tea</item>
-        <item>Ice Coffee</item>
-        <item>Ice Tea</item>
-        <item>Juice</item>
-        <item>Lemonade</item>
-        <item>Liquor</item>
-        <item>Milk</item>
-        <item>Milkshake</item>
-        <item>Orange Juice</item>
-        <item>Punch</item>
-        <item>Soda</item>
-        <item>Soft Drink</item>
-        <item>Tea</item>
-        <item>Tomato Juice</item>
-        <item>Water</item>
-        <item>Whiskey</item>
-        <item>Wine</item>
-        <item>Apple</item>
-        <item>Apricot</item>
-        <item>Banana</item>
-        <item>Blackberry</item>
-        <item>Blueberry</item>
-        <item>Cherry</item>
-        <item>Cranberry</item>
-        <item>Currant</item>
-        <item>Fig</item>
-        <item>Grape</item>
-        <item>Grapefruit</item>
-        <item>Grapes</item>
-        <item>Kiwi</item>
-        <item>Kumquat</item>
-        <item>Lemon</item>
-        <item>Lime</item>
-        <item>Melon</item>
-        <item>Nectarine</item>
-        <item>Orange</item>
-        <item>Peach</item>
-        <item>Pear</item>
-        <item>Persimmon</item>
-        <item>Pineapple</item>
-        <item>Plum</item>
-        <item>Pomegranate</item>
-        <item>Prune</item>
-        <item>Raspberry</item>
-        <item>Strawberry</item>
-        <item>Tangerine</item>
-        <item>Watermelon</item>
-        <item>Barley</item>
-        <item>Corn</item>
-        <item>Millet</item>
-        <item>Oats</item>
-        <item>Rice</item>
-        <item>Rye</item>
-        <item>Brown Rice</item>
-        <item>Short Grain Rice</item>
-        <item>Long Grain Rice</item>
-        <item>Rye</item>
-        <item>Soy Beans</item>
-        <item>Wheat</item>
-        <item>Alphabet</item>
-        <item>Bows</item>
-        <item>Cappelletti</item>
-        <item>Curly Lasagna</item>
-        <item>Elbow Macaroni</item>
-        <item>Fedelini</item>
-        <item>Lasagna</item>
-        <item>Noodles</item>
-        <item>Ravioli</item>
-        <item>Ribbed Macaroni</item>
-        <item>Shells</item>
-        <item>Spaghetti</item>
-        <item>Stars</item>
-        <item>Thin Macaroni</item>
-        <item>Thin Spaghetti</item>
-        <item>Tortellini</item>
-        <item>Turrets</item>
-        <item>Vermicelli</item>
-        <item>Wheels</item>
-        <item>Bacon</item>
-        <item>Beef</item>
-        <item>Chicken</item>
-        <item>Chicken Breast</item>
-        <item>Chicken Leg</item>
-        <item>Chicken Wing</item>
-        <item>Ham</item>
-        <item>Hamburger</item>
-        <item>Heart</item>
-        <item>Hot Dog</item>
-        <item>Kidney</item>
-        <item>Lamb Chop</item>
-        <item>Mutton</item>
-        <item>Pork</item>
-        <item>Roast</item>
-        <item>Sausage</item>
-        <item>Steak</item>
-        <item>Tongue</item>
-        <item>Turkey</item>
-        <item>Veal</item>
-        <item>Venison</item>
-        <item>Bill</item>
-        <item>Breakfast</item>
-        <item>Check</item>
-        <item>Cup</item>
-        <item>Dessert</item>
-        <item>Dinner</item>
-        <item>Dressing</item>
-        <item>Drink</item>
-        <item>Fork</item>
-        <item>Hamburger</item>
-        <item>Knife</item>
-        <item>Lunch</item>
-        <item>Menu</item>
-        <item>Napkin</item>
-        <item>Order</item>
-        <item>Salt</item>
-        <item>Spoon</item>
-        <item>Water</item>
-        <item>Coffee</item>
-        <item>Tea</item>
-        <item>Blue Cheese</item>
-        <item>French Dressing</item>
-        <item>House Dressing</item>
-        <item>Thousand Island</item>
-        <item>Vinegar</item>
-        <item>Ranch</item>
-        <item>Oil And Vinegar</item>
-        <item>Asparagus</item>
-        <item>Beans</item>
-        <item>Beet</item>
-        <item>Broccoli</item>
-        <item>Brussels Sprouts</item>
-        <item>Cabbage</item>
-        <item>Carrot</item>
-        <item>Cauliflower</item>
-        <item>Celery</item>
-        <item>Chinese Cabbage</item>
-        <item>Corn</item>
-        <item>Cucumber</item>
-        <item>Eggplant</item>
-        <item>Green Pepper</item>
-        <item>Japanese Radish</item>
-        <item>Kale</item>
-        <item>Lettuce</item>
-        <item>Okra</item>
-        <item>Onion</item>
-        <item>Peas</item>
-        <item>Potato</item>
-        <item>Pumpkins</item>
-        <item>Radish</item>
-        <item>Spinach</item>
-        <item>Sweet Potato</item>
-        <item>Tomatoes</item>
-        <item>Turnips</item>
-        <item>Cheese</item>
-        <item>Cream</item>
-        <item>Ice Cream</item>
-        <item>Milk</item>
-        <item>Yogurt</item>
-        <item>Beans</item>
-        <item>Bread</item>
-        <item>Cereal</item>
-        <item>Eggs</item>
-        <item>Fats</item>
-        <item>Fish</item>
-        <item>Fruit</item>
-        <item>Meat</item>
-        <item>Nuts</item>
-        <item>Oils</item>
-        <item>Pasta</item>
-        <item>Poultry</item>
-        <item>Rice</item>
-        <item>Sweets</item>
-        <item>Vegetables</item>
-    </string-array>
-
-    <string-array name="array_sports">
-        <item>Strike</item>
-        <item>Baseball</item>
-        <item>Baseball</item>
-        <item>Perfect Game</item>
-        <item>Free Throw</item>
-        <item>Technical</item>
-        <item>Track</item>
-        <item>Sprint</item>
-        <item>Field Goal</item>
-        <item>Penalty</item>
-        <item>Offsides</item>
-        <item>Intentional Grounding</item>
-        <item>Parallel Bar</item>
-        <item>Quarterback</item>
-        <item>Corner Kick</item>
-        <item>NCAA</item>
-        <item>NFL</item>
-        <item>MLB</item>
-        <item>Baseline</item>
-        <item>Ejection</item>
-        <item>Sudden Death</item>
-        <item>Push Up</item>
-        <item>Spike</item>
-        <item>Pistol</item>
-        <item>Pitcher</item>
-        <item>Outfielder</item>
-        <item>Polo</item>
-        <item>Ping Pong</item>
-        <item>Bengals</item>
-        <item>Steelers</item>
-        <item>Rams</item>
-        <item>Smash</item>
-        <item>Half Nelson</item>
-        <item>Travel</item>
-        <item>Three Pointer</item>
-        <item>Touchdown</item>
-        <item>Extra Point</item>
-        <item>Puck</item>
-        <item>Hole In One</item>
-        <item>Putter</item>
-        <item>Man-to-Man</item>
-        <item>Own Goal</item>
-        <item>Playoffs</item>
-        <item>Ride The Bus</item>
-        <item>Timeout</item>
-        <item>Topspin</item>
-        <item>Underhand</item>
-        <item>Strike</item>
-        <item>Spare</item>
-        <item>Defense</item>
-        <item>Offense</item>
-        <item>Lost a Step</item>
-        <item>Slam Dunk</item>
-        <item>Next Man Up</item>
-        <item>Hail Mary</item>
-        <item>Win is a Win</item>
-        <item>Pass the Baton</item>
-        <item>Full-court Press</item>
-        <item>G.O.A.T</item>
-        <item>Par for the Course</item>
-        <item>Scratch</item>
-        <item>Curveball</item>
-        <item>Punt</item>
-        <item>Fired Up</item>
-        <item>Marathon</item>
-        <item>Utility Player</item>
-        <item>Five Star Recruit</item>
-        <item>Get the Ball Rolling</item>
-        <item>Dropped the Ball</item>
-        <item>Game of Inches</item>
-        <item>Out of the Park</item>
-        <item>Athletics</item>
-        <item>Baseball</item>
-        <item>Basketball</item>
-        <item>Bowling</item>
-        <item>Car racing</item>
-        <item>Cycling</item>
-        <item>Football</item>
-        <item>Golf</item>
-        <item>Gymnastics</item>
-        <item>Handball</item>
-        <item>Hang gliding</item>
-        <item>Hockey</item>
-        <item>Horse racing</item>
-        <item>Jogging</item>
-        <item>Motorcycle racing</item>
-        <item>Para gliding</item>
-        <item>Polo</item>
-        <item>Rugby</item>
-        <item>Scuba diving</item>
-        <item>Skiing</item>
-        <item>Skin diving</item>
-        <item>Snow-boarding</item>
-        <item>Soccer</item>
-        <item>Softball</item>
-        <item>Squash</item>
-        <item>Swimming</item>
-        <item>Table tennis</item>
-        <item>Tennis</item>
-        <item>Track and field</item>
-        <item>Volleyball</item>
-        <item>Ball</item>
-        <item>Baseball cap</item>
-        <item>Bat</item>
-        <item>Batter</item>
-        <item>Batters box</item>
-        <item>Batting average</item>
-        <item>Catcher</item>
-        <item>Catcher mitt</item>
-        <item>Catchers box</item>
-        <item>Center fielder</item>
-        <item>Chest protector</item>
-        <item>Coach</item>
-        <item>Day game</item>
-        <item>Dugout</item>
-        <item>Exhibition game</item>
-        <item>Extra inning</item>
-        <item>Face mask</item>
-        <item>Farm team</item>
-        <item>Fence</item>
-        <item>Field umpire</item>
-        <item>First baseman</item>
-        <item>Glove</item>
-        <item>Foul</item>
-        <item>Foul line</item>
-        <item>Four balls</item>
-        <item>Game</item>
-        <item>Glove</item>
-        <item>Helmet</item>
-        <item>Hit</item>
-        <item>Home plate</item>
-        <item>Home team</item>
-        <item>Innings</item>
-        <item>Left fielder</item>
-        <item>Major league</item>
-        <item>Minor league</item>
-        <item>Night game</item>
-        <item>One ball</item>
-        <item>Pitcher</item>
-        <item>Pitchers mound</item>
-        <item>Plate umpire</item>
-        <item>Play-off</item>
-        <item>Right fielder</item>
-        <item>Runner</item>
-        <item>Scoreboard</item>
-        <item>Second baseman</item>
-        <item>Shin guards</item>
-        <item>Short stop</item>
-        <item>Spiked shoes</item>
-        <item>Strike one</item>
-        <item>Strike out</item>
-        <item>Strike three</item>
-        <item>Strike two</item>
-        <item>Switch hitter</item>
-        <item>Third baseman</item>
-        <item>Three balls</item>
-        <item>Two balls</item>
-        <item>Visiting team</item>
-        <item>Walk</item>
-        <item>Cornerback</item>
-        <item>Defensive end</item>
-        <item>Fullback</item>
-        <item>Guard</item>
-        <item>Halfback</item>
-        <item>Linebacker</item>
-        <item>Middle guard</item>
-        <item>Quarterback</item>
-        <item>Tackle</item>
-        <item>Backstroke</item>
-        <item>Breaststroke</item>
-        <item>Butterfly</item>
-        <item>Crawl</item>
-        <item>Deep end</item>
-        <item>Diving</item>
-        <item>Diving board</item>
-        <item>Dog paddle</item>
-        <item>Lake</item>
-        <item>Life guard</item>
-        <item>Ocean</item>
-        <item>River</item>
-        <item>Shallow end</item>
-        <item>Sidestroke</item>
-        <item>Swimming lane</item>
-        <item>Swimming pool</item>
-        <item>Synchronized swimming</item>
-        <item>Turn</item>
-        <item>Water</item>
-    </string-array>
-
-    <string-array name="array_science">
-        <item>Butane</item>
-        <item>Carbon dioxide</item>
-        <item>Carbon monoxide</item>
-        <item>Freon</item>
-        <item>Helium</item>
-        <item>Hydrogen</item>
-        <item>Methane</item>
-        <item>Neon</item>
-        <item>Nitric oxide</item>
-        <item>Nitrogen</item>
-        <item>Oxygen</item>
-        <item>Propane</item>
-        <item>Alcohol</item>
-        <item>Blood</item>
-        <item>Coffee</item>
-        <item>Cream</item>
-        <item>Gasoline</item>
-        <item>Grease</item>
-        <item>Juice</item>
-        <item>Milk</item>
-        <item>Oil</item>
-        <item>Syrup</item>
-        <item>Soup</item>
-        <item>Tea</item>
-        <item>Water</item>
-        <item>Gold</item>
-        <item>Silver</item>
-        <item>Iron</item>
-        <item>Aluminium</item>
-        <item>Copper</item>
-        <item>Steel</item>
-        <item>Brass</item>
-        <item>Tin</item>
-        <item>Zinc</item>
-        <item>Lead</item>
-        <item>Nickel</item>
-        <item>Platinum</item>
-        <item>Titanium</item>
-        <item>Mercury</item>
-        <item>Bronze</item>
-        <item>Acrylic</item>
-        <item>Alloy</item>
-        <item>Aluminum</item>
-        <item>Brass</item>
-        <item>Brick</item>
-        <item>Bronze</item>
-        <item>Carbon</item>
-        <item>Cardboard</item>
-        <item>Cast iron</item>
-        <item>Cement</item>
-        <item>Ceramics</item>
-        <item>Copper</item>
-        <item>Cotton</item>
-        <item>Diamond</item>
-        <item>Epoxy</item>
-        <item>Fiber</item>
-        <item>Fiberglass</item>
-        <item>Glass</item>
-        <item>Glue</item>
-        <item>Gold</item>
-        <item>Iron</item>
-        <item>Leather</item>
-        <item>Linen</item>
-        <item>Nylon</item>
-        <item>Paper</item>
-        <item>Polyester</item>
-        <item>Rubber</item>
-        <item>Sand</item>
-        <item>Silica</item>
-        <item>Silver</item>
-        <item>Skin</item>
-        <item>Steel</item>
-        <item>Stone</item>
-        <item>Titanium</item>
-        <item>Vinyl</item>
-        <item>Viscose</item>
-        <item>Wood</item>
-        <item>Wool</item>
-        <item>Air</item>
-        <item>Barometer</item>
-        <item>Blizzard</item>
-        <item>Celsius</item>
-        <item>Chill</item>
-        <item>Cirrus</item>
-        <item>Cloud</item>
-        <item>Clouds</item>
-        <item>Cloudy</item>
-        <item>Cold</item>
-        <item>Cyclone</item>
-        <item>Degree</item>
-        <item>Dew</item>
-        <item>Drizzle</item>
-        <item>Dry</item>
-        <item>Dry season</item>
-        <item>Fahrenheit</item>
-        <item>Flood</item>
-        <item>Fog</item>
-        <item>Forecast</item>
-        <item>Freeze</item>
-        <item>Frost</item>
-        <item>Hail</item>
-        <item>Heat</item>
-        <item>Hot</item>
-        <item>Humidity</item>
-        <item>Hurricane</item>
-        <item>Ice</item>
-        <item>Lightning</item>
-        <item>Meteorology</item>
-        <item>Moon</item>
-        <item>Precipitation</item>
-        <item>Pressure</item>
-        <item>Radar</item>
-        <item>Rain</item>
-        <item>Rainstorm</item>
-        <item>Rainbow</item>
-        <item>Rainy</item>
-        <item>Rainy season</item>
-        <item>Sky</item>
-        <item>Sleet</item>
-        <item>Snow</item>
-        <item>Snowstorm</item>
-        <item>Snowy</item>
-        <item>Storm</item>
-        <item>Sun</item>
-        <item>Sunny</item>
-        <item>Temperature</item>
-        <item>Thermometer</item>
-        <item>Thunder</item>
-        <item>Thunderstorm</item>
-        <item>Tornado</item>
-        <item>Tsunami</item>
-        <item>Typhoon</item>
-        <item>Warm</item>
-        <item>Weather</item>
-        <item>Wind</item>
-        <item>Windy</item>
-    </string-array>
-
-    <string-array name="array_animals">
-        <item>Aardvark</item>
-        <item>Bear</item>
-        <item>Camel</item>
-        <item>Crocodile</item>
-        <item>Elephant</item>
-        <item>Giraffe</item>
-        <item>Kangaroo</item>
-        <item>Leopard</item>
-        <item>Lion</item>
-        <item>Llama</item>
-        <item>Monkey</item>
-        <item>Ostrich</item>
-        <item>Rhinoceros</item>
-        <item>Snake</item>
-        <item>Tiger</item>
-        <item>Wolf</item>
-        <item>Zebra</item>
-        <item>Anteater</item>
-        <item>Armadillo</item>
-        <item>Baboon</item>
-        <item>Badger</item>
-        <item>Beaver</item>
-        <item>Cheetah</item>
-        <item>Cougar</item>
-        <item>Gazelle</item>
-        <item>Gorilla</item>
-        <item>Ocelot</item>
-        <item>Panda</item>
-        <item>Panther</item>
-        <item>Porcupine</item>
-        <item>Wallaby</item>
-        <item>Puma</item>
-        <item>Lynx</item>
-        <item>Bobcat</item>
-        <item>Jaguar</item>
-        <item>Hyena</item>
-        <item>Alligator</item>
-        <item>Ant</item>
-        <item>Bee</item>
-        <item>Bird</item>
-        <item>Cat</item>
-        <item>Chicken</item>
-        <item>Chimpanzee</item>
-        <item>Cow</item>
-        <item>Deer</item>
-        <item>Dog</item>
-        <item>Dolphin</item>
-        <item>Duck</item>
-        <item>Eagle</item>
-        <item>Fish</item>
-        <item>Fly</item>
-        <item>Fox</item>
-        <item>Frog</item>
-        <item>Goat</item>
-        <item>Goldfish</item>
-        <item>Hamster</item>
-        <item>Hippopotamus</item>
-        <item>Horse</item>
-        <item>Kitten</item>
-        <item>Lizard</item>
-        <item>Lobster</item>
-        <item>Octopus</item>
-        <item>Otter</item>
-        <item>Owl</item>
-        <item>Oyster</item>
-        <item>Parrot</item>
-        <item>Pelican</item>
-        <item>Pig</item>
-        <item>Pigeon</item>
-        <item>Puppy</item>
-        <item>Rabbit</item>
-        <item>Rat</item>
-        <item>Reindeer</item>
-        <item>Rooster</item>
-        <item>Scorpion</item>
-        <item>Seal</item>
-        <item>Shark</item>
-        <item>Sheep</item>
-        <item>Shrimp</item>
-        <item>Snail</item>
-        <item>Sparrow</item>
-        <item>Spider</item>
-        <item>Squid</item>
-        <item>Squirrel</item>
-        <item>Swallow</item>
-        <item>Swan</item>
-        <item>Toad</item>
-        <item>Tortoise</item>
-        <item>Turtle</item>
-        <item>Vulture</item>
-        <item>Walrus</item>
-        <item>Weasel</item>
-        <item>Whale</item>
-        <item>Bull</item>
-        <item>Calf</item>
-        <item>Donkey</item>
-        <item>Goose</item>
-        <item>Hen</item>
-        <item>Lamb</item>
-        <item>Turkey</item>
-        <item>Chihuahua</item>
-        <item>Bulldog</item>
-        <item>German Shepherd</item>
-        <item>Beetle</item>
-        <item>Butterfly</item>
-        <item>Caterpillar</item>
-        <item>Centipede</item>
-        <item>Cockroach</item>
-        <item>Cricket</item>
-        <item>Dragonfly</item>
-        <item>Flea</item>
-        <item>Grasshopper</item>
-        <item>Grub</item>
-        <item>Ladybug</item>
-        <item>Maggot</item>
-        <item>Mosquito</item>
-        <item>Moth</item>
-        <item>Termite</item>
-        <item>Tick</item>
-        <item>Wasp</item>
-        <item>Carp</item>
-        <item>Tropical Fish</item>
-        <item>Caterpillar</item>
-        <item>Cicada</item>
-        <item>Insects</item>
-        <item>Locust</item>
-        <item>Albatross</item>
-        <item>Buzzard</item>
-        <item>Chick</item>
-        <item>Condor</item>
-        <item>Cormorant</item>
-        <item>Crow</item>
-        <item>Drake</item>
-        <item>Duckling</item>
-        <item>Gander</item>
-        <item>Gosling</item>
-        <item>Grouse</item>
-        <item>Hawk</item>
-        <item>Heron</item>
-        <item>Partridge</item>
-        <item>Pheasant</item>
-        <item>Ptarmigan</item>
-        <item>Puffin</item>
-        <item>Quail</item>
-        <item>Raven</item>
-        <item>Seagull</item>
-        <item>Bass</item>
-        <item>Cod</item>
-        <item>Crab</item>
-        <item>Crawdad</item>
-        <item>Crayfish</item>
-        <item>Eel</item>
-        <item>Halibut</item>
-        <item>Herring</item>
-        <item>Perch</item>
-        <item>Pike</item>
-        <item>Salmon</item>
-        <item>Sardine</item>
-        <item>Sturgeon</item>
-        <item>Tadpole</item>
-        <item>Trout</item>
-        <item>Tuna</item>
-        <item>Swordfish</item>
-        <item>Boa</item>
-        <item>Brown Snake</item>
-        <item>Cobra</item>
-        <item>Coral Snake</item>
-        <item>Green Snake</item>
-        <item>King Cobra</item>
-        <item>Python</item>
-        <item>Rat Snake</item>
-        <item>Rattlesnake</item>
-        <item>Viper</item>
-        <item>Sphynx</item>
-        <item>Beagle</item>
-        <item>Borzoi</item>
-        <item>Boxer</item>
-        <item>Collie</item>
-        <item>Corgie</item>
-        <item>Dachshund</item>
-        <item>Dingo</item>
-        <item>Feist</item>
-        <item>Harrier</item>
-        <item>Hound</item>
-        <item>Husky</item>
-        <item>Maltese</item>
-        <item>Pinscher</item>
-        <item>Poodle</item>
-        <item>Pug</item>
-        <item>Retriever</item>
-        <item>Rottweiler</item>
-        <item>Schnauser</item>
-        <item>Setter</item>
-        <item>Spaniel</item>
-        <item>Spitz</item>
-        <item>Terrier</item>
-        <item>Westie</item>
-        <item>Whippet</item>
-        <item>Angora</item>
-        <item>Balinese</item>
-        <item>Bengal</item>
-        <item>Birman</item>
-        <item>Bobtail</item>
-        <item>Bombay</item>
-        <item>Burmese</item>
-        <item>Calico</item>
-        <item>Ginger</item>
-        <item>Himalayan</item>
-        <item>Javanese</item>
-        <item>Korat</item>
-        <item>Longhair</item>
-        <item>Marmalade</item>
-        <item>Oriental</item>
-        <item>Persian</item>
-        <item>Siamese</item>
-        <item>Siberian</item>
-        <item>Tabby</item>
-        <item>Tom</item>
-        <item>Albatross</item>
-        <item>Avocet</item>
-        <item>Budgie</item>
-        <item>Canary</item>
-        <item>Chick</item>
-        <item>Chickadee</item>
-        <item>Chicken</item>
-        <item>Cockatiel</item>
-        <item>Cockatoo</item>
-        <item>Coot</item>
-        <item>Covey</item>
-        <item>Crow</item>
-        <item>Cuckoo</item>
-        <item>Darter</item>
-        <item>Dove</item>
-        <item>Duck</item>
-        <item>Eagle</item>
-        <item>Falcon</item>
-        <item>Finch</item>
-        <item>Flamingo</item>
-        <item>Fowl</item>
-        <item>Goldfinch</item>
-        <item>Goose</item>
-        <item>Grouse</item>
-        <item>Hawk</item>
-        <item>Heron</item>
-        <item>Jackdaw</item>
-        <item>Jay</item>
-        <item>Kestrel</item>
-        <item>Lark</item>
-        <item>Loon</item>
-        <item>Macaw</item>
-        <item>Magpie</item>
-        <item>Martin</item>
-        <item>Osprey</item>
-        <item>Ostrich</item>
-        <item>Owl</item>
-        <item>Parakeet</item>
-        <item>Parrot</item>
-        <item>Pelican</item>
-        <item>Penguin</item>
-        <item>Pigeon</item>
-        <item>Pintail</item>
-        <item>Puffin</item>
-        <item>Quail</item>
-        <item>Quetzal</item>
-        <item>Rail</item>
-        <item>Raven</item>
-        <item>Razorbill</item>
-        <item>Rhea</item>
-        <item>Rook</item>
-        <item>Shrike</item>
-        <item>Skylark</item>
-        <item>Snipe</item>
-        <item>Sparrow</item>
-        <item>Starling</item>
-        <item>Stork</item>
-        <item>Swallow</item>
-        <item>Swift</item>
-        <item>Tanager</item>
-        <item>Thrush</item>
-        <item>Toucan</item>
-        <item>Turkey</item>
-        <item>Vulture</item>
-        <item>Warbler</item>
-        <item>Anchovy</item>
-        <item>Bass</item>
-        <item>Carp</item>
-        <item>Cod</item>
-        <item>Flounder</item>
-        <item>Grouper</item>
-        <item>Haddock</item>
-        <item>Halibut</item>
-        <item>Herring</item>
-        <item>Mackerel</item>
-        <item>Marlin</item>
-        <item>Mullet</item>
-        <item>Perch</item>
-        <item>Pollock</item>
-        <item>Salmon</item>
-        <item>Sardine</item>
-        <item>Scallop</item>
-        <item>Shark</item>
-        <item>Snapper</item>
-        <item>Sole</item>
-        <item>Tilapia</item>
-        <item>Trout</item>
-        <item>Tuna</item>
-    </string-array>
-</resources>
+	<resources>
+		
+		<string-array name="array_college_life">
+		<item>Drinking</item>
+		<item>Hangover</item>
+		<item>Sexiled</item>
+		<item>Beer Pong</item>
+		<item>Flip Cup</item>
+		<item>Academic Year</item>
+		<item>Advisor</item>
+		<item>Application</item>
+		<item>Common App</item>
+		<item>Degree</item>
+		<item>Commencement</item>
+		<item>Credit</item>
+		<item>Financial Aid</item>
+		<item>FASFA</item>
+		<item>GenEd</item>
+		<item>GPA</item>
+		<item>Grant</item>
+		<item>Scholarship</item>
+		<item>Internship</item>
+		<item>Open Admission</item>
+		<item>Syllabus</item>
+		<item>Syllabooze Week</item>
+		<item>Transcript</item>
+		<item>Tuition</item>
+		<item>Work-Study</item>
+		<item>PhD</item>
+		<item>Credit Hour</item>
+		<item>Curriculum</item>
+		<item>Liberal Arts</item>
+		<item>Track</item>
+		<item>Gap Year</item>
+		<item>Early Decision</item>
+		<item>Waitlist</item>
+		<item>NCAA</item>
+		<item>Denied</item>
+		<item>Accepted</item>
+		<item>Freshman</item>
+		<item>Junior</item>
+		<item>Sophomore</item>
+		<item>Senior</item>
+		<item>5th Year</item>
+		<item>Barstool</item>
+		<item>Instagram</item>
+		<item>Snapchat</item>
+		<item>Hookup</item>
+		<item>Tinder</item>
+		<item>Bumble</item>
+		<item>Hinge</item>
+		<item>Dorm</item>
+		<item>Resident Advisor</item>
+		<item>Colleague</item>
+		<item>SAT</item>
+		<item>ACT</item>
+		<item>Clown</item>
+		<item>Lit</item>
+		<item>Turnt</item>
+		<item>Dank</item>
+		<item>Low Key</item>
+		<item>Thicc</item>
+		<item>Savage</item>
+		<item>Woke</item>
+		<item>Weed</item>
+		<item>Joint</item>
+		<item>Juul</item>
+		<item>Podds</item>
+		<item>Shade</item>
+		<item>Fire</item>
+		<item>Salty</item>
+		<item>Fam</item>
+		<item>Goals</item>
+		<item>Squad</item>
+		</string-array>
+		
+		<string-array name="array_everything">
+		<item>Filler</item>
+		</string-array>
+		
+		<string-array name="array_entertainment">
+		<item>The Beatles</item>
+		<item>Autotune</item>
+		<item>Gain</item>
+		<item>Gig</item>
+		<item>Hook</item>
+		<item>Mo Bamba</item>
+		<item>Jam</item>
+		<item>Treble</item>
+		<item>Mids</item>
+		<item>Bass</item>
+		<item>Soundbar</item>
+		<item>Harmony</item>
+		<item>Melody</item>
+		<item>Noise Canceling</item>
+		<item>Violin</item>
+		<item>Pitch</item>
+		<item>Tempo</item>
+		<item>Twerking</item>
+		<item>Beat</item>
+		<item>Beat Box</item>
+		<item>Hip Hop</item>
+		<item>Mosh Pit</item>
+		<item>Saxophone</item>
+		<item>Funky</item>
+		<item>Trumpet</item>
+		<item>Audience</item>
+		<item>Curtain Call</item>
+		<item>The Flash</item>
+		<item>Arrow</item>
+		<item>Game of Thrones</item>
+		<item>Baby Shark</item>
+		<item>Shaw Shank Redemption</item>
+		<item>Dodgeball!</item>
+		<item>Bart Simpson</item>
+		<item>Peter Griffin</item>
+		<item>Family Guy</item>
+		<item>Here Comes the Sun</item>
+		<item>Cue</item>
+		<item>The 100</item>
+		<item>Pirating</item>
+		<item>Movie Box</item>
+		<item>Torrent</item>
+		<item>Drake</item>
+		<item>Luke Combs</item>
+		<item>XXXTENTACION</item>
+		<item>Van Morrison</item>
+		<item>Wham!</item>
+		<item>Tyga</item>
+		<item>Migos</item>
+		<item>Chief Keef</item>
+		<item>Neil Diamond</item>
+		<item>Josh Groban</item>
+		<item>Zac Brown</item>
+		<item>Ice Ice Baby</item>
+		<item>Mr. Brightside</item>
+		<item>Eric Church</item>
+		<item>Bruce Springsteen</item>
+		<item>Alan Jackson</item>
+		<item>Baby Shark</item>
+		<item>Chuck Berry</item>
+		<item>Humble</item>
+		<item>Action!</item>
+		<item>Lil Baby</item>
+		<item>Toto</item>
+		<item>Billy Joel</item>
+		<item>Piano Man</item>
+		<item>Adele</item>
+		<item>Offset</item>
+		<item>Travis Scott</item>
+		<item>A$AP Ferg</item>
+		<item>Bowling for Soup</item>
+		<item>Jimmy Buffet</item>
+		<item>Casablanca</item>
+		<item>Wizard of Oz</item>
+		<item>The Godfather</item>
+		<item>2001: Space Odyssey</item>
+		<item>Mary Poppins</item>
+		<item>Ben-Her</item>
+		<item>James Bond</item>
+		<item>Daniel Day-Lewis</item>
+		<item>Mary Streep</item>
+		<item>Denzel Washington</item>
+		<item>Johnny Depp</item>
+		<item>Natalie Portman</item>
+		<item>Leonardo DiCaprio</item>
+		<item>Robert Downey Jr.</item>
+		<item>Brad Pitt</item>
+		<item>Jodie Foster</item>
+		<item>Liam Neeson</item>
+		<item>Morgan Freeman</item>
+		<item>Supermodel</item>
+		<item>Eddie Murry</item>
+		<item>Music to My Ears</item>
+		<item>Will Farrel</item>
+		<item>Selena Gomez</item>
+		<item>Taylor Swift</item>
+		<item>Saturday Night Live</item>
+		<item>Behind the Scenes</item>
+		<item>Box Office</item>
+		<item>Prime Time</item>
+		<item>Superman</item>
+		<item>Drums</item>
+		<item>Gong</item>
+		<item>Sitar</item>
+		<item>Tuba</item>
+		<item>Squidward</item>
+		<item>Rotten Tomatos</item>
+		<item>Will Smith</item>
+		<item>Sequel</item>
+		<item>Back to the Future</item>
+		<item>Harry Potter</item>
+		<item>Supergirl</item>
+		<item>Electric Slide</item>
+		<item>UCF</item>
+		<item>Fight Night</item>
+		<item>Seth McFarlane</item>
+		<item>Bootleg</item>
+		<item>Elevator Music</item>
+		<item>Fred Fredburger</item>
+		<item>Owen Wilson</item>
+		<item>Seth Myers</item>
+		<item>Ben Stiller</item>
+		<item>Boombox</item>
+		<item>Chromecast</item>
+		<item>Netflix</item>
+		<item>Amazon Video</item>
+		<item>Fergie</item>
+		<item>Black Eye Peas</item>
+		<item>Jeopardy</item>
+		<item>Oscars</item>
+		<item>Red Carpet</item>
+		<item>Seth Rogan</item>
+		
+		</string-array>
+		
+		<string-array name="array_places">
+		<item>Machu Picchu</item>
+		<item>Taj Mahal</item>
+		<item>St Peters Basilica</item>
+		<item>Alcatraz</item>
+		<item>Golden Gate Bridge</item>
+		<item>Statue of Liberty</item>
+		<item>Eiffel Tower</item>
+		<item>Big Ben</item>
+		<item>Tower of Pisa</item>
+		<item>Colosseum</item>
+		<item>Empire State Building</item>
+		<item>Hollywood</item>
+		<item>Notre Dame</item>
+		<item>Tokyo</item>
+		<item>London</item>
+		<item>Wall of China</item>
+		<item>Sydney</item>
+		<item>Berlin Wall</item>
+		<item>Stonehenge</item>
+		<item>Kilimanjaro</item>
+		<item>Grand Canyon</item>
+		<item>Pyramids of Giza</item>
+		<item>Great Sphinx</item>
+		<item>Forbidden City</item>
+		<item>Mount Everest</item>
+		<item>Capitol Hill</item>
+		<item>Sears Tower</item>
+		<item>Brooklyn Bridge</item>
+		<item>Times Square</item>
+		<item>White House</item>
+		<item>Buckingham Palace</item>
+		<item>Pompeii</item>
+		<item>Edinburgh Castle</item>
+		<item>CN Tower</item>
+		<item>Niagara Falls</item>
+		<item>Tower of London</item>
+		<item>Madrid Palace</item>
+		<item>Las Vegas</item>
+		<item>Windsor Castle</item>
+		<item>St. Pauls Cathedral</item>
+		<item>Central Park</item>
+		<item>Mount Rushmore</item>
+		<item>Mount Fuji</item>
+		<item>Space Needle</item>
+		<item>Tower of the Americas</item>
+		<item>Cincinnati</item>
+		<item>San Antonio</item>
+		<item>Mexico</item>
+		<item>Washington Monument</item>
+		<item>The Shard</item>
+		<item>Moai</item>
+		<item>Temple of Luxor</item>
+		<item>Pentagon</item>
+		<item>Chichen Itza</item>
+		<item>Chicago</item>
+		<item>The Bean</item>
+		<item>Victoria Falls</item>
+		<item>Terracotta Warriors</item>
+		<item>Yellowstone</item>
+		<item>Petra</item>
+		<item>Pearl Tower</item>
+		<item>Wailing Wall</item>
+		<item>Loch Ness</item>
+		<item>Mecca</item>
+		<item>Sydney Harbor Bridge</item>
+		<item>Sistine Chapel</item>
+		<item>Riverwalk</item>
+		<item>Mount Etna</item>
+		<item>Freedom Tower</item>
+		<item>Gateway Arch</item>
+		<item>Shanghai</item>
+		<item>Redwood National Park</item>
+		<item>Berlin Cathedral</item>
+		<item>England</item>
+		<item>Disneyland</item>
+		<item>Everglades</item>
+		<item>Prague Castle</item>
+		<item>Chapel Bridge</item>
+		<item>Table Mountain</item>
+		<item>Walk of Fame</item>
+		<item>Death Valley</item>
+		<item>Winter Palace</item>
+		<item>British Museum</item>
+		<item>Oxford University</item>
+		<item>Blue Lagoon</item>
+		<item>Kremlin</item>
+		<item>Millau Bridge</item>
+		<item>San Diego</item>
+		<item>Denmark</item>
+		<item>France</item>
+		<item>Sagrada Familia</item>
+		<item>Mount Rushmore</item>
+		<item>Seattle</item>
+		<item>New York City</item>
+		<item>Charleston</item>
+		<item>San Francisco</item>
+		<item>Washington, D.C.</item>
+		<item>New Orleans</item>
+		<item>Palm Springs</item>
+		<item>St. Louis</item>
+		<item>Hawaii</item>
+		<item>Miami Beach</item>
+		<item>Boston</item>
+		<item>Savannah</item>
+		<item>Orlando</item>
+		<item>Portland</item>
+		<item>Nashville</item>
+		<item>Austin</item>
+		<item>Africa</item>
+		<item>Antarctica</item>
+		<item>Asia</item>
+		<item>Australia</item>
+		<item>Europe</item>
+		<item>North america</item>
+		<item>South america</item>
+		<item>Bay</item>
+		<item>Beach</item>
+		<item>Cave</item>
+		<item>Creek</item>
+		<item>Desert</item>
+		<item>Earth</item>
+		<item>Forest</item>
+		<item>Hill</item>
+		<item>Island</item>
+		<item>Lake</item>
+		<item>Mountain</item>
+		<item>Ocean</item>
+		<item>Peak</item>
+		<item>Plain</item>
+		<item>Pond</item>
+		<item>River</item>
+		<item>Riverbed</item>
+		<item>Sea</item>
+		<item>Stream</item>
+		<item>Swamp</item>
+		<item>Valley</item>
+		<item>Waterfall</item>
+		<item>Woods</item>
+		
+		</string-array>
+		
+		<string-array name="array_food">
+		<item>Butter</item>
+		<item>Chili</item>
+		<item>Chives</item>
+		<item>Chutney</item>
+		<item>Garlic</item>
+		<item>Honey</item>
+		<item>Horseradish</item>
+		<item>Ketchup</item>
+		<item>Margarine</item>
+		<item>Mayonnaise</item>
+		<item>Miso</item>
+		<item>Mustard</item>
+		<item>Oil</item>
+		<item>Onion</item>
+		<item>Pesto</item>
+		<item>Relish</item>
+		<item>Remoulade</item>
+		<item>Salsa</item>
+		<item>Sauerkraut</item>
+		<item>Sriracha</item>
+		<item>Vinegar</item>
+		<item>Wasabi</item>
+		<item>Blt</item>
+		<item>Bagel</item>
+		<item>Burger</item>
+		<item>Burrito</item>
+		<item>Cheeseburger</item>
+		<item>Clubhouse</item>
+		<item>Frank</item>
+		<item>Hamburger</item>
+		<item>Hoagie</item>
+		<item>Melt</item>
+		<item>Muffin</item>
+		<item>Panini</item>
+		<item>Philly</item>
+		<item>Pita</item>
+		<item>Pretzel</item>
+		<item>Reuben</item>
+		<item>Sandwich</item>
+		<item>Slider</item>
+		<item>Sub</item>
+		<item>Taco</item>
+		<item>Wrap</item>
+		<item>Apple</item>
+		<item>Apricot</item>
+		<item>Avocado</item>
+		<item>Banana</item>
+		<item>Berry</item>
+		<item>Cantaloupe</item>
+		<item>Cherry</item>
+		<item>Citron</item>
+		<item>Citrus</item>
+		<item>Coconut</item>
+		<item>Date</item>
+		<item>Fig</item>
+		<item>Grape</item>
+		<item>Guava</item>
+		<item>Kiwi</item>
+		<item>Lemon</item>
+		<item>Lime</item>
+		<item>Mango</item>
+		<item>Melon</item>
+		<item>Mulberry</item>
+		<item>Nectarine</item>
+		<item>Orange</item>
+		<item>Papaya</item>
+		<item>Peach</item>
+		<item>Pear</item>
+		<item>Pineapple</item>
+		<item>Plum</item>
+		<item>Prune</item>
+		<item>Raisin</item>
+		<item>Raspberry</item>
+		<item>Tangerine</item>
+		<item>Arrowroot</item>
+		<item>Basil</item>
+		<item>Bay</item>
+		<item>Cayenne</item>
+		<item>Cilantro</item>
+		<item>Cinnamon</item>
+		<item>Coriander</item>
+		<item>Cumin</item>
+		<item>Curry</item>
+		<item>Dill</item>
+		<item>Fennel</item>
+		<item>Ginger</item>
+		<item>Lemon</item>
+		<item>Mace</item>
+		<item>Mint</item>
+		<item>Nutmeg</item>
+		<item>Oregano</item>
+		<item>Paprika</item>
+		<item>Parsley</item>
+		<item>Pepper</item>
+		<item>Rosemary</item>
+		<item>Sage</item>
+		<item>Salt</item>
+		<item>Sesame</item>
+		<item>Soda</item>
+		<item>Sugar</item>
+		<item>Tarragon</item>
+		<item>Thyme</item>
+		<item>Turmeric</item>
+		<item>Bourbon</item>
+		<item>Brandy</item>
+		<item>Cognac</item>
+		<item>Gin</item>
+		<item>Liqueur</item>
+		<item>Rum</item>
+		<item>Scotch</item>
+		<item>Tequila</item>
+		<item>Vodka</item>
+		<item>Whisky</item>
+		<item>Albariño</item>
+		<item>Amarone</item>
+		<item>Arneis</item>
+		<item>Auslese</item>
+		<item>Banylus</item>
+		<item>Barbaresco</item>
+		<item>Bardolino</item>
+		<item>Barolo</item>
+		<item>Beaujolais</item>
+		<item>Blanc</item>
+		<item>Burgundy</item>
+		<item>Cabernet</item>
+		<item>Chablis</item>
+		<item>Champagne</item>
+		<item>Chardonnay</item>
+		<item>Chianti</item>
+		<item>Chinon</item>
+		<item>Claret</item>
+		<item>Dolcetto</item>
+		<item>Grappa</item>
+		<item>Lambrusco</item>
+		<item>Madeira</item>
+		<item>Malbec</item>
+		<item>Marsanne</item>
+		<item>Mead</item>
+		<item>Merlot</item>
+		<item>Moscato</item>
+		<item>Muscat</item>
+		<item>Noir</item>
+		<item>Pinot</item>
+		<item>Port</item>
+		<item>Prosecco</item>
+		<item>Rosé</item>
+		<item>Riesling</item>
+		<item>Sauvignon</item>
+		<item>Sherry</item>
+		<item>Shiraz</item>
+		<item>Zinfandel</item>
+		<item>Acorn</item>
+		<item>Alfalfa</item>
+		<item>Bamboo</item>
+		<item>Bark</item>
+		<item>Bean</item>
+		<item>Berry</item>
+		<item>Blade</item>
+		<item>Brush</item>
+		<item>Bud</item>
+		<item>Bulb</item>
+		<item>Bush</item>
+		<item>Cactus</item>
+		<item>Clover</item>
+		<item>Cork</item>
+		<item>Corolla</item>
+		<item>Fern</item>
+		<item>Flora</item>
+		<item>Flower</item>
+		<item>Forest</item>
+		<item>Fruit</item>
+		<item>Garden</item>
+		<item>Grain</item>
+		<item>Grass</item>
+		<item>Grove</item>
+		<item>Herb</item>
+		<item>Ivy</item>
+		<item>Jungle</item>
+		<item>Juniper</item>
+		<item>Kelp</item>
+		<item>Kudzu</item>
+		<item>Leaf</item>
+		<item>Lily</item>
+		<item>Moss</item>
+		<item>Nectar</item>
+		<item>Nut</item>
+		<item>Palm</item>
+		<item>Petal</item>
+		<item>Pollen</item>
+		<item>Resin</item>
+		<item>Root</item>
+		<item>Sage</item>
+		<item>Sap</item>
+		<item>Seed</item>
+		<item>Shoot</item>
+		<item>Shrub</item>
+		<item>Spore</item>
+		<item>Stalk</item>
+		<item>Spine</item>
+		<item>Sprout</item>
+		<item>Stem</item>
+		<item>Thorn</item>
+		<item>Tree</item>
+		<item>Trunk</item>
+		<item>Twig</item>
+		<item>Vein</item>
+		<item>Vine</item>
+		<item>Weed</item>
+		<item>Wood</item>
+		<item>Alligator</item>
+		<item>Beef</item>
+		<item>Bison</item>
+		<item>Buffalo</item>
+		<item>Caribou</item>
+		<item>Chicken</item>
+		<item>Duck</item>
+		<item>Elk</item>
+		<item>Goat</item>
+		<item>Lamb</item>
+		<item>Pheasant</item>
+		<item>Pork</item>
+		<item>Quail</item>
+		<item>Rabbit</item>
+		<item>Turkey</item>
+		<item>Veal</item>
+		<item>Venison</item>
+		<item>Yak</item>
+		<item>Apple</item>
+		<item>Apricot</item>
+		<item>Avocado</item>
+		<item>Banana</item>
+		<item>Berry</item>
+		<item>Cantaloupe</item>
+		<item>Cherry</item>
+		<item>Citron</item>
+		<item>Citrus</item>
+		<item>Coconut</item>
+		<item>Date</item>
+		<item>Fig</item>
+		<item>Grape</item>
+		<item>Guava</item>
+		<item>Kiwi</item>
+		<item>Lemon</item>
+		<item>Lime</item>
+		<item>Mango</item>
+		<item>Melon</item>
+		<item>Nectarine</item>
+		<item>Orange</item>
+		<item>Papaya</item>
+		<item>Peach</item>
+		<item>Pear</item>
+		<item>Pineapple</item>
+		<item>Plum</item>
+		<item>Prune</item>
+		<item>Raisin</item>
+		<item>Raspberry</item>
+		<item>Tangerine</item>
+		<item>Aroma</item>
+		<item>Bagel</item>
+		<item>Batter</item>
+		<item>Beans</item>
+		<item>Beer</item>
+		<item>Biscuit</item>
+		<item>Bread</item>
+		<item>Broth</item>
+		<item>Burger</item>
+		<item>Butter</item>
+		<item>Cake</item>
+		<item>Candy</item>
+		<item>Caramel</item>
+		<item>Caviar</item>
+		<item>Cheese</item>
+		<item>Chili</item>
+		<item>Chocolate</item>
+		<item>Cider</item>
+		<item>Cobbler</item>
+		<item>Cocoa</item>
+		<item>Coffee</item>
+		<item>Cookie</item>
+		<item>Cream</item>
+		<item>Croissant</item>
+		<item>Crumble</item>
+		<item>Cuisine</item>
+		<item>Curd</item>
+		<item>Dessert</item>
+		<item>Dish</item>
+		<item>Drink</item>
+		<item>Eggs</item>
+		<item>Entree</item>
+		<item>Filet</item>
+		<item>Fish</item>
+		<item>Flour</item>
+		<item>Foie Gras</item>
+		<item>Food</item>
+		<item>Glaze</item>
+		<item>Grill</item>
+		<item>Hamburger</item>
+		<item>Ice</item>
+		<item>Juice</item>
+		<item>Ketchup</item>
+		<item>Kitchen</item>
+		<item>Lard</item>
+		<item>Liquor</item>
+		<item>Margarine</item>
+		<item>Marinade</item>
+		<item>Mayo</item>
+		<item>Mayonnaise</item>
+		<item>Meat</item>
+		<item>Milk</item>
+		<item>Mousse</item>
+		<item>Muffin</item>
+		<item>Mushroom</item>
+		<item>Noodle</item>
+		<item>Nut</item>
+		<item>Oil</item>
+		<item>Olive</item>
+		<item>Omelette</item>
+		<item>Pan</item>
+		<item>Pasta</item>
+		<item>Paste</item>
+		<item>Pastry</item>
+		<item>Pie</item>
+		<item>Pizza</item>
+		<item>Plate</item>
+		<item>Pot</item>
+		<item>Poutine</item>
+		<item>Pudding</item>
+		<item>Raclette</item>
+		<item>Recipe</item>
+		<item>Rice</item>
+		<item>Salad</item>
+		<item>Salsa</item>
+		<item>Sandwich</item>
+		<item>Sauce</item>
+		<item>Seasoning</item>
+		<item>Skillet</item>
+		<item>Soda</item>
+		<item>Soup</item>
+		<item>Soy</item>
+		<item>Spice</item>
+		<item>Steak</item>
+		<item>Stew</item>
+		<item>Syrup</item>
+		<item>Tartar</item>
+		<item>Taste</item>
+		<item>Tea</item>
+		<item>Toast</item>
+		<item>Vinegar</item>
+		<item>Waffle</item>
+		<item>Water</item>
+		<item>Wheat</item>
+		<item>Wine</item>
+		<item>Wok</item>
+		<item>Yeast</item>
+		<item>Yogurt</item>
+		<item>Blt</item>
+		<item>Bagel</item>
+		<item>Burger</item>
+		<item>Burrito</item>
+		<item>Cheeseburger</item>
+		<item>Clubhouse</item>
+		<item>Frank</item>
+		<item>Hamburger</item>
+		<item>Hoagie</item>
+		<item>Melt</item>
+		<item>Muffin</item>
+		<item>Panini</item>
+		<item>Philly</item>
+		<item>Pita</item>
+		<item>Pretzel</item>
+		<item>Reuben</item>
+		<item>Sandwich</item>
+		<item>Slider</item>
+		<item>Sub</item>
+		<item>Taco</item>
+		<item>Wrap</item>
+		<item>Beer</item>
+		<item>Test</item>
+		<item>Brandy</item>
+		<item>Cocoa</item>
+		<item>Cocktail</item>
+		<item>Coffee</item>
+		<item>Coke</item>
+		<item>Green Tea</item>
+		<item>Ice Coffee</item>
+		<item>Ice Tea</item>
+		<item>Juice</item>
+		<item>Lemonade</item>
+		<item>Liquor</item>
+		<item>Milk</item>
+		<item>Milkshake</item>
+		<item>Orange Juice</item>
+		<item>Punch</item>
+		<item>Soda</item>
+		<item>Soft Drink</item>
+		<item>Tea</item>
+		<item>Tomato Juice</item>
+		<item>Water</item>
+		<item>Whiskey</item>
+		<item>Wine</item>
+		<item>Apple</item>
+		<item>Apricot</item>
+		<item>Banana</item>
+		<item>Blackberry</item>
+		<item>Blueberry</item>
+		<item>Cherry</item>
+		<item>Cranberry</item>
+		<item>Currant</item>
+		<item>Fig</item>
+		<item>Grape</item>
+		<item>Grapefruit</item>
+		<item>Grapes</item>
+		<item>Kiwi</item>
+		<item>Kumquat</item>
+		<item>Lemon</item>
+		<item>Lime</item>
+		<item>Melon</item>
+		<item>Nectarine</item>
+		<item>Orange</item>
+		<item>Peach</item>
+		<item>Pear</item>
+		<item>Persimmon</item>
+		<item>Pineapple</item>
+		<item>Plum</item>
+		<item>Pomegranate</item>
+		<item>Prune</item>
+		<item>Raspberry</item>
+		<item>Strawberry</item>
+		<item>Tangerine</item>
+		<item>Watermelon</item>
+		<item>Barley</item>
+		<item>Corn</item>
+		<item>Millet</item>
+		<item>Oats</item>
+		<item>Rice</item>
+		<item>Rye</item>
+		<item>Brown Rice</item>
+		<item>Short Grain Rice</item>
+		<item>Long Grain Rice</item>
+		<item>Rye</item>
+		<item>Soy Beans</item>
+		<item>Wheat</item>
+		<item>Alphabet</item>
+		<item>Bows</item>
+		<item>Cappelletti</item>
+		<item>Curly Lasagna</item>
+		<item>Elbow Macaroni</item>
+		<item>Fedelini</item>
+		<item>Lasagna</item>
+		<item>Noodles</item>
+		<item>Ravioli</item>
+		<item>Ribbed Macaroni</item>
+		<item>Shells</item>
+		<item>Spaghetti</item>
+		<item>Stars</item>
+		<item>Thin Macaroni</item>
+		<item>Thin Spaghetti</item>
+		<item>Tortellini</item>
+		<item>Turrets</item>
+		<item>Vermicelli</item>
+		<item>Wheels</item>
+		<item>Bacon</item>
+		<item>Beef</item>
+		<item>Chicken</item>
+		<item>Chicken Breast</item>
+		<item>Chicken Leg</item>
+		<item>Chicken Wing</item>
+		<item>Ham</item>
+		<item>Hamburger</item>
+		<item>Heart</item>
+		<item>Hot Dog</item>
+		<item>Kidney</item>
+		<item>Lamb Chop</item>
+		<item>Mutton</item>
+		<item>Pork</item>
+		<item>Roast</item>
+		<item>Sausage</item>
+		<item>Steak</item>
+		<item>Tongue</item>
+		<item>Turkey</item>
+		<item>Veal</item>
+		<item>Venison</item>
+		<item>Bill</item>
+		<item>Breakfast</item>
+		<item>Check</item>
+		<item>Cup</item>
+		<item>Dessert</item>
+		<item>Dinner</item>
+		<item>Dressing</item>
+		<item>Drink</item>
+		<item>Fork</item>
+		<item>Hamburger</item>
+		<item>Knife</item>
+		<item>Lunch</item>
+		<item>Menu</item>
+		<item>Napkin</item>
+		<item>Order</item>
+		<item>Salt</item>
+		<item>Spoon</item>
+		<item>Water</item>
+		<item>Coffee</item>
+		<item>Tea</item>
+		<item>Blue Cheese</item>
+		<item>French Dressing</item>
+		<item>House Dressing</item>
+		<item>Thousand Island</item>
+		<item>Vinegar</item>
+		<item>Ranch</item>
+		<item>Oil And Vinegar</item>
+		<item>Asparagus</item>
+		<item>Beans</item>
+		<item>Beet</item>
+		<item>Broccoli</item>
+		<item>Brussels Sprouts</item>
+		<item>Cabbage</item>
+		<item>Carrot</item>
+		<item>Cauliflower</item>
+		<item>Celery</item>
+		<item>Chinese Cabbage</item>
+		<item>Corn</item>
+		<item>Cucumber</item>
+		<item>Eggplant</item>
+		<item>Green Pepper</item>
+		<item>Japanese Radish</item>
+		<item>Kale</item>
+		<item>Lettuce</item>
+		<item>Okra</item>
+		<item>Onion</item>
+		<item>Peas</item>
+		<item>Potato</item>
+		<item>Pumpkins</item>
+		<item>Radish</item>
+		<item>Spinach</item>
+		<item>Sweet Potato</item>
+		<item>Tomatoes</item>
+		<item>Turnips</item>
+		<item>Cheese</item>
+		<item>Cream</item>
+		<item>Ice Cream</item>
+		<item>Milk</item>
+		<item>Yogurt</item>
+		<item>Beans</item>
+		<item>Bread</item>
+		<item>Cereal</item>
+		<item>Eggs</item>
+		<item>Fats</item>
+		<item>Fish</item>
+		<item>Fruit</item>
+		<item>Meat</item>
+		<item>Nuts</item>
+		<item>Oils</item>
+		<item>Pasta</item>
+		<item>Poultry</item>
+		<item>Rice</item>
+		<item>Sweets</item>
+		<item>Vegetables</item>
+		</string-array>
+		
+		<string-array name="array_sports">
+		<item>Archer</item>
+		<item>Arena</item>
+		<item>Arrow</item>
+		<item>Athlete</item>
+		<item>Axel</item>
+		<item>Badminton</item>
+		<item>Ball</item>
+		<item>Base</item>
+		<item>Bat</item>
+		<item>Batter</item>
+		<item>Bicycle</item>
+		<item>Bike</item>
+		<item>Bocce</item>
+		<item>Bow</item>
+		<item>Box</item>
+		<item>Canoe</item>
+		<item>Catch</item>
+		<item>Cleats</item>
+		<item>Club</item>
+		<item>Coach</item>
+		<item>Compete</item>
+		<item>Crew</item>
+		<item>Cricket</item>
+		<item>Cycle</item>
+		<item>Cyclist</item>
+		<item>Dart</item>
+		<item>Defense</item>
+		<item>Diamond</item>
+		<item>Dive</item>
+		<item>Diver</item>
+		<item>Exercise</item>
+		<item>Fencing</item>
+		<item>Field</item>
+		<item>Fitness</item>
+		<item>Frisbee</item>
+		<item>Game</item>
+		<item>Gear</item>
+		<item>Goal</item>
+		<item>Goalie</item>
+		<item>Golf</item>
+		<item>Golfer</item>
+		<item>Guard</item>
+		<item>Gym</item>
+		<item>Gymnast</item>
+		<item>Helmet</item>
+		<item>Hockey</item>
+		<item>Home</item>
+		<item>Hoop</item>
+		<item>Hoops</item>
+		<item>Ice</item>
+		<item>Infield</item>
+		<item>Inning</item>
+		<item>Javelin</item>
+		<item>Jog</item>
+		<item>Judo</item>
+		<item>Jump</item>
+		<item>Jumper</item>
+		<item>Karate</item>
+		<item>Kayak</item>
+		<item>Kite</item>
+		<item>Lacrosse</item>
+		<item>League</item>
+		<item>Lose</item>
+		<item>Loser</item>
+		<item>Luge</item>
+		<item>Major</item>
+		<item>Mallet</item>
+		<item>Mat</item>
+		<item>Medal</item>
+		<item>Mitt</item>
+		<item>Move</item>
+		<item>Net</item>
+		<item>Offense</item>
+		<item>Olympics</item>
+		<item>Out</item>
+		<item>Paddle</item>
+		<item>Pitch</item>
+		<item>Play</item>
+		<item>Player</item>
+		<item>Pole</item>
+		<item>Polo</item>
+		<item>Pool</item>
+		<item>Puck</item>
+		<item>Quarter</item>
+		<item>Quiver</item>
+		<item>Race</item>
+		<item>Racer</item>
+		<item>Referee</item>
+		<item>Relay</item>
+		<item>Ride</item>
+		<item>Rink</item>
+		<item>Rink</item>
+		<item>Row</item>
+		<item>Rower</item>
+		<item>Sail</item>
+		<item>Score</item>
+		<item>Scuba</item>
+		<item>Skate</item>
+		<item>Ski</item>
+		<item>Skier</item>
+		<item>Slalom</item>
+		<item>Sled</item>
+		<item>Sledder</item>
+		<item>Snowboard</item>
+		<item>Soccer</item>
+		<item>Sport</item>
+		<item>Squash</item>
+		<item>Stadium</item>
+		<item>Stick</item>
+		<item>Surfer</item>
+		<item>Swim</item>
+		<item>Swimmer</item>
+		<item>Tag</item>
+		<item>Target</item>
+		<item>Team</item>
+		<item>Tee</item>
+		<item>Tennis</item>
+		<item>Throw</item>
+		<item>Tie</item>
+		<item>Triathlon</item>
+		<item>Umpire</item>
+		<item>Vault</item>
+		<item>Volley</item>
+		<item>Walk</item>
+		<item>Weight</item>
+		<item>Win</item>
+		<item>Winner</item>
+		<item>Winning</item>
+		<item>Wrestler</item>
+		<item>Strike</item>
+		<item>Baseball</item>
+		<item>Baseball</item>
+		<item>Perfect Game</item>
+		<item>Free Throw</item>
+		<item>Technical</item>
+		<item>Track</item>
+		<item>Sprint</item>
+		<item>Field Goal</item>
+		<item>Penalty</item>
+		<item>Offsides</item>
+		<item>Intentional Grounding</item>
+		<item>Parallel Bar</item>
+		<item>Quarterback</item>
+		<item>Corner Kick</item>
+		<item>NCAA</item>
+		<item>NFL</item>
+		<item>MLB</item>
+		<item>Baseline</item>
+		<item>Ejection</item>
+		<item>Sudden Death</item>
+		<item>Push Up</item>
+		<item>Spike</item>
+		<item>Pistol</item>
+		<item>Pitcher</item>
+		<item>Outfielder</item>
+		<item>Polo</item>
+		<item>Ping Pong</item>
+		<item>Bengals</item>
+		<item>Steelers</item>
+		<item>Rams</item>
+		<item>Smash</item>
+		<item>Half Nelson</item>
+		<item>Travel</item>
+		<item>Three Pointer</item>
+		<item>Touchdown</item>
+		<item>Extra Point</item>
+		<item>Puck</item>
+		<item>Hole In One</item>
+		<item>Putter</item>
+		<item>Man-to-Man</item>
+		<item>Own Goal</item>
+		<item>Playoffs</item>
+		<item>Ride The Bus</item>
+		<item>Timeout</item>
+		<item>Topspin</item>
+		<item>Underhand</item>
+		<item>Strike</item>
+		<item>Spare</item>
+		<item>Defense</item>
+		<item>Offense</item>
+		<item>Lost a Step</item>
+		<item>Slam Dunk</item>
+		<item>Next Man Up</item>
+		<item>Hail Mary</item>
+		<item>Win is a Win</item>
+		<item>Pass the Baton</item>
+		<item>Full-court Press</item>
+		<item>G.O.A.T</item>
+		<item>Par for the Course</item>
+		<item>Scratch</item>
+		<item>Curveball</item>
+		<item>Punt</item>
+		<item>Fired Up</item>
+		<item>Marathon</item>
+		<item>Utility Player</item>
+		<item>Five Star Recruit</item>
+		<item>Get the Ball Rolling</item>
+		<item>Dropped the Ball</item>
+		<item>Game of Inches</item>
+		<item>Out of the Park</item>
+		<item>Athletics</item>
+		<item>Baseball</item>
+		<item>Basketball</item>
+		<item>Bowling</item>
+		<item>Car racing</item>
+		<item>Cycling</item>
+		<item>Football</item>
+		<item>Golf</item>
+		<item>Gymnastics</item>
+		<item>Handball</item>
+		<item>Hang gliding</item>
+		<item>Hockey</item>
+		<item>Horse racing</item>
+		<item>Jogging</item>
+		<item>Motorcycle racing</item>
+		<item>Para gliding</item>
+		<item>Polo</item>
+		<item>Rugby</item>
+		<item>Scuba diving</item>
+		<item>Skiing</item>
+		<item>Skin diving</item>
+		<item>Snow-boarding</item>
+		<item>Soccer</item>
+		<item>Softball</item>
+		<item>Squash</item>
+		<item>Swimming</item>
+		<item>Table tennis</item>
+		<item>Tennis</item>
+		<item>Track and field</item>
+		<item>Volleyball</item>
+		<item>Ball</item>
+		<item>Baseball cap</item>
+		<item>Bat</item>
+		<item>Batter</item>
+		<item>Batters box</item>
+		<item>Batting average</item>
+		<item>Catcher</item>
+		<item>Catcher mitt</item>
+		<item>Catchers box</item>
+		<item>Center fielder</item>
+		<item>Chest protector</item>
+		<item>Coach</item>
+		<item>Day game</item>
+		<item>Dugout</item>
+		<item>Exhibition game</item>
+		<item>Extra inning</item>
+		<item>Face mask</item>
+		<item>Farm team</item>
+		<item>Fence</item>
+		<item>Field umpire</item>
+		<item>First baseman</item>
+		<item>Glove</item>
+		<item>Foul</item>
+		<item>Foul line</item>
+		<item>Four balls</item>
+		<item>Game</item>
+		<item>Glove</item>
+		<item>Helmet</item>
+		<item>Hit</item>
+		<item>Home plate</item>
+		<item>Home team</item>
+		<item>Innings</item>
+		<item>Left fielder</item>
+		<item>Major league</item>
+		<item>Minor league</item>
+		<item>Night game</item>
+		<item>One ball</item>
+		<item>Pitcher</item>
+		<item>Pitchers mound</item>
+		<item>Plate umpire</item>
+		<item>Play-off</item>
+		<item>Right fielder</item>
+		<item>Runner</item>
+		<item>Scoreboard</item>
+		<item>Second baseman</item>
+		<item>Shin guards</item>
+		<item>Short stop</item>
+		<item>Spiked shoes</item>
+		<item>Strike one</item>
+		<item>Strike out</item>
+		<item>Strike three</item>
+		<item>Strike two</item>
+		<item>Switch hitter</item>
+		<item>Third baseman</item>
+		<item>Three balls</item>
+		<item>Two balls</item>
+		<item>Visiting team</item>
+		<item>Walk</item>
+		<item>Cornerback</item>
+		<item>Defensive end</item>
+		<item>Fullback</item>
+		<item>Guard</item>
+		<item>Halfback</item>
+		<item>Linebacker</item>
+		<item>Middle guard</item>
+		<item>Quarterback</item>
+		<item>Tackle</item>
+		<item>Backstroke</item>
+		<item>Breaststroke</item>
+		<item>Butterfly</item>
+		<item>Crawl</item>
+		<item>Deep end</item>
+		<item>Diving</item>
+		<item>Diving board</item>
+		<item>Dog paddle</item>
+		<item>Lake</item>
+		<item>Life guard</item>
+		<item>Ocean</item>
+		<item>River</item>
+		<item>Shallow end</item>
+		<item>Sidestroke</item>
+		<item>Swimming lane</item>
+		<item>Swimming pool</item>
+		<item>Synchronized swimming</item>
+		<item>Turn</item>
+		<item>Water</item>
+		</string-array>
+		
+		<string-array name="array_science">
+		<item>Acid</item>
+		<item>Anion</item>
+		<item>Anode</item>
+		<item>Atom</item>
+		<item>Base</item>
+		<item>Catalyst</item>
+		<item>Cathode</item>
+		<item>Charge</item>
+		<item>Combustion</item>
+		<item>Compound</item>
+		<item>Concentration</item>
+		<item>Decay</item>
+		<item>Effusion</item>
+		<item>Electrolysis</item>
+		<item>Electron</item>
+		<item>Element</item>
+		<item>Energy</item>
+		<item>Entropy</item>
+		<item>Force</item>
+		<item>Frequency</item>
+		<item>Hydrolysis</item>
+		<item>Ion</item>
+		<item>Mixture</item>
+		<item>Molality</item>
+		<item>Mole</item>
+		<item>Molecule</item>
+		<item>Neutron</item>
+		<item>Nucleus</item>
+		<item>Octet</item>
+		<item>Particle</item>
+		<item>Photon</item>
+		<item>Proton</item>
+		<item>Radiation</item>
+		<item>Solute</item>
+		<item>Solvent</item>
+		<item>Term</item>
+		<item>Velocity</item>
+		<item>Volume</item>
+		<item>Wave</item>
+		<item>Wavelength</item>
+		<item>Acid</item>
+		<item>Acidic</item>
+		<item>Alcohol</item>
+		<item>Allotropy</item>
+		<item>Aluminum</item>
+		<item>Argon</item>
+		<item>Arsenic</item>
+		<item>Atomic Number</item>
+		<item>Barium</item>
+		<item>Beryllium</item>
+		<item>Bond</item>
+		<item>Boron</item>
+		<item>Brass</item>
+		<item>Calcium</item>
+		<item>Carbon</item>
+		<item>Catalyst</item>
+		<item>Chemical</item>
+		<item>Chlorine</item>
+		<item>Complex</item>
+		<item>Concentration</item>
+		<item>Copper</item>
+		<item>Electron Configuration</item>
+		<item>Electronic</item>
+		<item>Element</item>
+		<item>Fluorine</item>
+		<item>Gold</item>
+		<item>Helium</item>
+		<item>Hydrogen</item>
+		<item>Iodine</item>
+		<item>Iron</item>
+		<item>Isotope</item>
+		<item>Krypton</item>
+		<item>Lead</item>
+		<item>Lithium</item>
+		<item>Magnesium</item>
+		<item>Manganese</item>
+		<item>Mercury</item>
+		<item>Neon</item>
+		<item>Nickel</item>
+		<item>Nitrogen</item>
+		<item>Oxidize</item>
+		<item>Oxidized</item>
+		<item>Oxygen</item>
+		<item>Periodic Table</item>
+		<item>Phosphorus</item>
+		<item>Platinum</item>
+		<item>Plutonium</item>
+		<item>Potassium</item>
+		<item>Product</item>
+		<item>Protactinium</item>
+		<item>Radical</item>
+		<item>Radium</item>
+		<item>Saturated</item>
+		<item>Saturation</item>
+		<item>Scandium</item>
+		<item>Silicon</item>
+		<item>Silver</item>
+		<item>Sodium</item>
+		<item>Spectrum</item>
+		<item>Steel</item>
+		<item>Strontium</item>
+		<item>Sulfur</item>
+		<item>Tin</item>
+		<item>Unoxidized</item>
+		<item>Unsaturated</item>
+		<item>Uranium</item>
+		<item>Water</item>
+		<item>Zinc</item>
+		<item>Butane</item>
+		<item>Carbon dioxide</item>
+		<item>Carbon monoxide</item>
+		<item>Freon</item>
+		<item>Helium</item>
+		<item>Hydrogen</item>
+		<item>Methane</item>
+		<item>Neon</item>
+		<item>Nitric oxide</item>
+		<item>Nitrogen</item>
+		<item>Oxygen</item>
+		<item>Propane</item>
+		<item>Alcohol</item>
+		<item>Blood</item>
+		<item>Coffee</item>
+		<item>Cream</item>
+		<item>Gasoline</item>
+		<item>Grease</item>
+		<item>Juice</item>
+		<item>Milk</item>
+		<item>Oil</item>
+		<item>Syrup</item>
+		<item>Soup</item>
+		<item>Tea</item>
+		<item>Water</item>
+		<item>Gold</item>
+		<item>Silver</item>
+		<item>Iron</item>
+		<item>Aluminium</item>
+		<item>Copper</item>
+		<item>Steel</item>
+		<item>Brass</item>
+		<item>Tin</item>
+		<item>Zinc</item>
+		<item>Lead</item>
+		<item>Nickel</item>
+		<item>Platinum</item>
+		<item>Titanium</item>
+		<item>Mercury</item>
+		<item>Bronze</item>
+		<item>Acrylic</item>
+		<item>Alloy</item>
+		<item>Aluminum</item>
+		<item>Brass</item>
+		<item>Brick</item>
+		<item>Bronze</item>
+		<item>Carbon</item>
+		<item>Cardboard</item>
+		<item>Cast iron</item>
+		<item>Cement</item>
+		<item>Ceramics</item>
+		<item>Copper</item>
+		<item>Cotton</item>
+		<item>Diamond</item>
+		<item>Epoxy</item>
+		<item>Fiber</item>
+		<item>Fiberglass</item>
+		<item>Glass</item>
+		<item>Glue</item>
+		<item>Gold</item>
+		<item>Iron</item>
+		<item>Leather</item>
+		<item>Linen</item>
+		<item>Nylon</item>
+		<item>Paper</item>
+		<item>Polyester</item>
+		<item>Rubber</item>
+		<item>Sand</item>
+		<item>Silica</item>
+		<item>Silver</item>
+		<item>Skin</item>
+		<item>Steel</item>
+		<item>Stone</item>
+		<item>Titanium</item>
+		<item>Vinyl</item>
+		<item>Viscose</item>
+		<item>Wood</item>
+		<item>Wool</item>
+		<item>Air</item>
+		<item>Barometer</item>
+		<item>Blizzard</item>
+		<item>Celsius</item>
+		<item>Chill</item>
+		<item>Cirrus</item>
+		<item>Cloud</item>
+		<item>Clouds</item>
+		<item>Cloudy</item>
+		<item>Cold</item>
+		<item>Cyclone</item>
+		<item>Degree</item>
+		<item>Dew</item>
+		<item>Drizzle</item>
+		<item>Dry</item>
+		<item>Dry season</item>
+		<item>Fahrenheit</item>
+		<item>Flood</item>
+		<item>Fog</item>
+		<item>Forecast</item>
+		<item>Freeze</item>
+		<item>Frost</item>
+		<item>Hail</item>
+		<item>Heat</item>
+		<item>Hot</item>
+		<item>Humidity</item>
+		<item>Hurricane</item>
+		<item>Ice</item>
+		<item>Lightning</item>
+		<item>Meteorology</item>
+		<item>Moon</item>
+		<item>Precipitation</item>
+		<item>Pressure</item>
+		<item>Radar</item>
+		<item>Rain</item>
+		<item>Rainstorm</item>
+		<item>Rainbow</item>
+		<item>Rainy</item>
+		<item>Rainy season</item>
+		<item>Sky</item>
+		<item>Sleet</item>
+		<item>Snow</item>
+		<item>Snowstorm</item>
+		<item>Snowy</item>
+		<item>Storm</item>
+		<item>Sun</item>
+		<item>Sunny</item>
+		<item>Temperature</item>
+		<item>Thermometer</item>
+		<item>Thunder</item>
+		<item>Thunderstorm</item>
+		<item>Tornado</item>
+		<item>Tsunami</item>
+		<item>Typhoon</item>
+		<item>Warm</item>
+		<item>Weather</item>
+		<item>Wind</item>
+		<item>Windy</item>
+		</string-array>
+		
+		<string-array name="array_animals">
+		<item>Aardvark</item>
+		<item>Bear</item>
+		<item>Camel</item>
+		<item>Crocodile</item>
+		<item>Elephant</item>
+		<item>Giraffe</item>
+		<item>Kangaroo</item>
+		<item>Leopard</item>
+		<item>Lion</item>
+		<item>Llama</item>
+		<item>Monkey</item>
+		<item>Ostrich</item>
+		<item>Rhinoceros</item>
+		<item>Snake</item>
+		<item>Tiger</item>
+		<item>Wolf</item>
+		<item>Zebra</item>
+		<item>Anteater</item>
+		<item>Armadillo</item>
+		<item>Baboon</item>
+		<item>Badger</item>
+		<item>Beaver</item>
+		<item>Cheetah</item>
+		<item>Cougar</item>
+		<item>Gazelle</item>
+		<item>Gorilla</item>
+		<item>Ocelot</item>
+		<item>Panda</item>
+		<item>Panther</item>
+		<item>Porcupine</item>
+		<item>Wallaby</item>
+		<item>Puma</item>
+		<item>Lynx</item>
+		<item>Bobcat</item>
+		<item>Jaguar</item>
+		<item>Hyena</item>
+		<item>Alligator</item>
+		<item>Ant</item>
+		<item>Bee</item>
+		<item>Bird</item>
+		<item>Cat</item>
+		<item>Chicken</item>
+		<item>Chimpanzee</item>
+		<item>Cow</item>
+		<item>Deer</item>
+		<item>Dog</item>
+		<item>Dolphin</item>
+		<item>Duck</item>
+		<item>Eagle</item>
+		<item>Fish</item>
+		<item>Fly</item>
+		<item>Fox</item>
+		<item>Frog</item>
+		<item>Goat</item>
+		<item>Goldfish</item>
+		<item>Hamster</item>
+		<item>Hippopotamus</item>
+		<item>Horse</item>
+		<item>Kitten</item>
+		<item>Lizard</item>
+		<item>Lobster</item>
+		<item>Octopus</item>
+		<item>Otter</item>
+		<item>Owl</item>
+		<item>Oyster</item>
+		<item>Parrot</item>
+		<item>Pelican</item>
+		<item>Pig</item>
+		<item>Pigeon</item>
+		<item>Puppy</item>
+		<item>Rabbit</item>
+		<item>Rat</item>
+		<item>Reindeer</item>
+		<item>Rooster</item>
+		<item>Scorpion</item>
+		<item>Seal</item>
+		<item>Shark</item>
+		<item>Sheep</item>
+		<item>Shrimp</item>
+		<item>Snail</item>
+		<item>Sparrow</item>
+		<item>Spider</item>
+		<item>Squid</item>
+		<item>Squirrel</item>
+		<item>Swallow</item>
+		<item>Swan</item>
+		<item>Toad</item>
+		<item>Tortoise</item>
+		<item>Turtle</item>
+		<item>Vulture</item>
+		<item>Walrus</item>
+		<item>Weasel</item>
+		<item>Whale</item>
+		<item>Bull</item>
+		<item>Calf</item>
+		<item>Donkey</item>
+		<item>Goose</item>
+		<item>Hen</item>
+		<item>Lamb</item>
+		<item>Turkey</item>
+		<item>Chihuahua</item>
+		<item>Bulldog</item>
+		<item>German Shepherd</item>
+		<item>Beetle</item>
+		<item>Butterfly</item>
+		<item>Caterpillar</item>
+		<item>Centipede</item>
+		<item>Cockroach</item>
+		<item>Cricket</item>
+		<item>Dragonfly</item>
+		<item>Flea</item>
+		<item>Grasshopper</item>
+		<item>Grub</item>
+		<item>Ladybug</item>
+		<item>Maggot</item>
+		<item>Mosquito</item>
+		<item>Moth</item>
+		<item>Termite</item>
+		<item>Tick</item>
+		<item>Wasp</item>
+		<item>Carp</item>
+		<item>Tropical Fish</item>
+		<item>Caterpillar</item>
+		<item>Cicada</item>
+		<item>Insects</item>
+		<item>Locust</item>
+		<item>Albatross</item>
+		<item>Buzzard</item>
+		<item>Chick</item>
+		<item>Condor</item>
+		<item>Cormorant</item>
+		<item>Crow</item>
+		<item>Drake</item>
+		<item>Duckling</item>
+		<item>Gander</item>
+		<item>Gosling</item>
+		<item>Grouse</item>
+		<item>Hawk</item>
+		<item>Heron</item>
+		<item>Partridge</item>
+		<item>Pheasant</item>
+		<item>Ptarmigan</item>
+		<item>Puffin</item>
+		<item>Quail</item>
+		<item>Raven</item>
+		<item>Seagull</item>
+		<item>Bass</item>
+		<item>Cod</item>
+		<item>Crab</item>
+		<item>Crawdad</item>
+		<item>Crayfish</item>
+		<item>Eel</item>
+		<item>Halibut</item>
+		<item>Herring</item>
+		<item>Perch</item>
+		<item>Pike</item>
+		<item>Salmon</item>
+		<item>Sardine</item>
+		<item>Sturgeon</item>
+		<item>Tadpole</item>
+		<item>Trout</item>
+		<item>Tuna</item>
+		<item>Swordfish</item>
+		<item>Boa</item>
+		<item>Brown Snake</item>
+		<item>Cobra</item>
+		<item>Coral Snake</item>
+		<item>Green Snake</item>
+		<item>King Cobra</item>
+		<item>Python</item>
+		<item>Rat Snake</item>
+		<item>Rattlesnake</item>
+		<item>Viper</item>
+		<item>Sphynx</item>
+		<item>Beagle</item>
+		<item>Borzoi</item>
+		<item>Boxer</item>
+		<item>Collie</item>
+		<item>Corgie</item>
+		<item>Dachshund</item>
+		<item>Dingo</item>
+		<item>Feist</item>
+		<item>Harrier</item>
+		<item>Hound</item>
+		<item>Husky</item>
+		<item>Maltese</item>
+		<item>Pinscher</item>
+		<item>Poodle</item>
+		<item>Pug</item>
+		<item>Retriever</item>
+		<item>Rottweiler</item>
+		<item>Schnauser</item>
+		<item>Setter</item>
+		<item>Spaniel</item>
+		<item>Spitz</item>
+		<item>Terrier</item>
+		<item>Westie</item>
+		<item>Whippet</item>
+		<item>Angora</item>
+		<item>Balinese</item>
+		<item>Bengal</item>
+		<item>Birman</item>
+		<item>Bobtail</item>
+		<item>Bombay</item>
+		<item>Burmese</item>
+		<item>Calico</item>
+		<item>Ginger</item>
+		<item>Himalayan</item>
+		<item>Javanese</item>
+		<item>Korat</item>
+		<item>Longhair</item>
+		<item>Marmalade</item>
+		<item>Oriental</item>
+		<item>Persian</item>
+		<item>Siamese</item>
+		<item>Siberian</item>
+		<item>Tabby</item>
+		<item>Tom</item>
+		<item>Albatross</item>
+		<item>Avocet</item>
+		<item>Budgie</item>
+		<item>Canary</item>
+		<item>Chick</item>
+		<item>Chickadee</item>
+		<item>Chicken</item>
+		<item>Cockatiel</item>
+		<item>Cockatoo</item>
+		<item>Coot</item>
+		<item>Covey</item>
+		<item>Crow</item>
+		<item>Cuckoo</item>
+		<item>Darter</item>
+		<item>Dove</item>
+		<item>Duck</item>
+		<item>Eagle</item>
+		<item>Falcon</item>
+		<item>Finch</item>
+		<item>Flamingo</item>
+		<item>Fowl</item>
+		<item>Goldfinch</item>
+		<item>Goose</item>
+		<item>Grouse</item>
+		<item>Hawk</item>
+		<item>Heron</item>
+		<item>Jackdaw</item>
+		<item>Jay</item>
+		<item>Kestrel</item>
+		<item>Lark</item>
+		<item>Loon</item>
+		<item>Macaw</item>
+		<item>Magpie</item>
+		<item>Martin</item>
+		<item>Osprey</item>
+		<item>Ostrich</item>
+		<item>Owl</item>
+		<item>Parakeet</item>
+		<item>Parrot</item>
+		<item>Pelican</item>
+		<item>Penguin</item>
+		<item>Pigeon</item>
+		<item>Pintail</item>
+		<item>Puffin</item>
+		<item>Quail</item>
+		<item>Quetzal</item>
+		<item>Rail</item>
+		<item>Raven</item>
+		<item>Razorbill</item>
+		<item>Rhea</item>
+		<item>Rook</item>
+		<item>Shrike</item>
+		<item>Skylark</item>
+		<item>Snipe</item>
+		<item>Sparrow</item>
+		<item>Starling</item>
+		<item>Stork</item>
+		<item>Swallow</item>
+		<item>Swift</item>
+		<item>Tanager</item>
+		<item>Thrush</item>
+		<item>Toucan</item>
+		<item>Turkey</item>
+		<item>Vulture</item>
+		<item>Warbler</item>
+		<item>Anchovy</item>
+		<item>Bass</item>
+		<item>Carp</item>
+		<item>Cod</item>
+		<item>Flounder</item>
+		<item>Grouper</item>
+		<item>Haddock</item>
+		<item>Halibut</item>
+		<item>Herring</item>
+		<item>Mackerel</item>
+		<item>Marlin</item>
+		<item>Mullet</item>
+		<item>Perch</item>
+		<item>Pollock</item>
+		<item>Salmon</item>
+		<item>Sardine</item>
+		<item>Scallop</item>
+		<item>Shark</item>
+		<item>Snapper</item>
+		<item>Sole</item>
+		<item>Tilapia</item>
+		<item>Trout</item>
+		<item>Tuna</item>
+		<item>Amberjack</item>
+		<item>Anchovy</item>
+		<item>Angler</item>
+		<item>Ayu</item>
+		<item>Barbel</item>
+		<item>Barracuda</item>
+		<item>Bass</item>
+		<item>Betta</item>
+		<item>Blowfish</item>
+		<item>Bocaccio</item>
+		<item>Burbot</item>
+		<item>Carp</item>
+		<item>Cobbler</item>
+		<item>Cod</item>
+		<item>Eel</item>
+		<item>Flounder</item>
+		<item>Grouper</item>
+		<item>Haddock</item>
+		<item>Halibut</item>
+		<item>Herring</item>
+		<item>Mackerel</item>
+		<item>Marlin</item>
+		<item>Mullet</item>
+		<item>Perch</item>
+		<item>Pollock</item>
+		<item>Salmon</item>
+		<item>Sardine</item>
+		<item>Scallop</item>
+		<item>Shark</item>
+		<item>Snapper</item>
+		<item>Sole</item>
+		<item>Tilapia</item>
+		<item>Trout</item>
+		<item>Tuna</item>
+		<item>Beagle</item>
+		<item>Borzoi</item>
+		<item>Boxer</item>
+		<item>Collie</item>
+		<item>Corgie</item>
+		<item>Dachshund</item>
+		<item>Dingo</item>
+		<item>Feist</item>
+		<item>Harrier</item>
+		<item>Hound</item>
+		<item>Husky</item>
+		<item>Maltese</item>
+		<item>Pinscher</item>
+		<item>Poodle</item>
+		<item>Pug</item>
+		<item>Retriever</item>
+		<item>Rottweiler</item>
+		<item>Schnauser</item>
+		<item>Setter</item>
+		<item>Spaniel</item>
+		<item>Spitz</item>
+		<item>Terrier</item>
+		<item>Westie</item>
+		<item>Whippet</item>
+		<item>Adder</item>
+		<item>Albatross</item>
+		<item>Alevin</item>
+		<item>Alligator</item>
+		<item>Anchovy</item>
+		<item>Ant</item>
+		<item>Armadillo</item>
+		<item>Asiatic Peafowl</item>
+		<item>Axis</item>
+		<item>Bat</item>
+		<item>Bear</item>
+		<item>Bear Paw</item>
+		<item>Beaver</item>
+		<item>Bee</item>
+		<item>Bird Of Prey</item>
+		<item>Bobcat</item>
+		<item>Brontosaurus</item>
+		<item>Buck</item>
+		<item>Budgie</item>
+		<item>Buffalo</item>
+		<item>Buffalo Skull</item>
+		<item>Bull</item>
+		<item>Bullfrog</item>
+		<item>Bunny</item>
+		<item>Bustard</item>
+		<item>Butterfly</item>
+		<item>Calf</item>
+		<item>Camel</item>
+		<item>Cat</item>
+		<item>Chicken</item>
+		<item>Cougar</item>
+		<item>Cow</item>
+		<item>Coyote</item>
+		<item>Crane</item>
+		<item>Creepy-Crawly</item>
+		<item>Cricket</item>
+		<item>Crocodile</item>
+		<item>Deer</item>
+		<item>Dog</item>
+		<item>Dolphin</item>
+		<item>Donkey</item>
+		<item>Dove</item>
+		<item>Dragon</item>
+		<item>Dragonfly</item>
+		<item>Duck</item>
+		<item>Dumbledore</item>
+		<item>Eagle</item>
+		<item>Elephant</item>
+		<item>Elk</item>
+		<item>Ferret</item>
+		<item>Fly</item>
+		<item>Foal</item>
+		<item>Fowl</item>
+		<item>Fox</item>
+		<item>Frog</item>
+		<item>Fry</item>
+		<item>Fur</item>
+		<item>Gelding</item>
+		<item>Gila Monster</item>
+		<item>Giraffe</item>
+		<item>Goat</item>
+		<item>Goldfish</item>
+		<item>Goose</item>
+		<item>Gorilla</item>
+		<item>Grizzly Bear</item>
+		<item>Hamster</item>
+		<item>Hare</item>
+		<item>Harvestman</item>
+		<item>Hawk</item>
+		<item>Hedgehog</item>
+		<item>Hen</item>
+		<item>Hippo</item>
+		<item>Hippopotamus</item>
+		<item>Homo Sapiens</item>
+		<item>Hopi Hand</item>
+		<item>Horse</item>
+		<item>Hummingbird</item>
+		<item>Hyena</item>
+		<item>Indus River Dolphin</item>
+		<item>Jaguar</item>
+		<item>Kangaroo</item>
+		<item>Kashmir Stag</item>
+		<item>Kiwi</item>
+		<item>Komodo Dragon</item>
+		<item>Lion</item>
+		<item>Lioness</item>
+		<item>Livestock</item>
+		<item>Lizard</item>
+		<item>Loon</item>
+		<item>Manatee</item>
+		<item>Mare</item>
+		<item>Markhor</item>
+		<item>Mastodon</item>
+		<item>Monkey</item>
+		<item>Moose</item>
+		<item>Mosquito</item>
+		<item>Mouse</item>
+		<item>Mule</item>
+		<item>Muscovy Duck</item>
+		<item>Orca</item>
+		<item>Ostrich</item>
+		<item>Otter</item>
+		<item>Owl</item>
+		<item>Panda</item>
+		<item>Parakeet</item>
+		<item>Parr</item>
+		<item>Parrot</item>
+		<item>Pegasus</item>
+		<item>Pelican</item>
+		<item>Penguin</item>
+		<item>Peregrine Falcon</item>
+		<item>Pet</item>
+		<item>Pheasant</item>
+		<item>Pig</item>
+		<item>Pigeon</item>
+		<item>Plaice</item>
+		<item>Polar Bear</item>
+		<item>Pterodactyl</item>
+		<item>Pup</item>
+		<item>Puppy</item>
+		<item>Quail</item>
+		<item>Rabbit</item>
+		<item>Raccoon</item>
+		<item>Ram</item>
+		<item>Raptor</item>
+		<item>Rat</item>
+		<item>Raven</item>
+		<item>Rhesus Macaque</item>
+		<item>Rhino</item>
+		<item>Road Runner</item>
+		<item>Rose-Ringed Parakeet</item>
+		<item>Salmon</item>
+		<item>Scorpion</item>
+		<item>Seabird</item>
+		<item>Seahorse</item>
+		<item>Serpent</item>
+		<item>Shark</item>
+		<item>Sheep</item>
+		<item>Skunk</item>
+		<item>Smolt</item>
+		<item>Snake</item>
+		<item>Snakelet</item>
+		<item>Snow Leopard</item>
+		<item>Sole</item>
+		<item>Spider</item>
+		<item>Spot-Billed Pelican</item>
+		<item>Squirrel</item>
+		<item>Stallion</item>
+		<item>Steer Skull</item>
+		<item>Stegosaurus</item>
+		<item>Swallow</item>
+		<item>Swan</item>
+		<item>Thunderbird</item>
+		<item>Tick</item>
+		<item>Tiger</item>
+		<item>Tit</item>
+		<item>Tuna</item>
+		<item>Turkey</item>
+		<item>Turtle</item>
+		<item>Unicorn</item>
+		<item>Viper</item>
+		<item>Water Buffalo</item>
+		<item>Weasel</item>
+		<item>Whale</item>
+		<item>Wolf</item>
+		<item>Wolf Paw</item>
+		<item>Worm</item>
+		<item>Zebra</item>
+		<item>Zuni Bear</item>
+		</string-array>
+	</resources>
