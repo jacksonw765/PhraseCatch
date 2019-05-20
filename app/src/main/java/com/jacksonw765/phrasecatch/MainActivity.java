@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder;
                 builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle("Unsupported Device")
-                        .setMessage("This application is not well optimized f")
+                        .setMessage("This application is not well optimized for lower end devices.")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
