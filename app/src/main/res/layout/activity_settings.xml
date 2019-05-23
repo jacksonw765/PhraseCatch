@@ -1,159 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <RelativeLayout
-        android:id="@+id/layoutPoints"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_white"
-        android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
+        <Space
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutPoints"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/nunito"
-            android:text="Points to Win"
-            android:textSize="30sp" />
+            android:background="@drawable/button_white_bordered"
+            android:elevation="5dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="298dp">
 
-        <EditText
-            android:id="@+id/textPointsToWin"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonPlus"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="11dp"
-            android:ems="5"
-            android:fontFamily="@font/nunito"
-            android:inputType="number"
-            android:text="6"
-            android:textAlignment="center"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/buttonPlus"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignEnd="@+id/textView2"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/button_lightblue"
-            android:elevation="2dp"
-            android:fontFamily="@font/nunito"
-            android:text="+"
-            android:textAlignment="center"
-            android:textSize="36sp" />
-
-        <Button
-            android:id="@+id/buttonMinus"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_alignTop="@+id/buttonPlus"
-            android:background="@drawable/button_lightblue"
-            android:elevation="2dp"
-            android:fontFamily="@font/nunito"
-            android:text="-"
-            android:textAlignment="center"
-            android:textSize="36sp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/layoutTimer"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_alignStart="@+id/layoutPoints"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="103dp"
-        android:background="@drawable/button_white"
-        android:elevation="5dp">
-
-        <TextView
-            android:id="@+id/textTimer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/nunito"
-            android:text="Timer Length"
-            android:textSize="30sp" />
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textTimer"
-            android:layout_alignParentTop="true">
-
-
-            <RadioButton
-                android:id="@+id/radioButtonOne"
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/textTimer"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="74dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/nunito"
-                android:text="30 Seconds"
-                android:textSize="18sp" />
+                android:text="Points to Win"
+                android:textSize="30sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonTwo"
+            <EditText
+                android:id="@+id/textPointsToWin"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonPlus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:ems="5"
+                android:fontFamily="@font/nunito"
+                android:inputType="number"
+                android:text="6"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_lightblue_circle"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignTop="@+id/buttonPlus"
+                android:background="@drawable/button_lightblue_circle"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTimer"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_alignStart="@+id/layoutPoints"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="103dp"
+            android:background="@drawable/button_white_bordered"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/textTimer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/radioButtonOne"
-                android:layout_alignStart="@+id/textTimer"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/nunito"
-                android:text="45 Seconds"
-                android:textSize="18sp" />
+                android:text="Timer Length"
+                android:textSize="30sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonThree"
+            <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/radioButtonTwo"
                 android:layout_alignStart="@+id/textTimer"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:fontFamily="@font/nunito"
-                android:text="60 Seconds"
-                android:textSize="18sp" />
-
-            <RadioButton
-                android:id="@+id/radioButtonFour"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/radioButtonThree"
-                android:layout_alignStart="@+id/textTimer"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:fontFamily="@font/nunito"
-                android:text="Random"
-                android:textSize="18sp" />
-
-        </RadioGroup>
+                android:layout_alignParentTop="true">
 
 
-    </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/radioButtonOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textTimer"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="74dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="30 Seconds"
+                    android:textSize="20sp" />
 
+                <RadioButton
+                    android:id="@+id/radioButtonTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioButtonOne"
+                    android:layout_alignStart="@+id/textTimer"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="45 Seconds"
+                    android:textSize="20sp" />
 
+                <RadioButton
+                    android:id="@+id/radioButtonThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioButtonTwo"
+                    android:layout_alignStart="@+id/textTimer"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="60 Seconds"
+                    android:textSize="20sp" />
 
+                <RadioButton
+                    android:id="@+id/radioButtonFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioButtonThree"
+                    android:layout_alignStart="@+id/textTimer"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Random"
+                    android:textSize="20sp" />
 
-</RelativeLayout>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

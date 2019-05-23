@@ -14,6 +14,12 @@ public class MainLauncher extends AppCompatActivity {
 
     private Data data;
 
+    //do nothing on back press
+    @Override
+    public void onBackPressed() {
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +40,7 @@ public class MainLauncher extends AppCompatActivity {
             Intent i = new Intent(getBaseContext(), MainActivity.class);
             startActivity(i);
         }
+
 
 
     }

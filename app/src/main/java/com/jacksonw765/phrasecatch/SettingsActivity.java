@@ -28,6 +28,12 @@ public class SettingsActivity extends AppCompatActivity {
     public static final int LONG_TIME = 53;
 
     @Override
+    protected void onPause() {
+        System.out.println("pause");
+        super.onPause();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
@@ -122,5 +128,7 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 }

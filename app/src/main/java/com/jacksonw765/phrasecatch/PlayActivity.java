@@ -391,6 +391,12 @@ public class PlayActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onPause() {
+        System.out.println("pause");
+        super.onPause();
+    }
+
     private void timerUp() {
         textWord.setText("Click Start");
         final AlertDialog.Builder builder;

@@ -73,4 +73,5 @@ public class Data {
         editor.putBoolean(FIRST_RUN, first);
         editor.apply();
     }
+
 }
