@@ -91,7 +91,7 @@
 
     <Button
         android:id="@+id/buttonStop"
-        android:layout_width="275dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/button_red"
@@ -106,7 +106,7 @@
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="275dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/button_lightblue"

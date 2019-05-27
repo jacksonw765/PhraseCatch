@@ -7,9 +7,9 @@ import android.preference.PreferenceManager;
 public class Data {
 
     //define constants
-    public final static String RADIO_KEY = "RADIO_KEY";
-    public final static String POINTS_KEY = "POINTS_KEY";
-    public final static String FIRST_RUN = "FIRST_RUN";
+    private final static String RADIO_KEY = "RADIO_KEY";
+    private final static String POINTS_KEY = "POINTS_KEY";
+    private final static String FIRST_RUN = "FIRST_RUN";
     public final static int SHORT = 1;
     public final static int MID = 2;
     public final static int LONG = 3;
@@ -18,7 +18,7 @@ public class Data {
     //private variables
     private SharedPreferences.Editor editor;
     private SharedPreferences prefs;
-    private Context context;
+    private final Context context;
 
     public Data(Context context) {
         this.context = context;

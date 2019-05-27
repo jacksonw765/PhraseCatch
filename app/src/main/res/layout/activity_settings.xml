@@ -14,7 +14,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"/>
 
         <RelativeLayout
             android:id="@+id/layoutPoints"
@@ -22,7 +22,7 @@
             android:layout_height="250dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/button_white_bordered"
+            android:background="@drawable/button_white"
             android:elevation="5dp"
             tools:layout_editor_absoluteX="39dp"
             tools:layout_editor_absoluteY="298dp">
@@ -60,7 +60,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/button_lightblue_circle"
-                android:elevation="2dp"
+                android:elevation="3dp"
                 android:fontFamily="@font/nunito"
                 android:text="+"
                 android:textAlignment="center"
@@ -73,7 +73,7 @@
                 android:layout_alignStart="@+id/textView2"
                 android:layout_alignTop="@+id/buttonPlus"
                 android:background="@drawable/button_lightblue_circle"
-                android:elevation="2dp"
+                android:elevation="3dp"
                 android:fontFamily="@font/nunito"
                 android:text="-"
                 android:textAlignment="center"
@@ -83,7 +83,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"/>
 
         <RelativeLayout
             android:id="@+id/layoutTimer"
@@ -91,8 +91,7 @@
             android:layout_height="250dp"
             android:layout_alignStart="@+id/layoutPoints"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="103dp"
-            android:background="@drawable/button_white_bordered"
+            android:background="@drawable/button_white"
             android:elevation="5dp">
 
             <TextView
@@ -123,7 +122,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="74dp"
                     android:fontFamily="@font/nunito"
-                    android:text="30 Seconds"
+                    android:text="Short"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -135,7 +134,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:fontFamily="@font/nunito"
-                    android:text="45 Seconds"
+                    android:text="Mid"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -147,7 +146,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:fontFamily="@font/nunito"
-                    android:text="60 Seconds"
+                    android:text="Long"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -161,8 +160,26 @@
                     android:fontFamily="@font/nunito"
                     android:text="Random"
                     android:textSize="20sp" />
-
             </RadioGroup>
         </RelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/buttonRate"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_lightblue"
+            android:elevation="5dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="Rate"
+            android:textSize="30sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
     </LinearLayout>
 </ScrollView>

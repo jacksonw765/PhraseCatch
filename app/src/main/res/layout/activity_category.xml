@@ -22,6 +22,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
+                android:fontFamily="@font/nunito"
                 android:text="Pick A Deck"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -49,8 +50,9 @@
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
+                    android:singleLine="false"
                     android:text="Everything"
-                    android:textSize="24sp" />
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/buttonCollegeLife"
@@ -66,7 +68,7 @@
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
                     android:text="College Life"
-                    android:textSize="24sp" />
+                    android:textSize="22sp" />
 
             </RelativeLayout>
 
@@ -91,7 +93,7 @@
                     android:elevation="5dp"
                     android:gravity="center"
                     android:text="Sports"
-                    android:textSize="26sp" />
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/buttonEntertainment"
@@ -106,8 +108,8 @@
                     android:elevation="5dp"
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
-                    android:text="Entertainment"
-                    android:textSize="20sp" />
+                    android:text="The Arts"
+                    android:textSize="22sp" />
 
             </RelativeLayout>
 
@@ -134,7 +136,7 @@
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
                     android:text="Places"
-                    android:textSize="26sp" />
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/buttonScience"
@@ -150,7 +152,7 @@
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
                     android:text="Science"
-                    android:textSize="24sp" />
+                    android:textSize="22sp" />
 
             </RelativeLayout>
 
@@ -178,7 +180,7 @@
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
                     android:text="Animals"
-                    android:textSize="26sp" />
+                    android:textSize="22sp" />
 
                 <Button
                     android:id="@+id/buttonFood"
@@ -194,7 +196,7 @@
                     android:fontFamily="@font/nunito_font"
                     android:gravity="center"
                     android:text="Food"
-                    android:textSize="26sp" />
+                    android:textSize="22sp" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

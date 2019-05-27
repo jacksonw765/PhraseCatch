@@ -8,7 +8,14 @@ import android.widget.Button;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    Button buttonEverything, buttonSports, buttonEntertainment, buttonCollege, buttonPlaces, buttonScience, buttonAnimals, buttonFood;
+    private Button buttonEverything;
+    private Button buttonSports;
+    private Button buttonEntertainment;
+    private Button buttonCollege;
+    private Button buttonPlaces;
+    private Button buttonScience;
+    private Button buttonAnimals;
+    private Button buttonFood;
 
     public final static String CATEGORY_TYPE = "CATEGORY";
     public final static int EVERYTHING = 1;

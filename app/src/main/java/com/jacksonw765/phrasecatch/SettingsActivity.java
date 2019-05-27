@@ -1,6 +1,8 @@
 package com.jacksonw765.phrasecatch;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -14,7 +16,7 @@ import android.widget.Toast;
 public class SettingsActivity extends AppCompatActivity {
 
     //define UI
-    private Button buttonPlus, buttonMinus;
+    private Button buttonPlus, buttonMinus, buttonRate;
     private TextView textViewPointsToWin;
     private RadioGroup radioGroup;
     private RadioButton radioShort, radioMid, radioLong, radioRandom;
@@ -48,6 +50,7 @@ public class SettingsActivity extends AppCompatActivity {
         radioMid = findViewById(R.id.radioButtonTwo);
         radioLong = findViewById(R.id.radioButtonThree);
         radioRandom = findViewById(R.id.radioButtonFour);
+        buttonRate = findViewById(R.id.buttonRate);
 
         //instantiate other elements
         pointsToWin = data.loadPointsToWin();
@@ -119,7 +122,6 @@ public class SettingsActivity extends AppCompatActivity {
                         pointsToWin++;
                         textViewPointsToWin.setText("" + pointsToWin);
                         data.savePointsToWin(pointsToWin);
-                        System.out.println("Load" + data.loadPointsToWin());
                     } catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                     }
@@ -129,6 +131,13 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        buttonRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.jacksonw765.phrasecatch&hl=en_US"));
+                startActivity(browserIntent);
+            }
+        });
 
     }
 }
