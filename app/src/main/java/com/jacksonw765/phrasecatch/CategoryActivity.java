@@ -1,6 +1,7 @@
 package com.jacksonw765.phrasecatch;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -31,7 +32,14 @@ public class CategoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+
+        if(Build.MANUFACTURER.contains("samsung")) {
+            setContentView(R.layout.activity_category_samsung);
+        }
+        else {
+            setContentView(R.layout.activity_category);
+        }
+
         buttonEverything = findViewById(R.id.buttonCatagoryEverything);
         buttonSports = findViewById(R.id.buttonSports);
         buttonEntertainment = findViewById(R.id.buttonEntertainment);
