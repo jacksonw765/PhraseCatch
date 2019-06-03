@@ -55,13 +55,20 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        MobileAds.initialize(this, "ca-app-pub-7225811178915318~7129168296");
-        interstitialAd = new InterstitialAd(this);
-        adview = findViewById(R.id.adView);
-        adRequest = new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build();
-        adview.loadAd(adRequest);
-        interstitialAd.setAdUnitId("ca-app-pub-7225811178915318/8513120893");
-        interstitialAd.loadAd(new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build());
+        try {
+            MobileAds.initialize(this, "ca-app-pub-7225811178915318~7129168296");
+            interstitialAd = new InterstitialAd(this);
+            adview = findViewById(R.id.adView);
+            adRequest = new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build();
+            adview.loadAd(adRequest);
+            interstitialAd.setAdUnitId("ca-app-pub-7225811178915318/8513120893");
+            interstitialAd.loadAd(new AdRequest.Builder().addTestDevice("F1143FF789A53A2B4E5A2837BEE09ABB").build());
+        }
+
+        //call base exception to catch every error
+        catch (Exception e) {
+            e.printStackTrace();
+        }
 
         buttonNext = findViewById(R.id.buttonNext);
         buttonStartStop = findViewById(R.id.buttonStop);
@@ -405,10 +412,12 @@ public class PlayActivity extends AppCompatActivity {
                 .setMessage("Timer is up.")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        if (interstitialAd.isLoaded()) {
-                            interstitialAd.show();
-                        } else {
-                            System.out.println("NOT LOADED");
+                        try {
+                            if (interstitialAd.isLoaded()) {
+                                interstitialAd.show();
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 })

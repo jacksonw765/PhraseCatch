@@ -41,7 +41,7 @@
 
                 <Button
                     android:id="@+id/buttonCatagoryEverything"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -56,12 +56,12 @@
 
                 <Button
                     android:id="@+id/buttonCollegeLife"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="false"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
@@ -84,9 +84,9 @@
 
                 <Button
                     android:id="@+id/buttonSports"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
@@ -97,12 +97,12 @@
 
                 <Button
                     android:id="@+id/buttonEntertainment"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="false"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
@@ -126,9 +126,9 @@
 
                 <Button
                     android:id="@+id/buttonPlaces"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
@@ -140,12 +140,12 @@
 
                 <Button
                     android:id="@+id/buttonScience"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="false"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
@@ -170,9 +170,9 @@
 
                 <Button
                     android:id="@+id/buttonAnimals"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
@@ -184,12 +184,12 @@
 
                 <Button
                     android:id="@+id/buttonFood"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="false"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/button_white"
                     android:elevation="5dp"
