@@ -1,5 +1,6 @@
 package com.jacksonw765.phrasecatch;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 public class SettingsActivity extends AppCompatActivity {
 
     //define UI
-    private Button buttonPlus, buttonMinus, buttonRate;
+    private Button buttonPlus, buttonMinus, buttonRate, buttonContact;
     private TextView textViewPointsToWin;
     private RadioGroup radioGroup;
     private RadioButton radioShort, radioMid, radioLong, radioRandom;
@@ -51,6 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
         radioLong = findViewById(R.id.radioButtonThree);
         radioRandom = findViewById(R.id.radioButtonFour);
         buttonRate = findViewById(R.id.buttonRate);
+        buttonContact = findViewById(R.id.buttonContact);
 
         //instantiate other elements
         pointsToWin = data.loadPointsToWin();
@@ -136,6 +138,20 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.jacksonw765.phrasecatch&hl=en_US"));
                 startActivity(browserIntent);
+            }
+        });
+
+        buttonContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:jacksonw765@gmail.com"));
+
+                try {
+                    startActivity(emailIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), "Could't start activity", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

@@ -181,5 +181,20 @@
         <Space
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/buttonContact"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_lightblue"
+            android:elevation="5dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textSize="30sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
     </LinearLayout>
 </ScrollView>
