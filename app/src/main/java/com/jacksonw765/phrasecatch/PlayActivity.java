@@ -50,6 +50,7 @@ public class PlayActivity extends AppCompatActivity {
     private long timeLeft = -1;
     private int countDownSoundURI;
     private Context context;
+    private Random random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,8 @@ public class PlayActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
+
         buttonNext = findViewById(R.id.buttonNext);
         buttonStartStop = findViewById(R.id.buttonStop);
         textTeamAPoints = findViewById(R.id.textTeamAPoints);
@@ -82,6 +85,7 @@ public class PlayActivity extends AppCompatActivity {
         textTeamBPoints = findViewById(R.id.textTeamBPoints);
         adview = findViewById(R.id.adView);
         context = getApplicationContext();
+        random = new Random();
 
         //load current deck
         Intent intent = getIntent();
@@ -197,10 +201,10 @@ public class PlayActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                endGame();
                 if (!isFinishing()) {
                     timerUp();
                 }
+                System.gc();
             }
         };
 
@@ -305,7 +309,7 @@ public class PlayActivity extends AppCompatActivity {
     }
 
     //gets the users preference for timer length and converts it to audio.
-    //this is a really ugly method. Refactor when feeling it
+    //this is a really ugly method. Refactor when feeling it, which is prolly never lol.
     private int getSelectedTimeInMilli() {
         Random random;
         int retVal = data.loadRadio();
@@ -401,28 +405,42 @@ public class PlayActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        System.out.println("pause");
         super.onPause();
     }
 
+    @Override
+    protected void onDestroy() {
+        System.gc();
+        super.onDestroy();
+    }
+
+    private void showAd() {
+        try {
+            int adNum = random.nextInt((3 - 1) + 1) + 1;
+            if (interstitialAd.isLoaded() && adNum == 1) {
+                interstitialAd.show();
+            }
+            else {
+                System.out.println("No ad shown");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private void timerUp() {
-        textWord.setText("Click Start");
         final AlertDialog.Builder builder;
         builder = new AlertDialog.Builder(PlayActivity.this);
         builder.setTitle("Timer Expired!")
                 .setMessage("Timer is up.")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            if (interstitialAd.isLoaded()) {
-                                interstitialAd.show();
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        endGame();
+                        showAd();
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
+        textWord.setText("Click Start");
     }
 }

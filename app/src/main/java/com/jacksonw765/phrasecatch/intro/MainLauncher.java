@@ -40,8 +40,11 @@ public class MainLauncher extends AppCompatActivity {
             Intent i = new Intent(getBaseContext(), MainActivity.class);
             startActivity(i);
         }
+    }
 
-
-
+    @Override
+    protected void onDestroy() {
+        System.gc();
+        super.onDestroy();
     }
 }

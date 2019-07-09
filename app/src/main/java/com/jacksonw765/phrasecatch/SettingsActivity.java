@@ -26,14 +26,19 @@ public class SettingsActivity extends AppCompatActivity {
     //define variables
     private int pointsToWin;
 
-    public static final int SHORT_TIME = 30;
-    public static final int MID_TIME = 47;
-    public static final int LONG_TIME = 53;
+    public static final int SHORT_TIME = 41;
+    public static final int MID_TIME = 50;
+    public static final int LONG_TIME = 61;
 
     @Override
     protected void onPause() {
-        System.out.println("pause");
         super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        System.gc();
+        super.onDestroy();
     }
 
     @Override
@@ -73,6 +78,8 @@ public class SettingsActivity extends AppCompatActivity {
             case 4:
                 radioRandom.toggle();
         }
+
+
 
         //onClick listeners
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

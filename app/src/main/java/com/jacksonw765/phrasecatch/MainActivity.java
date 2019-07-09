@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle("Please Play Fair")
                         .setMessage("Since this application is free, we rely on ads. " +
-                                "While we can't stop you from playing, please consider connecting to internet.")
+                                "While we can't stop you from playing, please consider connecting to internet to support this app. Thank you!")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
 
@@ -88,5 +88,11 @@ public class MainActivity extends AppCompatActivity {
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         return cm.getActiveNetworkInfo() != null;
+    }
+
+    @Override
+    protected void onDestroy() {
+        System.gc();
+        super.onDestroy();
     }
 }
