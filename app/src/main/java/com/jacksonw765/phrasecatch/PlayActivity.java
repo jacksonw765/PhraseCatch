@@ -416,8 +416,7 @@ public class PlayActivity extends AppCompatActivity {
 
     private void showAd() {
         try {
-            int adNum = random.nextInt((3 - 1) + 1) + 1;
-            if (interstitialAd.isLoaded() && adNum == 1) {
+            if (interstitialAd.isLoaded() && getRandomBoolean()) {
                 interstitialAd.show();
             }
             else {
@@ -426,6 +425,11 @@ public class PlayActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean getRandomBoolean() {
+        Random random = new Random();
+        return random.nextBoolean();
     }
 
     private void timerUp() {
