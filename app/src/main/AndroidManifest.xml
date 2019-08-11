@@ -18,7 +18,9 @@
         android:screenOrientation="portrait"
         tools:replace="android:appComponentFactory"
         android:fullBackupContent="@xml/backup_descriptor"
+        android:largeHeap="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".intro.MainLauncher"
             android:label="@string/app_name">
