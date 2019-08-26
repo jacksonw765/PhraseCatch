@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -22,24 +23,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int height = displayMetrics.heightPixels;
-        int width = displayMetrics.widthPixels;
-
-        if(width <= 720 || height <= 1080) {
             if(!isFinishing()) {
                 AlertDialog.Builder builder;
                 builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("Unsupported Device")
-                        .setMessage("This application is not well optimized for lower end devices.")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setTitle("We've Upgraded!")
+                        .setMessage("We are excited to announce that due to the success of Phrase Catch version 1, we have created a new version with over 100 improvements to make the game even more enjoyable.")
+                        .setPositiveButton("Upgrade", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent browse = new Intent(Intent.ACTION_VIEW , Uri.parse("https://play.google.com/store/apps/details?id=com.jacksonw765.phrase_catch2&hl=en_US"));
+                                startActivity(browse);
+                            }
+                        }).setIcon(android.R.drawable.ic_dialog_alert)
+                        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
                             public void onClick(DialogInterface dialog, int which) {
 
                             }
-                        }).setIcon(android.R.drawable.ic_dialog_alert).show();
+                        }).show();
             }
-        }
 
         if(!isNetworkConnected()) {
             if(!isFinishing()) {
